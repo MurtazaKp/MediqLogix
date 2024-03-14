@@ -1,0 +1,145 @@
+import Link from "next/link";
+import React from "react";
+
+const Footer = () => {
+  const footerData = {
+    footerLinks: [
+      {
+        heading: "PRODUCTS",
+        links: [
+          {
+            label: "Mediqm Solution",
+            href: "#",
+          },
+          {
+            label: "Saas Mediqm",
+            href: "#",
+          },
+          {
+            label: "Mediqm Platform",
+            href: "#",
+          },
+        ],
+      },
+      {
+        heading: "SERVICE",
+        links: [
+          {
+            label: "Hospital Quality Consulting",
+            href: "#",
+          },
+          {
+            label: "Quality Management Education & Training",
+            href: "#",
+          },
+          {
+            label: "Hospital Safety Consulting",
+            href: "#",
+          },
+        ],
+      },
+    ],
+    address: {
+      heading: "ADDRESS",
+      logo: "/images/logo.svg",
+      email: "info@Mediqlogix.com",
+      address: "  15, Downing Town, PA 12345",
+      phone: "USA Phone : +1 123 456 7891",
+      website: "http://www.mediqlogix.com",
+    },
+    copyRight: {
+      copyrightLinks: [
+        {
+          label: "Home",
+          href: "/",
+        },
+        {
+          label: "Solution",
+          href: "/",
+        },
+        {
+          label: "Services",
+          href: "/",
+        },
+        {
+          label: "Contact",
+          href: "/",
+        },
+      ],
+      copyrightText: "Privacy © 2024 - mediqlogix.com",
+    },
+  };
+
+  return (
+    <>
+      <div className=" bg-primary-black px-36 py-14">
+        <div className="grid grid-cols-4">
+          <div className=" col-span-3 w-9/12">
+            <div className="grid grid-cols-2 ">
+              {footerData.footerLinks.map((links, index) => {
+                return (
+                  <div key={index}>
+                    <h3 className="mb-7 text-white ">{links.heading}</h3>
+                    <ul className="flex flex-col gap-3 text-xs">
+                      {links.links.map((link, index) => {
+                        return (
+                          <Link
+                            className={"text-white "}
+                            key={index}
+                            href={link.href}
+                          >
+                            {" "}
+                            <div>
+                              <li className=" w-auto">{link.label}</li>
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="col-span-1">
+            <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
+            <div className="text-white flex flex-col gap-3 text-xs">
+              <img className="w-6/12" src={footerData.address.logo}></img>
+              <p>{footerData.address.address}</p>
+              <p>phone:{footerData.address.phone}</p>
+              <p>Email:{footerData.address.email}</p>
+              <p>Website:{footerData.address.website}</p>
+            </div>
+            <div className="flex mt-10 gap-2">
+              <a>
+                <img src="/images/Facebook.svg"></img>
+              </a>
+              <a>
+                <img src="/images/Linkdine.svg"></img>
+              </a>
+              <a>
+                <img src="/images/Youtube.svg"></img>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-primary-green py-2 px-36">
+        <div className="grid grid-cols-4 ">
+          <div className="col-span-3 flex gap-16">
+            {footerData.copyRight.copyrightLinks.map((link, index) => {
+              return (
+                <Link className="font-semibold" key={index} href={link.href}>
+                  {link.label}
+                </Link>
+              );
+            })}
+          </div>
+          <div className="col-span-1">{footerData.copyRight.copyrightText}</div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Footer;
