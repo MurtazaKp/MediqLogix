@@ -72,10 +72,10 @@ const Footer = () => {
 
   return (
     <>
-      <div className=" bg-primary-black px-36 py-14">
-        <div className="grid grid-cols-4">
-          <div className=" col-span-3 w-9/12">
-            <div className="grid grid-cols-2 ">
+      <div className=" bg-primary-black px-5 lg:px-36 py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:grid-cols-4">
+          <div className=" lg:col-span-3 lg:w-9/12">
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 ">
               {footerData.footerLinks.map((links, index) => {
                 return (
                   <div key={index}>
@@ -104,7 +104,7 @@ const Footer = () => {
           <div className="col-span-1">
             <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
             <div className="text-white flex flex-col gap-3 text-xs">
-              <img className="w-6/12" src={footerData.address.logo}></img>
+              <img className="w-6/12 -ml-1" src={footerData.address.logo}></img>
               <p>{footerData.address.address}</p>
               <p>phone:{footerData.address.phone}</p>
               <p>Email:{footerData.address.email}</p>
@@ -124,9 +124,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-primary-green py-2 px-36">
-        <div className="grid grid-cols-4 ">
-          <div className="col-span-3 flex gap-16">
+      <div className="bg-primary-green py-2 px-2 lg:px-36">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
+          <div className="lg:col-span-3 flex-wrap flex gap-5 lg:gap-16">
             {footerData.copyRight.copyrightLinks.map((link, index) => {
               return (
                 <Link className="font-semibold" key={index} href={link.href}>
@@ -135,7 +135,9 @@ const Footer = () => {
               );
             })}
           </div>
-          <div className="col-span-1">{footerData.copyRight.copyrightText}</div>
+          <div className="lg:col-span-1 sm:flex sm:justify-end lg:justify-start">
+            {footerData.copyRight.copyrightText}
+          </div>
         </div>
       </div>
     </>

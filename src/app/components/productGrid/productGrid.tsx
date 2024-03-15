@@ -58,13 +58,13 @@ const ProductGrid = () => {
   ];
 
   return (
-    <div className=" bg-primary-green  py-10 lg:px-36">
-      <div className="grid grid-cols-4 gap-9 justify-evenly ">
+    <div className=" bg-primary-green  py-10 px-10 lg:px-36">
+      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-9 justify-evenly ">
         {productGridData.map((product, index) => {
           return (
             <div
-              className={`text-white px-1 flex flex-col justify-between gap-5 ${
-                index != 3 ? "border-r border-white" : ""
+              className={`text-white px-1 flex flex-col items-center lg:items-start justify-between gap-5 ${
+                index != 3 ? "lg:border-r border-white" : ""
               } `}
               key={index}
             >
@@ -75,7 +75,9 @@ const ProductGrid = () => {
               <h2 className=" text-tertiary-heading font-bold">
                 {product.label}
               </h2>
-              <p className="text-[16.5px]">{product.paragrapgh}</p>
+              <p className="text-[16.5px] text-center lg:text-start">
+                {product.paragrapgh}
+              </p>
               <Link
                 className="rounded-full border border-white w-7/12 py-1 text-center"
                 href={product.buttonCta.href}

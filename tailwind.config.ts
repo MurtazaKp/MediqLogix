@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-           fontSize: {
+      fontSize: {
         "primary-heading": "82.24px",
         "secondary-heading": "36.9px",
         "tertiary-heading": "22.8px",
@@ -34,11 +34,10 @@ const config: Config = {
         "primary-blue": "#4387EA",
         "primary-black": "#333333",
         "secondary-black": "#000000",
-        "secondary-gray": "#4387EA",
-
+        "secondary-gray": "#f2f2f2",
+      },
     },
+    plugins: [],
   },
-  plugins: [],
-}
-}
+};
 export default config;

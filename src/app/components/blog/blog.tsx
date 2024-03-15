@@ -34,12 +34,12 @@ const Blog = () => {
   return (
     <div className="bg-black text-white py-14">
       <h2 className="text-center mb-8 text-2xl">{blogData.heading}</h2>
-      <div className="grid grid-cols-3 gap-5 lg:px-36">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-5 px-10 lg:px-36">
         {blogData.blog.map((blog, index) => {
           return (
             <div
               key={index}
-              className="flex gap-6 border rounded-lg h-[120px]  items-stretch border-primary-green"
+              className="flex gap-6 border rounded-lg lg:h-[120px]    items-stretch border-primary-green"
             >
               <div className="w-5/12 rounded-lg ">
                 <img
@@ -47,7 +47,7 @@ const Blog = () => {
                   src="https://images.pexels.com/photos/3153204/pexels-photo-3153204.jpeg?auto=compress&cs=tinysrgb&w=600"
                 />
               </div>
-              <div className="flex flex-col w-9/12  justify-between py-3">
+              <div className="flex flex-col w-9/12   justify-between py-3">
                 <h4 className="mb-5">{blog.heading}</h4>
                 <Link className="text-xs" href={blog.linK.href}>
                   {blog.linK.label}

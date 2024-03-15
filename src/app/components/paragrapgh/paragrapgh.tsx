@@ -2,7 +2,7 @@ import React from "react";
 
 const Paragrapgh = () => {
   return (
-    <div className="px-36 bg-black py-20 text-white">
+    <div className="px-10 lg:px-36 bg-black py-20 text-white">
       <h2 className="text-secondary-heading">
         Welcome to <span className="text-primary-green">MediQlogix</span>
       </h2>
