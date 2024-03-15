@@ -2,7 +2,7 @@ import React from "react";
 
 const CompanyProfile = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-10">
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
         vitae praesentium eaque beatae nulla aperiam explicabo modi minus
@@ -19,7 +19,23 @@ const CompanyProfile = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque non
         natus officiis dolor quod esse mollitia, nisi aspernatur, voluptatem
         doloremque perferendis? Aut hic expedita saepe officia facilis iure
-        laudantium illo.
+        laudantium illo. Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Recusandae vitae praesentium eaque beatae nulla aperiam explicabo
+        modi minus voluptatem, eum iure libero neque delectus numquam iusto
+        alias, molestias dicta error. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Consectetur perferendis quam ab dolorum veniam quod
+        voluptate debitis eaque iure dicta
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque non
+        natus officiis dolor quod esse mollitia, nisi aspernatur, voluptatem
+        doloremque perferendis? Aut hic expedita saepe officia facilis iure
+        laudantium illo. Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Recusandae vitae praesentium eaque beatae nulla aperiam explicabo
+        modi minus voluptatem, eum iure libero neque delectus numquam iusto
+        alias, molestias dicta error. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Consectetur perferendis quam ab dolorum veniam quod
+        voluptate debitis eaque iure dicta
       </p>
     </div>
   );
