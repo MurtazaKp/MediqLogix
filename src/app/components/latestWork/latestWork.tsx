@@ -56,7 +56,7 @@ const LatestWork = () => {
   ];
   return (
     <>
-      <div className="w-full bg-white px-3 pb-7 rounded-xl mt-6">
+      <div className="w-full bg-white px-3 pb-7 rounded-xl">
         <h4 className="text-primary-green py-5 font-bold">Latest Work</h4>
         <Slider {...settings}>
           {blogData.map((blog, index) => {

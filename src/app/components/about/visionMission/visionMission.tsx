@@ -13,7 +13,7 @@ const VisionMission = () => {
         </div>
 
         <div className="">
-          <h3 className="text-lg mb-3 text-primary-green text-center sm:text-start">
+          <h3 className="text-lg mb-3 font-bold text-primary-green text-center sm:text-start">
             Our Vision
           </h3>
           <p className="text-center sm:text-start">
@@ -34,8 +34,8 @@ const VisionMission = () => {
         </div>
 
         <div className="">
-          <h3 className="text-lg mb-3 text-primary-green text-center sm:text-start">
-            Our Vision
+          <h3 className="text-lg font-bold mb-3 text-primary-green text-center sm:text-start">
+            Our Mission
           </h3>
           <p className="text-center sm:text-start">
             MediQlogix is a healthcare software company developing SaaS database

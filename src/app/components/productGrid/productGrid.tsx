@@ -9,11 +9,11 @@ const ProductGrid = () => {
       paragrapgh:
         "Cloud solutions to the Hospital and Healthcare organizations.",
       buttonCta: {
-        label: "know more",
-        href: "#",
+        label: "Know more",
+        href: "/software",
       },
       image: {
-        src: "/images/cloudSolution.svg",
+        src: "/images/Data.svg",
       },
     },
     {
@@ -22,8 +22,8 @@ const ProductGrid = () => {
       paragrapgh:
         "Provides Mobile services for Hospital Quality, Education and Hospital safety.",
       buttonCta: {
-        label: "know more",
-        href: "#",
+        label: "Know more",
+        href: "software",
       },
       image: {
         src: "/images/Mobility.svg",
@@ -35,8 +35,8 @@ const ProductGrid = () => {
       paragrapgh:
         "Experts in Hospital Quality providing solutions to improve profitability.",
       buttonCta: {
-        label: "know more",
-        href: "#",
+        label: "Know more",
+        href: "software",
       },
       image: {
         src: "/images/Consulting.svg",
@@ -48,11 +48,11 @@ const ProductGrid = () => {
       paragrapgh:
         "Request for Demo please click and provide your basic contact details.",
       buttonCta: {
-        label: "know more",
-        href: "#",
+        label: "Know more",
+        href: "/software",
       },
       image: {
-        src: "/images/Data.svg",
+        src: "/images/cloudSolution.svg",
       },
     },
   ];
@@ -69,7 +69,7 @@ const ProductGrid = () => {
               key={index}
             >
               <img
-                className={` w-20 w-20 ${index == 0 ? "pt-5" : ""} `}
+                className={` w-20 h-20 ${index == 0 ? "" : ""} `}
                 src={product.image.src}
               />
               <h2 className=" text-tertiary-heading font-bold">

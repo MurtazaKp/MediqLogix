@@ -8,7 +8,7 @@ import MeetTeam from "../meetTeam/meetTeam";
 import Blog from "../blog/blog";
 
 const AboutUs = () => {
-  const [activeLink, setActiveLink] = useState("About");
+  const [activeLink, setActiveLink] = useState("About Us");
 
   const handleLinkClick = (link: any) => {
     setActiveLink(link);
@@ -44,7 +44,7 @@ const AboutUs = () => {
                     {link.label}
                   </button>
                   {activeLink === link.label && (
-                    <div className="w-3 absolute -top-1 left-5 z-[50] h-3 rounded-full bg-primary-green"></div>
+                    <div className="w-3 absolute -top-1 left-1 z-[50] h-3 rounded-full bg-primary-green"></div>
                   )}
                 </div>
               ))}
@@ -52,7 +52,7 @@ const AboutUs = () => {
           </nav>
         </div>
         <div className=" pt-6 mx-auto  ">
-          {activeLink === "About" && (
+          {activeLink === "About Us" && (
             <div>
               <AboutContent />
             </div>

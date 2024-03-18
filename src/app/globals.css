@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .slick-prev {
   z-index: 10000;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .slick-dots li.slick-active button:before {
@@ -23,4 +37,8 @@
 /* Handle */
 #meetTeam::-webkit-scrollbar-thumb {
   background: green;
+}
+
+.slick-dots li {
+  width: 20px !important;
 }

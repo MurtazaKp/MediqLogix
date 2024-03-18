@@ -6,7 +6,7 @@ const Paragrapgh = () => {
       <h2 className="text-secondary-heading">
         Welcome to <span className="text-primary-green">MediQlogix</span>
       </h2>
-      <p className="text-lg">
+      <p className="text-lg capitalize">
         <span className="text-primary-green"> MediQlogix</span> provides
         hospitals and healthcare organizations with IT (Information technology)
         solutions for Quality and Safety measures using SaaS (Software as a

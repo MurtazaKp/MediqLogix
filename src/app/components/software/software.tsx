@@ -16,10 +16,10 @@ const SoftwareProducts = () => {
   };
 
   const tabs = [
-    { id: 1, label: "Cloud MediQm" },
-    { id: 2, label: "MediQm Mobility" },
-    { id: 3, label: "MediQm Platform" },
-    { id: 4, label: "MediQm Solution" },
+    { id: 1, label: "Cloud MediQM" },
+    { id: 2, label: "MediQM Mobility" },
+    { id: 3, label: "MediQM Platform" },
+    { id: 4, label: "MediQM Solution" },
   ];
 
   return (
@@ -34,7 +34,7 @@ const SoftwareProducts = () => {
               {tabs.map((link) => (
                 <div className="relative w-full lg:w-auto flex" key={link.id}>
                   <button
-                    className={`py-2 px-2 w-full lg:w-auto  z-10   rounded-full border border-black ${
+                    className={`py-2 px-2 w-full lg:w-auto  z-10  rounded-full border border-black ${
                       activeLink === link.label ? "bg-black text-white " : ""
                     }`}
                     onClick={(e) => {
@@ -60,22 +60,22 @@ const SoftwareProducts = () => {
                   <SoftwareContent />
                 </div>
               )}
-              {activeLink === "Cloud MediQm" && (
+              {activeLink === "Cloud MediQM" && (
                 <div>
                   <CloudMediQm />
                 </div>
               )}
-              {activeLink === "MediQm Mobility" && (
+              {activeLink === "MediQM Mobility" && (
                 <div>
                   <MediQmMobility />
                 </div>
               )}
-              {activeLink === "MediQm Platform" && (
+              {activeLink === "MediQM Platform" && (
                 <div>
                   <MediQmPlatform />
                 </div>
               )}
-              {activeLink === "MediQm Solution" && (
+              {activeLink === "MediQM Solution" && (
                 <div>
                   <MediQmSolution />
                 </div>

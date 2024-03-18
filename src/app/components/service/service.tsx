@@ -77,7 +77,7 @@ const Services = () => {
               )}
             </div>
           </div>
-          <div className="hidden lg:block lg:w-3/12 p-2">
+          <div className="hidden border-s-2 ps-7 border-gray-300 mt-6 lg:block lg:w-3/12 p-2 pt-0">
             <LatestWork />
           </div>
         </div>

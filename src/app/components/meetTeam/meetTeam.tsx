@@ -11,8 +11,8 @@ const teamMembers = [
     imageSrc: "/images/teamOne.jpg",
   },
   {
-    name: "Joey Smith",
-    role: " Executive Vice Presidnent - Healthcare Business",
+    name: "Somesh Saxena",
+    role: " Vice President – Product Development",
     imageSrc: "/images/teamtwo.jpg",
   },
   {
@@ -21,18 +21,18 @@ const teamMembers = [
     imageSrc: "/images/teamthree.jpg",
   },
   {
-    name: "Mathew smith",
-    role: "Vice President – Clinical Management",
+    name: "Jeffrey Dunn, MD MBA FACS",
+    role: "Executive Vice Presidnent - Healthcare Business",
     imageSrc: "/images/teamFour.jpg",
   },
   {
-    name: "Reena Saxsena",
-    role: " Vice President - Sales",
+    name: "Kathy Irvin, RN, BS",
+    role: " Vice President – Clinical Management",
     imageSrc: "/images/teamFive.jpg",
   },
   {
-    name: "Mary Hudson",
-    role: "Chief Technical Officer",
+    name: "Larry Deem MBA,",
+    role: "Vice President - Sales",
     imageSrc: "/images/teamSix.jpg",
   },
 ];

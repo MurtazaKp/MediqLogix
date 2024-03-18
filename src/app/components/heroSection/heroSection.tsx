@@ -25,7 +25,7 @@ const HeroSection = () => {
       <Slider {...settings}>
         <div className="flex flex-col  relative">
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
-            <span className="text-primary-green ">Digital </span>SOLUTION
+            <span className="text-primary-green ">Digital </span>Solution
           </h1>
 
           <div>
@@ -38,6 +38,35 @@ const HeroSection = () => {
         <div className=" flex flex-col  relative  ">
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
             <span className="text-primary-green ">Mobility </span>Services
+          </h1>
+
+          <div>
+            <p className=" lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[700px]">
+              Provides Mobile services for Hospital Quality, Education and
+              Hospital safety.
+            </p>
+            <p>{/* <button></button>{" "} */}</p>
+          </div>
+        </div>
+        <div className=" flex flex-col  relative  ">
+          <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
+            <span className="text-primary-green ">Consulting</span>
+            <br />
+            Services
+          </h1>
+
+          <div>
+            <p className=" lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[700px]">
+              Experts in Hospital Quality providing solutions to improve
+              profitability.
+            </p>
+            <p>{/* <button></button>{" "} */}</p>
+          </div>
+        </div>
+        <div className=" flex flex-col  relative  ">
+          <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
+            <span className="text-primary-green "> Data </span>
+            Analitics
           </h1>
 
           <div>

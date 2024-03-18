@@ -128,7 +128,7 @@ const Modal = ({ handleClose }: any) => {
             <span className="sr-only">Close</span>
           </button>
           <div>
-            <h5 className="text-[#adadad] mb-10 text-xs lg:text-base">
+            <h5 className="text-[#adadad] mb-10 ps-3 text-xs lg:text-base">
               {ModalData.heading}
             </h5>
             <ul className="flex flex-col gap-5 ">
@@ -142,9 +142,9 @@ const Modal = ({ handleClose }: any) => {
                   >
                     {" "}
                     <li
-                      className={` text-tertiary-heading leading-tertiary-heading lg:leading-secondary-heading lg:text-secondary-heading ${
+                      className={` text-tertiary-heading ps-3 leading-tertiary-heading lg:leading-secondary-heading lg:text-secondary-heading ${
                         pathname === links.href
-                          ? "text-primary-green"
+                          ? "text-primary-green border-s-2 border-primary-green"
                           : "text-white"
                       } `}
                     >
@@ -155,7 +155,7 @@ const Modal = ({ handleClose }: any) => {
               })}
             </ul>
 
-            <div className="mt-14 flex justify-between">
+            <div className="mt-14 ps-3 gap-4 flex justify-between">
               <span>
                 <p className="text-[#adadad] mb-3">Follow us</p>
                 <div className="flex gap-2 ">
@@ -171,7 +171,7 @@ const Modal = ({ handleClose }: any) => {
                   </a>
                 </div>
               </span>
-              <div className="flex justify-end items-end">
+              <div className="flex justify-start lg:justify-end items-end">
                 <div className=" w-8/12 lg:w-6/12">
                   <FooterLogoIcon />
                 </div>

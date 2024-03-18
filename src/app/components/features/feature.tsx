@@ -20,7 +20,7 @@ const Features = () => {
     {
       heading: "Financial Benefit",
       description:
-        "At MediQlogix, we believe that information and data tools play a critical role in improving the quality and safety.",
+        "MediQlogix’s team believes that for a hospital to be financially successful, the organization needs to excel in quality & patient safetyt",
       icon: "financial",
       knowMoreCta: {
         label: "Know More",
@@ -30,7 +30,7 @@ const Features = () => {
     {
       heading: "Data Analytics",
       description:
-        "At MediQlogix, we believe that information and data tools play a critical role in improving the quality and safety.",
+        "MediQlogix provides Big data and data analytics to improve Health Safety, Profit Margin and Customer Satisfaction",
       icon: "data",
       knowMoreCta: {
         label: "Know More",
@@ -40,7 +40,7 @@ const Features = () => {
     {
       heading: "Cloud Technology",
       description:
-        "At MediQlogix, we believe that information and data tools play a critical role in improving the quality and safety.",
+        "MediQlogix provides Cloud solutions to the Hospital and Healthcare organizations.",
       icon: "cloud",
       knowMoreCta: {
         label: "Know More",
@@ -63,16 +63,18 @@ const Features = () => {
     return <IconComponent />;
   };
   return (
-    <div className=" px-36 py-14">
-      <h4 className="  text-tertiary-heading text-center mb-8">Benifits</h4>
-      <div className="grid grid-cols-2 gap-6">
+    <div className="px-10 lg:px-36 py-14">
+      <h4 className="  text-tertiary-heading text-center mb-8 font-semibold">
+        Benefits
+      </h4>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {FeatureData.map((feature, index) => {
           return (
             <div
               key={index}
               className="border rounded-lg hover:border-primary-green p-5"
             >
-              <div className="flex items-center gap-5">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
                 <div>
                   <FeatureLink {...feature} />
                 </div>

@@ -5,7 +5,7 @@ const ServiceContent = () => {
   return (
     <div className="flex flex-col gap-7">
       <h3 className="text-primary-green text-xl">Service</h3>
-      <p>
+      <p className=" capitalize">
         MediQlogix’s software technology products are developed on clourd
         technology platforms for easy integration with your existing IT systems
         (Ex: COPE, Nursing, RX and Lab) in addition to an being a platform based

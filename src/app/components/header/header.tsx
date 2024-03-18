@@ -24,7 +24,7 @@ const Header = () => {
               href={"/contact"}
               className="border hover:bg-black hover:text-white border-black rounded-full flex justify-center items-center px-4 "
             >
-              Get in Touch
+              Get in touch
             </Link>
             <button onClick={handleOpen} className="">
               <img src="/images/Menu.svg" />
