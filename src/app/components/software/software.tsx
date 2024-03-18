@@ -30,11 +30,11 @@ const SoftwareProducts = () => {
             <p className="text-tertiary-heading text-primary-blue font-bold">
               {activeLink}
             </p>
-            <div className="flex flex-col items-stretch sm:flex-row gap-3 lg:w-9/12">
+            <div className="flex flex-col items-stretch sm:flex-row justify-end  gap-3 lg:w-9/12">
               {tabs.map((link) => (
-                <div className="relative w-full flex" key={link.id}>
+                <div className="relative w-full lg:w-auto flex" key={link.id}>
                   <button
-                    className={`py-3 px-3 w-full  z-10   rounded-full border border-black ${
+                    className={`py-2 px-2 w-full lg:w-auto  z-10   rounded-full border border-black ${
                       activeLink === link.label ? "bg-black text-white " : ""
                     }`}
                     onClick={(e) => {

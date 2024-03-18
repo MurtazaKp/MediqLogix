@@ -58,7 +58,7 @@ const ProductGrid = () => {
   ];
 
   return (
-    <div className=" bg-primary-green  py-10 px-10 lg:px-36">
+    <div className=" bg-primary-green py-14 px-10 lg:px-36">
       <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-9 justify-evenly ">
         {productGridData.map((product, index) => {
           return (
@@ -79,7 +79,7 @@ const ProductGrid = () => {
                 {product.paragrapgh}
               </p>
               <Link
-                className="rounded-full border border-white w-7/12 py-1 text-center"
+                className="rounded-full text-[14.54px] hover:bg-white hover:text-black text-white border border-white w-6/12 py-2 text-center"
                 href={product.buttonCta.href}
               >
                 {product.buttonCta.label}

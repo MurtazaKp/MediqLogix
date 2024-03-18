@@ -31,9 +31,9 @@ const AboutUs = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               {tabs.map((link) => (
-                <div className="relative" key={link.id}>
+                <div className="relative w-full lg:w-auto" key={link.id}>
                   <button
-                    className={`py-3 px-6  z-10  sm:px-3 lg:px-6 rounded-full border border-black ${
+                    className={`py-2 px-2 w-full lg:w-auto  z-10   rounded-full border border-black ${
                       activeLink === link.label ? "bg-black text-white " : ""
                     }`}
                     onClick={(e) => {

@@ -15,14 +15,14 @@ const Header = () => {
   return (
     <>
       <div className="">
-        <div className="flex justify-between py-2 px-2 lg:px-36">
+        <div className="flex justify-between  px-2 lg:px-36 py-4">
           <Link href={"/"}>
             <img src="/images/logo.svg" />
           </Link>
           <div className=" flex gap-6">
             <Link
               href={"/contact"}
-              className="border border-black rounded-full flex justify-center items-center px-4 "
+              className="border hover:bg-black hover:text-white border-black rounded-full flex justify-center items-center px-4 "
             >
               Get in Touch
             </Link>

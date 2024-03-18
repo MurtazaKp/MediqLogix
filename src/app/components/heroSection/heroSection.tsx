@@ -18,12 +18,12 @@ const HeroSection = () => {
   };
   const sliderRef = useRef();
   return (
-    <div className="bg-black  px-10 lg:px-36 hero-section ">
+    <div className="bg-black  px-10 lg:px-36 relative hero-section ">
+      <div className="absolute inset-0 z-10 ">
+        <img className="" src="/images/backgroud.png" />
+      </div>
       <Slider {...settings}>
         <div className="flex flex-col  relative">
-          <div className="absolute inset-0 z-10 ">
-            <img className="" src="/images/backgroud.png" />
-          </div>
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
             <span className="text-primary-green ">Digital </span>SOLUTION
           </h1>
@@ -36,9 +36,6 @@ const HeroSection = () => {
           </div>
         </div>
         <div className=" flex flex-col  relative  ">
-          <div className="absolute inset-0 z-10 ">
-            <img className="" src="/images/backgroud.png" />
-          </div>
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
             <span className="text-primary-green ">Mobility </span>Services
           </h1>

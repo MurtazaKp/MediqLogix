@@ -63,35 +63,30 @@ const Features = () => {
     return <IconComponent />;
   };
   return (
-    <div className="grid grid-cols-2 gap-6 px-36 py-10">
-      {FeatureData.map((feature, index) => {
-        return (
-          <div
-            key={index}
-            className="border rounded-lg border-primary-green p-5"
-          >
-            <div className="flex items-center gap-5">
-              <div>
-                <FeatureLink {...feature} />
-              </div>
-              <div>
-                <h2 className=" text-tertiary-heading text-primary-green font-semibold">
-                  {feature.heading}
-                </h2>
-                <p>{feature.description}</p>
+    <div className=" px-36 py-14">
+      <h4 className="  text-tertiary-heading text-center mb-8">Benifits</h4>
+      <div className="grid grid-cols-2 gap-6">
+        {FeatureData.map((feature, index) => {
+          return (
+            <div
+              key={index}
+              className="border rounded-lg hover:border-primary-green p-5"
+            >
+              <div className="flex items-center gap-5">
+                <div>
+                  <FeatureLink {...feature} />
+                </div>
+                <div>
+                  <h2 className=" text-tertiary-heading text-primary-green font-semibold">
+                    {feature.heading}
+                  </h2>
+                  <p className="text-[14.5px]">{feature.description}</p>
+                </div>
               </div>
             </div>
-            <div>
-              <Link
-                className="flex justify-end pt-2 text-primary-green"
-                href={feature.knowMoreCta.href}
-              >
-                {feature.knowMoreCta.label}
-              </Link>
-            </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };

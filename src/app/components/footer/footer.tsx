@@ -85,7 +85,11 @@ const Footer = () => {
                       {links.links.map((link, index) => {
                         return (
                           <Link
-                            className={"text-white "}
+                            className={`text-white w-max border-[#707070] ${
+                              index != 2
+                                ? " border-b border-[#707070]  p-1"
+                                : "ps-1"
+                            } `}
                             key={index}
                             href={link.href}
                           >
@@ -106,10 +110,16 @@ const Footer = () => {
             <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
             <div className="text-white flex flex-col gap-3 text-xs">
               <FooterLogoIcon />
-              <p>{footerData.address.address}</p>
-              <p>phone:{footerData.address.phone}</p>
-              <p>Email:{footerData.address.email}</p>
-              <p>Website:{footerData.address.website}</p>
+              <p className="border-b border-[#707070]  p-1">
+                {footerData.address.address}
+              </p>
+              <p className="border-b border-[#707070]  p-1">
+                phone:{footerData.address.phone}
+              </p>
+              <p className="border-b border-[#707070]  p-1">
+                Email:{footerData.address.email}
+              </p>
+              <p className="ps-1">Website:{footerData.address.website}</p>
             </div>
             <div className="flex mt-10 gap-2">
               <a>

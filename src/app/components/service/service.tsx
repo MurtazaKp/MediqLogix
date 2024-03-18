@@ -34,7 +34,7 @@ const Services = () => {
                   key={link.id}
                 >
                   <button
-                    className={`py-1 px-6 w-full   z-10   rounded-full border border-black ${
+                    className={`py-1 px-4 w-full   z-10   rounded-full border border-black ${
                       activeLink === link.label ? "bg-black text-white " : ""
                     }`}
                     onClick={(e) => {
