@@ -22,7 +22,7 @@ const Header = () => {
           <div className=" flex gap-6">
             <Link
               href={"/contact"}
-              className="border border-black rounded-full flex justify-center items-center px-2"
+              className="border border-black rounded-full flex justify-center items-center px-4 "
             >
               Get in Touch
             </Link>
