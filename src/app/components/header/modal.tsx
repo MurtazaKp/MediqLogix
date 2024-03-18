@@ -5,6 +5,7 @@ import { LinkedinIcon } from "../icons/linkedinIcon";
 import { YoutubeIcon } from "../icons/youtubeIcon";
 import { LogoIcon } from "../icons/logo";
 import { FooterLogoIcon } from "../icons/footerLogo";
+import { usePathname } from "next/navigation";
 
 const Modal = ({ handleClose }: any) => {
   const ModalData = {
@@ -92,6 +93,9 @@ const Modal = ({ handleClose }: any) => {
       },
     ],
   };
+
+  const pathname = usePathname();
+
   return (
     <div className="fixed meet-team inset-0 z-[60] min-h-full overflow-y-auto overflow-x-hidden transition flex items-center">
       {/* <!-- overlay --> */}
@@ -130,9 +134,20 @@ const Modal = ({ handleClose }: any) => {
             <ul className="flex flex-col gap-5 ">
               {ModalData.navLinks.map((links, index) => {
                 return (
-                  <Link onClick={handleClose} href={links.href} key={index}>
+                  <Link
+                    className=""
+                    onClick={handleClose}
+                    href={links.href}
+                    key={index}
+                  >
                     {" "}
-                    <li className="text-white text-tertiary-heading leading-tertiary-heading lg:leading-secondary-heading lg:text-secondary-heading">
+                    <li
+                      className={` text-tertiary-heading leading-tertiary-heading lg:leading-secondary-heading lg:text-secondary-heading ${
+                        pathname === links.href
+                          ? "text-primary-green"
+                          : "text-white"
+                      } `}
+                    >
                       {links.label}
                     </li>
                   </Link>
