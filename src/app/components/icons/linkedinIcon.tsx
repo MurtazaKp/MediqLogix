@@ -4,6 +4,7 @@ import type { SquaredIconProps } from "./types";
 export const LinkedinIcon: FC<SquaredIconProps> = ({
   size = 24,
   className = "",
+  color,
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -23,13 +24,14 @@ export const LinkedinIcon: FC<SquaredIconProps> = ({
         id="Group_1015"
         data-name="Group 1015"
         transform="translate(-2023.862 -6871.5)"
+        fill="#ffffff"
       >
         <path
           id="Path_191"
           data-name="Path 191"
           d="M21.1,10.552A10.552,10.552,0,1,1,10.552,0,10.552,10.552,0,0,1,21.1,10.552"
           transform="translate(2025.311 6872.448)"
-          fill="#fff"
+          fill={color}
         />
         <path
           id="Path_188"

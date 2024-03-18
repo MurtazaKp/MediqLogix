@@ -44,7 +44,7 @@ const AboutUs = () => {
                     {link.label}
                   </button>
                   {activeLink === link.label && (
-                    <div className="w-3 absolute -top-1 left-5 z-[100000] h-3 rounded-full bg-primary-green"></div>
+                    <div className="w-3 absolute -top-1 left-5 z-[50] h-3 rounded-full bg-primary-green"></div>
                   )}
                 </div>
               ))}

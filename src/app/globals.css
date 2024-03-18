@@ -9,3 +9,18 @@
 .slick-dots li.slick-active button:before {
   color: green !important;
 }
+
+#meetTeam::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 2px;
+}
+
+/* Track */
+#meetTeam::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#meetTeam::-webkit-scrollbar-thumb {
+  background: green;
+}

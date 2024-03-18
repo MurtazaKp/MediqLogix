@@ -8,9 +8,7 @@ const Software = () => {
   return (
     <div>
       <div className="">
-        <Header />
         <SoftwareProducts />
-        <Footer />
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import type { SquaredIconProps } from "./types";
 export const YoutubeIcon: FC<SquaredIconProps> = ({
   size = 24,
   className = "",
+  color,
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -23,13 +24,14 @@ export const YoutubeIcon: FC<SquaredIconProps> = ({
         id="Group_1017"
         data-name="Group 1017"
         transform="translate(-2080.586 -6871.448)"
+        fill="white"
       >
         <path
           id="Path_187"
           data-name="Path 187"
           d="M21.1,10.552A10.552,10.552,0,1,1,10.552,0,10.552,10.552,0,0,1,21.1,10.552"
           transform="translate(2081.586 6872.448)"
-          fill="#fff"
+          fill={color}
         />
         <path
           id="Path_186"

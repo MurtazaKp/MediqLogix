@@ -4,6 +4,7 @@ import { FacebookIcon } from "../icons/facebook";
 import { LinkedinIcon } from "../icons/linkedinIcon";
 import { YoutubeIcon } from "../icons/youtubeIcon";
 import { LogoIcon } from "../icons/logo";
+import { FooterLogoIcon } from "../icons/footerLogo";
 
 const Modal = ({ handleClose }: any) => {
   const ModalData = {
@@ -92,7 +93,7 @@ const Modal = ({ handleClose }: any) => {
     ],
   };
   return (
-    <div className="fixed inset-0 z-40 min-h-full overflow-y-auto overflow-x-hidden transition flex items-center">
+    <div className="fixed meet-team inset-0 z-[60] min-h-full overflow-y-auto overflow-x-hidden transition flex items-center">
       {/* <!-- overlay --> */}
       <div
         aria-hidden="true"
@@ -143,17 +144,22 @@ const Modal = ({ handleClose }: any) => {
               <span>
                 <p className="text-[#adadad] mb-3">Follow us</p>
                 <div className="flex gap-2 ">
-                  <FacebookIcon />
-                  <LinkedinIcon />
-                  <YoutubeIcon />
+                  <a href="www.facebook.com">
+                    {" "}
+                    <FacebookIcon color="#42ad25" />
+                  </a>
+                  <a href="www.linkedin.com">
+                    <LinkedinIcon color="#42ad25" />
+                  </a>
+                  <a href="www.youtube.com">
+                    <YoutubeIcon color="#42ad25" />
+                  </a>
                 </div>
               </span>
               <div className="flex justify-end items-end">
-                <img
-                  className=" w-8/12 lg:w-6/12"
-                  src="/images/logo.png"
-                  alt=""
-                />
+                <div className=" w-8/12 lg:w-6/12">
+                  <FooterLogoIcon />
+                </div>
               </div>
             </div>
           </div>

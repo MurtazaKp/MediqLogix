@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { FooterLogoIcon } from "../icons/footerLogo";
 
 const Footer = () => {
   const footerData = {
@@ -9,15 +10,15 @@ const Footer = () => {
         links: [
           {
             label: "Mediqm Solution",
-            href: "#",
+            href: "/software",
           },
           {
             label: "Saas Mediqm",
-            href: "#",
+            href: "/software",
           },
           {
             label: "Mediqm Platform",
-            href: "#",
+            href: "/software",
           },
         ],
       },
@@ -26,15 +27,15 @@ const Footer = () => {
         links: [
           {
             label: "Hospital Quality Consulting",
-            href: "#",
+            href: "/service",
           },
           {
             label: "Quality Management Education & Training",
-            href: "#",
+            href: "/service",
           },
           {
             label: "Hospital Safety Consulting",
-            href: "#",
+            href: "/service",
           },
         ],
       },
@@ -59,11 +60,11 @@ const Footer = () => {
         },
         {
           label: "Services",
-          href: "/",
+          href: "/service",
         },
         {
           label: "Contact",
-          href: "/",
+          href: "/contact",
         },
       ],
       copyrightText: "Privacy © 2024 - mediqlogix.com",
@@ -104,7 +105,7 @@ const Footer = () => {
           <div className="col-span-1">
             <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
             <div className="text-white flex flex-col gap-3 text-xs">
-              <img className="w-6/12 -ml-1" src={footerData.address.logo}></img>
+              <FooterLogoIcon />
               <p>{footerData.address.address}</p>
               <p>phone:{footerData.address.phone}</p>
               <p>Email:{footerData.address.email}</p>

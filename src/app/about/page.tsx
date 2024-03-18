@@ -6,9 +6,7 @@ import Footer from "../components/footer/footer";
 const About = () => {
   return (
     <div className="">
-      <Header />
       <AboutUs />
-      <Footer />
     </div>
   );
 };

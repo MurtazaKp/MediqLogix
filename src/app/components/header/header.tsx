@@ -20,9 +20,12 @@ const Header = () => {
             <img src="/images/logo.svg" />
           </Link>
           <div className=" flex gap-6">
-            <p className="border border-black rounded-full flex justify-center items-center px-2">
+            <Link
+              href={"/contact"}
+              className="border border-black rounded-full flex justify-center items-center px-2"
+            >
               Get in Touch
-            </p>
+            </Link>
             <button onClick={handleOpen} className="">
               <img src="/images/Menu.svg" />
             </button>

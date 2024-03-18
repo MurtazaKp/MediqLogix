@@ -6,9 +6,7 @@ import Footer from "../components/footer/footer";
 const Service = () => {
   return (
     <div>
-      <Header />
       <Services />
-      <Footer />
     </div>
   );
 };

@@ -5,16 +5,16 @@ import ProductGrid from "./components/productGrid/productGrid";
 import Footer from "./components/footer/footer";
 import Paragrapgh from "./components/paragrapgh/paragrapgh";
 import News from "./components/news/news";
+import Features from "./components/features/feature";
 
 export default function Home() {
   return (
     <div>
-      <Header />
       <HeroSection />
       <Paragrapgh />
       <ProductGrid />
+      <Features />
       <News />
-      <Footer />
     </div>
   );
 }
