@@ -7,12 +7,12 @@ import Slider from "react-slick";
 const HeroSection = () => {
   var settings = {
     infinite: true,
-    speed: 500,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoPlay: true,
-    autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     pauseOnHover: false,
   };
   const sliderRef = useRef();

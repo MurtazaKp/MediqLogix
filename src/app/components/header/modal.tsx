@@ -33,7 +33,7 @@ const Modal = ({ handleClose }: any) => {
       },
       {
         label: "Software Products",
-        href: "/products",
+        href: "/software",
         subLinks: [
           {
             label: "CloudMediQm",
@@ -129,7 +129,7 @@ const Modal = ({ handleClose }: any) => {
             <ul className="flex flex-col gap-5 ">
               {ModalData.navLinks.map((links, index) => {
                 return (
-                  <Link href={links.href} key={index}>
+                  <Link onClick={handleClose} href={links.href} key={index}>
                     {" "}
                     <li className="text-white text-tertiary-heading leading-tertiary-heading lg:leading-secondary-heading lg:text-secondary-heading">
                       {links.label}
