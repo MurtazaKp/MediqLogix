@@ -144,14 +144,14 @@ const Modal = ({ handleClose }: any) => {
               <span>
                 <p className="text-[#adadad] mb-3">Follow us</p>
                 <div className="flex gap-2 ">
-                  <a href="www.facebook.com">
+                  <a href="https://www.facebook.com/">
                     {" "}
                     <FacebookIcon color="#42ad25" />
                   </a>
-                  <a href="www.linkedin.com">
+                  <a href="https://www.linkedin.com">
                     <LinkedinIcon color="#42ad25" />
                   </a>
-                  <a href="www.youtube.com">
+                  <a href="https://www.youtube.com/">
                     <YoutubeIcon color="#42ad25" />
                   </a>
                 </div>
