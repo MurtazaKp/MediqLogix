@@ -67,13 +67,13 @@ const LatestWork = () => {
               >
                 <div className="rounded-t-xl relative  overflow-hidden shadow-lg">
                   <img
-                    className="w-full h-52 object-cover "
+                    className="w-full h-28 object-cover "
                     src={blog.image.src}
                     alt="Sunset in the mountains"
                   />
                 </div>
                 <div className="flex-grow p-4">
-                  <p className="text-gray-700 mb-7 text-base font-bold overflow-ellipsis overflow-hidden">
+                  <p className="text-gray-700 mb-7 font-bold overflow-ellipsis overflow-hidden">
                     {blog.description}
                   </p>
                   <Link

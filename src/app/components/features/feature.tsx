@@ -79,7 +79,7 @@ const Features = () => {
                   <FeatureLink {...feature} />
                 </div>
                 <div>
-                  <h2 className=" text-tertiary-heading text-primary-green font-semibold">
+                  <h2 className=" text-[18.5px] text-primary-green font-semibold">
                     {feature.heading}
                   </h2>
                   <p className="text-[14.5px]">{feature.description}</p>

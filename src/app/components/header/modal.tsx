@@ -75,7 +75,7 @@ const Modal = ({ handleClose }: any) => {
       },
       {
         label: "My MediQM",
-        href: "/mediqm",
+        href: "/mediQM",
         subLinks: [
           {
             label: "CloudMediQm",
@@ -106,7 +106,7 @@ const Modal = ({ handleClose }: any) => {
 
       {/* <!-- Modal --> */}
       <div className="relative w-full cursor-pointer pointer-events-none transition my-auto p-4">
-        <div className="w-full  bg-[#111111] cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-3xl lg:rounded-[50px] mx-auto max-w-xl lg:max-w-3xl py-20 pl-10 pr-7 lg:pl-32 lg:pr-28">
+        <div className="w-full  bg-[#111111] cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-3xl lg:rounded-[50px] mx-auto max-w-xl lg:max-w-3xl py-20 pl-10 pr-7 lg:p-24">
           <button
             type="button"
             className="absolute top-8 right-8 rtl:right-auto rtl:left-2"
@@ -131,7 +131,7 @@ const Modal = ({ handleClose }: any) => {
             <h5 className="text-[#adadad] mb-10 ps-3 text-xs lg:text-base">
               {ModalData.heading}
             </h5>
-            <ul className="flex flex-col gap-5 ">
+            <ul className="flex flex-col gap-6 ">
               {ModalData.navLinks.map((links, index) => {
                 return (
                   <Link
@@ -142,7 +142,7 @@ const Modal = ({ handleClose }: any) => {
                   >
                     {" "}
                     <li
-                      className={` text-tertiary-heading ps-3 leading-tertiary-heading lg:leading-secondary-heading lg:text-secondary-heading ${
+                      className={` text-tertiary-heading ps-3 leading-tertiary-heading lg:leading-[40px] lg:text-[28px] ${
                         pathname === links.href
                           ? "text-primary-green border-s-2 border-primary-green"
                           : "text-white"
@@ -156,7 +156,7 @@ const Modal = ({ handleClose }: any) => {
             </ul>
 
             <div className="mt-14 ps-3 gap-4 flex justify-between">
-              <span>
+              <span className="lg:w-6/12">
                 <p className="text-[#adadad] mb-3">Follow us</p>
                 <div className="flex gap-2 ">
                   <a href="https://www.facebook.com/">
@@ -172,7 +172,7 @@ const Modal = ({ handleClose }: any) => {
                 </div>
               </span>
               <div className="flex justify-start lg:justify-end items-end">
-                <div className=" w-8/12 lg:w-6/12">
+                <div className=" w-8/12 lg:6/12">
                   <FooterLogoIcon />
                 </div>
               </div>

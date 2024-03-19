@@ -8,7 +8,7 @@ const Brochure = () => {
       <h4 className="text-primary-green  font-bold">Brochure</h4>
 
       <PdfIcon />
-      <p>
+      <p className="text-xs">
         Mauris sapien purus, euismod nec feugiat quis, ultricies sed urna. Cras
         id est venenatis orci porta volutpat sit amet vitae magna.
       </p>

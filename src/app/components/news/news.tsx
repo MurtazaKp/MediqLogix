@@ -39,7 +39,7 @@ const News = () => {
           return (
             <div
               key={index}
-              className="flex gap-6 border rounded-lg lg:h-[120px]    items-stretch border-primary-green"
+              className="flex gap-6 border rounded-lg lg:h-[120px] items-stretch border-primary-green"
             >
               <div className="w-5/12 rounded-lg ">
                 <img
@@ -48,7 +48,7 @@ const News = () => {
                 />
               </div>
               <div className="flex flex-col w-9/12   justify-between py-3">
-                <h4 className="mb-5">{blog.heading}</h4>
+                <h4 className="mb-5 px-1">{blog.heading}</h4>
                 <Link className="text-xs" href={blog.linK.href}>
                   {blog.linK.label}
                 </Link>

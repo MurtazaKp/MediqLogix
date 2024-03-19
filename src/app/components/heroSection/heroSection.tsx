@@ -22,14 +22,14 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-10 ">
         <img className="" src="/images/backgroud.png" />
       </div>
-      <Slider {...settings}>
+      <Slider className="z-20" {...settings}>
         <div className="flex flex-col  relative">
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
             <span className="text-primary-green ">Digital </span>Solution
           </h1>
 
           <div>
-            <p className=" lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[700px]">
+            <p className=" lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[750px]">
               Digital solutions to the Hospital and Healthcare organizations.
             </p>
             <p> </p>
@@ -41,7 +41,7 @@ const HeroSection = () => {
           </h1>
 
           <div>
-            <p className=" lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[700px]">
+            <p className=" lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[750px]">
               Provides Mobile services for Hospital Quality, Education and
               Hospital safety.
             </p>
@@ -70,7 +70,7 @@ const HeroSection = () => {
           </h1>
 
           <div>
-            <p className=" lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[700px]">
+            <p className=" lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[750px]">
               Provides Mobile services for Hospital Quality, Education and
               Hospital safety.
             </p>

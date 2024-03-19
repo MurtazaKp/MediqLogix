@@ -50,12 +50,12 @@ const MeetTeam = () => {
   };
   return (
     <>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {teamMembers.map((member, index) => (
           <div
             onClick={() => handleOpen(index)}
             key={index}
-            className="rounded-xl group grayscale hover:grayscale-0 transition duration-300 relative overflow-y-hidden flex items-end w-[260px] h-[260px]"
+            className="rounded-xl group grayscale mx-auto hover:grayscale-0 transition duration-300 relative overflow-y-hidden flex justify-center items-end  w-[260px] h-[260px]"
           >
             <img
               width={100}

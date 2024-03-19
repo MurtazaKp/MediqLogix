@@ -34,7 +34,7 @@ const SoftwareProducts = () => {
               {tabs.map((link) => (
                 <div className="relative w-full lg:w-auto flex" key={link.id}>
                   <button
-                    className={`py-2 px-2 w-full lg:w-auto  z-10  rounded-full border border-black ${
+                    className={`py-2 px-2 w-full lg:w-auto text-[14.5px]  z-10  rounded-full border border-black ${
                       activeLink === link.label ? "bg-black text-white " : ""
                     }`}
                     onClick={(e) => {
@@ -45,7 +45,7 @@ const SoftwareProducts = () => {
                     {link.label}
                   </button>
                   {activeLink === link.label && (
-                    <div className="w-3 absolute -top-1 left-5 z-[100000] h-3 rounded-full bg-primary-green"></div>
+                    <div className="w-3 absolute -top-1 left-1 z-[40] h-3 rounded-full bg-primary-green"></div>
                   )}
                 </div>
               ))}

@@ -6,6 +6,8 @@ import Footer from "./components/footer/footer";
 import Paragrapgh from "./components/paragrapgh/paragrapgh";
 import News from "./components/news/news";
 import Features from "./components/features/feature";
+import PartnerSlider from "./components/partnerSlider/partnerSlider";
+import CaseStudy from "./components/caseStudy/caseStudy";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Paragrapgh />
       <ProductGrid />
       <Features />
+      <CaseStudy />
+      <PartnerSlider />
       <News />
     </div>
   );
