@@ -4,6 +4,28 @@ import { FacebookIcon } from "../icons/facebook";
 import Slider from "react-slick";
 
 const PartnerSlider = () => {
+  const setting = {
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   const partnerSliderData = {
     heading: "Our Digital Partners",
     description:
@@ -24,14 +46,14 @@ const PartnerSlider = () => {
     ],
   };
   return (
-    <div className="px-32 py-20 bg-primary-green">
+    <div className="px-10 lg:px-32 py-20 bg-primary-green">
       <div className="text-center text-white">
         <h2 className="text-[22.5px] pb-3">{partnerSliderData.heading}</h2>
         <p className=" pb-9 lg:w-8/12 2xl:w-6/12 mx-auto">
           {partnerSliderData.description}
         </p>
       </div>
-      <Slider slidesToShow={4}>
+      <Slider {...setting} slidesToShow={4}>
         {partnerSliderData.partners.map((partner, index) => {
           return (
             <div key={index} className="!flex   justify-center items-center">
