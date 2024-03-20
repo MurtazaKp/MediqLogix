@@ -85,7 +85,7 @@ const ProductGrid = () => {
               </p>
               <Link
                 className="rounded-full text-[14.54px] hover:bg-white hover:text-black text-white border border-white w-6/12 py-2 text-center"
-                href={`${product.buttonCta.href}?active=${product.activeLink}`}
+                href={product.buttonCta.href}
               >
                 {product.buttonCta.label}
               </Link>

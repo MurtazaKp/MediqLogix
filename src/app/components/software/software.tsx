@@ -6,13 +6,11 @@ import CloudMediQm from "./cloudMediQm/cloudMediQm";
 import MediQmMobility from "./mediQmMobility/mediQmMobility";
 import MediQmPlatform from "./mediQmPlatform/mediQmPlatform";
 import MediQmSolution from "./mediQmSolution/mediQmSolution";
-import LatestWork from "../latestWork/latestWork";
-import { useSearchParams } from "next/navigation";
 
 const SoftwareProducts = () => {
-  const paramURL = useSearchParams();
+  // const paramURL = useSearchParams();
 
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("Software Products");
 
   const handleLinkClick = (link: any) => {
     setActiveLink(link);
@@ -24,11 +22,11 @@ const SoftwareProducts = () => {
     { id: 3, label: "MediQM Platform" },
     { id: 4, label: "MediQM Solution" },
   ];
-  useEffect(() => {
-    paramURL.get("active")
-      ? setActiveLink(paramURL.get("active") || "")
-      : setActiveLink("Software Products");
-  }, [paramURL]);
+  // useEffect(() => {
+  //   paramURL.get("active")
+  //     ? setActiveLink(paramURL.get("active") || "")
+  //     : setActiveLink("Software Products");
+  // }, [paramURL]);
   console.log("Active", activeLink);
   return (
     <div className="py-12 bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
