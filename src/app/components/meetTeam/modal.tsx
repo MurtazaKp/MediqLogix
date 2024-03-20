@@ -102,10 +102,7 @@ const Modal = ({ handleClose, openIndex }: any) => {
                   involved in strategic decisions of company on new product
                   development and product marketing planning for Indian Market.{" "}
                 </p>
-                <p
-                  className="HelveticaNeue-Regular text-[14.5px] leading-5
-              "
-                >
+                <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
                   Mr. Pola’s expertise includes working with the Indian
                   government in establishing technology development centers,
                   operations of companies and managing Indian operations from

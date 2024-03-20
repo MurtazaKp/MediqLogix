@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { FacebookIcon } from "../icons/facebook";
+
 import Slider from "react-slick";
-import { StarIcon } from "../icons/Star";
+import { StarIcon } from "../icons/star";
 
 const CaseStudy = () => {
   const setting = {
