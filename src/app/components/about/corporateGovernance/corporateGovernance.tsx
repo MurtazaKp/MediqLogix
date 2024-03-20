@@ -31,7 +31,7 @@ const CorporateGovernance = () => {
         and in such a fashion that complies with both the letter and the spirit
         of the applicable laws, rules and regulations.
       </p>
-      <p>
+      <p className="text-[14.5] leading-5">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
         tempore, quae optio quaerat qui natus necessitatibus et quos? Officiis
         eligendi enim pariatur! Natus iusto molestiae architecto tempore fugit

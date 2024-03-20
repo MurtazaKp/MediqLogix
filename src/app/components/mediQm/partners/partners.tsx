@@ -4,8 +4,15 @@ const Partners = () => {
   return (
     <div>
       <div className=" mb-6">
-        <img className=" mix-blend-darken" src="/images/Microsoft.svg" />
-        <h4 className="text-[18.5px] text-primary-green">MicroSoft</h4>
+        <div className="flex justify-between items-center">
+          <h4 className="text-[18.5px] font-bold leading-5   text-primary-green">
+            Microsoft
+          </h4>
+          <img
+            className=" mix-blend-darken w-[184px] h-[39px]"
+            src="/images/Microsoft.svg"
+          />
+        </div>
         <p>
           Microsoft Corporation is an American public multinational corporation
           headquartered in Redmond, Washington, USA that develops, manufactures,
@@ -19,8 +26,16 @@ const Partners = () => {
         </p>
       </div>
       <div className=" mb-6">
-        <img className=" mix-blend-darken" src="/images/Oracle.svg" />
-        <h4 className="text-[18.5px]  text-primary-green">Oracle</h4>
+        <div className="flex justify-between items-center">
+          <h4 className="text-[18.5px] font-bold leading-5   text-primary-green">
+            Oracle
+          </h4>
+          <img
+            className=" mix-blend-darken w-[184px] h-[39px]"
+            src="/images/Oracle.svg"
+          />
+        </div>
+
         <p>
           racle provides the world’s most complete, open, and integrated
           business software and hardware systems, with more than 370,000
@@ -35,8 +50,15 @@ const Partners = () => {
       </div>
 
       <div className=" mb-6">
-        <img className=" mix-blend-darken" src="/images/Apple.svg" />
-        <h4 className="text-[18.5px]  text-primary-green">Apple</h4>
+        <div className="flex justify-between items-center">
+          <h4 className="text-[18.5px] font-bold leading-5  text-primary-green">
+            Apple
+          </h4>
+          <img
+            className=" mix-blend-darken w-[184px] h-[39px]"
+            src="/images/Apple.svg"
+          />
+        </div>
         <p>
           Apple Inc. (previously Apple Computer, Inc.) is an American
           multinational corporation that designs and markets consumer

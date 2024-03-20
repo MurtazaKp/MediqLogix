@@ -76,23 +76,23 @@ const Modal = ({ handleClose, openIndex }: any) => {
             </div>
             <div className="text-white lg:w-8/12">
               <div className="pb-5">
-                <h3 className="text-primary-green HelveticaNeue-Regular">
+                <h3 className="text-primary-green text-[18.5px]  HelveticaNeue-Regular">
                   {teamMembers[openIndex]?.name}
                 </h3>
-                <p>{teamMembers[openIndex]?.role}</p>
+                <p className="text-[14.5px]">{teamMembers[openIndex]?.role}</p>
               </div>
               <div
                 id="meetTeam"
                 className="h-[407px] flex flex-col gap-5 overflow-y-scroll pe-10 HelveticaNeue-Regular"
               >
-                <p className="HelveticaNeue-Regular">
+                <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
                   Mr. Navin worked in the information technology industry - NEC,
                   Bay Networks, Nortel, Com21 and Lucent Technologies in
                   software/product development, marketing and management
                   leadership. Currently Mr. Pola is responsible operations and
                   managing their software development operations in India.
                 </p>
-                <p>
+                <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
                   Since 2001, Mr. Navin, has been involved in starting up US
                   companies in India - Time2Market (Chip design company, parent
                   company based out of California, USA), MIC Electronics (LED,
@@ -102,7 +102,10 @@ const Modal = ({ handleClose, openIndex }: any) => {
                   involved in strategic decisions of company on new product
                   development and product marketing planning for Indian Market.{" "}
                 </p>
-                <p>
+                <p
+                  className="HelveticaNeue-Regular text-[14.5px] leading-5
+              "
+                >
                   Mr. Pola’s expertise includes working with the Indian
                   government in establishing technology development centers,
                   operations of companies and managing Indian operations from

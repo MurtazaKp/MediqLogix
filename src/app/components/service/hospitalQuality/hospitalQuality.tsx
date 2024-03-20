@@ -13,7 +13,7 @@ const HospitalQuality = () => {
         available on on Cloud model, which is designed with flexibility to
         implement systems at a large hospital group..
       </p>
-      <p>
+      <p className=" capitalize text-[14.5px] leading-5">
         Our main goal is to help hospitals become self-sufficient. We assist in
         developing AI-enabled software and processes for compliance. It is
         important to show hospitals the financial benefits of quality

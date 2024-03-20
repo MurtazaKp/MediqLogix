@@ -2,8 +2,8 @@ import React from "react";
 
 const CloudMediQm = () => {
   return (
-    <div className="flex gap-6 flex-col">
-      <h3 className="text-primary-green text-[18.5px] font-bold">
+    <div className="flex gap-4 flex-col">
+      <h3 className="text-primary-green leading-5 text-[22.5px] font-bold">
         Cloud MediQm
       </h3>
       <p className=" capitalize text-[14.5px]"></p>Hospitals are increasingly

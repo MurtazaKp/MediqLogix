@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="bg-primary-green lg:rounded-s-xl  lg:w-3/12 text-white flex flex-col items-center py-11 justify-between">
         <div className=" text-[18.5px] font-bold">
           {" "}
-          <p>Get in touch</p>
+          <p>Get In Touch</p>
           <p>With Us!</p>
         </div>
         <div>

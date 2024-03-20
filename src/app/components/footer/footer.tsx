@@ -44,7 +44,7 @@ const Footer = () => {
       heading: "ADDRESS",
       logo: "/images/logo.svg",
       email: "info@Mediqlogix.com",
-      address: "  15, Downing Town, PA 12345",
+      address: "  15, Downing Town, Pa 12345 USA",
       phone: "USA Phone : +1 123 456 7891",
       website: "http://www.mediqlogix.com",
     },
@@ -55,7 +55,7 @@ const Footer = () => {
           href: "/",
         },
         {
-          label: "Solution",
+          label: "Solutions",
           href: "/",
         },
         {
@@ -124,13 +124,13 @@ const Footer = () => {
               <p className="ps-1">Website:{footerData.address.website}</p>
             </div>
             <div className="flex mt-10 gap-2">
-              <a href="https://www.facebook.com/">
+              <a target="_blank" href="https://www.facebook.com/">
                 <img src="/images/Facebook.svg"></img>
               </a>
-              <a href="https://www.linkedin.com/">
+              <a target="_blank" href="https://www.linkedin.com/">
                 <img src="/images/Linkdine.svg"></img>
               </a>
-              <a href="https://www.youtube.com">
+              <a target="_blank" href="https://www.youtube.com">
                 <img src="/images/Youtube.svg"></img>
               </a>
             </div>

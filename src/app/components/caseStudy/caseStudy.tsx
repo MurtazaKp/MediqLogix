@@ -2,6 +2,7 @@
 import React from "react";
 import { FacebookIcon } from "../icons/facebook";
 import Slider from "react-slick";
+import { StarIcon } from "../icons/Star";
 
 const CaseStudy = () => {
   const setting = {
@@ -55,7 +56,10 @@ const CaseStudy = () => {
   return (
     <div className="px-10 lg:px-32 py-24 bg-[#002f71]">
       <div className="text-center text-white">
-        <h2 className="text-[22.5px] pb-3">{partnerSliderData.heading}</h2>
+        <h2 className="text-[22.5px] pb-3 flex justify-center items-center gap-2">
+          <StarIcon /> {partnerSliderData.heading}
+          <StarIcon />
+        </h2>
         <p className=" pb-9 lg:w-8/12 2xl:w-6/12 mx-auto">
           {partnerSliderData.description}
         </p>
@@ -71,6 +75,11 @@ const CaseStudy = () => {
                 </h2>
                 <p className="text-xs">{partner.description}</p>
               </div>
+              {/* <div className="flex gap-2 ">
+                <StarIcon color="#4387ea" />
+                <StarIcon color="#4387ea" />
+                <StarIcon color="#4387ea" />
+              </div> */}
             </div>
           );
         })}

@@ -4,7 +4,9 @@ import Blog from "../../blog/blog";
 const ServiceContent = () => {
   return (
     <div className="flex flex-col gap-4">
-      <h3 className="text-primary-green text-[18.5px] leading-5">Service</h3>
+      <h3 className="text-primary-green text-[18.5px] font-bold leading-5">
+        Service
+      </h3>
       <p className=" capitalize text-[14.5px]">
         MediQlogix’s software technology products are developed on clourd
         technology platforms for easy integration with your existing IT systems

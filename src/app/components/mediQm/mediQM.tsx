@@ -19,7 +19,7 @@ const MediQM = () => {
 
   return (
     <div className="py-12 bg-secondary-gray min-h-[100vh]">
-      <div className=" mx-auto sm:px-6 xl:px-32 px-8 ">
+      <div className=" mx-auto sm:px-6 xl:px-[139px] px-8 ">
         <div className="w-full pb-1 overflow-x-auto">
           <nav className="flex flex-col lg:flex-row justify-between items-stretch sm:items-center gap-4 py-1">
             <p className="text-tertiary-heading lg:w-4/12 xl:w-3/12 text-primary-blue font-bold">

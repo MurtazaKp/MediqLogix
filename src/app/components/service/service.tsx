@@ -24,7 +24,7 @@ const Services = () => {
       <div className=" mx-auto sm:px-10 xl:px-[139px] px-8 ">
         <div className="w-full pb-1 overflow-x-auto">
           <nav className="flex flex-col lg:flex-row justify-between items-stretch sm:items-center gap-4 py-1">
-            <p className="text-[18.5px] lg:w-4/12 xl:w-3/12 text-primary-blue font-bold">
+            <p className="text-[22.5px] leading-[30px] lg:w-4/12 xl:w-3/12 text-primary-blue font-bold">
               {activeLink}
             </p>
             <div className="flex flex-col items-stretch sm:flex-row justify-end lg:w-8/12 gap-4">
