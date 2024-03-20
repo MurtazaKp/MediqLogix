@@ -80,7 +80,9 @@ const Footer = () => {
               {footerData.footerLinks.map((links, index) => {
                 return (
                   <div key={index}>
-                    <h3 className="mb-7 text-white ">{links.heading}</h3>
+                    <h3 className="mb-7 text-sm text-white ">
+                      {links.heading}
+                    </h3>
                     <ul className="flex flex-col gap-3 text-xs">
                       {links.links.map((link, index) => {
                         return (
@@ -114,7 +116,7 @@ const Footer = () => {
                 {footerData.address.address}
               </p>
               <p className="border-b border-[#707070]  p-1">
-                phone:{footerData.address.phone}
+                {footerData.address.phone}
               </p>
               <p className="border-b border-[#707070]  p-1">
                 Email:{footerData.address.email}
@@ -122,13 +124,13 @@ const Footer = () => {
               <p className="ps-1">Website:{footerData.address.website}</p>
             </div>
             <div className="flex mt-10 gap-2">
-              <a>
+              <a href="https://www.facebook.com/">
                 <img src="/images/Facebook.svg"></img>
               </a>
-              <a>
+              <a href="https://www.linkedin.com/">
                 <img src="/images/Linkdine.svg"></img>
               </a>
-              <a>
+              <a href="https://www.youtube.com">
                 <img src="/images/Youtube.svg"></img>
               </a>
             </div>
@@ -140,13 +142,17 @@ const Footer = () => {
           <div className="lg:col-span-3 flex-wrap flex gap-5 lg:gap-16">
             {footerData.copyRight.copyrightLinks.map((link, index) => {
               return (
-                <Link className="font-semibold" key={index} href={link.href}>
+                <Link
+                  className="font-semibold text-white"
+                  key={index}
+                  href={link.href}
+                >
                   {link.label}
                 </Link>
               );
             })}
           </div>
-          <div className="lg:col-span-1 sm:flex sm:justify-end lg:justify-start">
+          <div className="lg:col-span-1 text-white sm:flex sm:justify-end lg:justify-start">
             {footerData.copyRight.copyrightText}
           </div>
         </div>

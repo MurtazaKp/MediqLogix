@@ -3,56 +3,33 @@ import React from "react";
 
 const HospitalQuality = () => {
   return (
-    <div className="flex gap-6 flex-col">
-      <p>
-        For a profitable Health care system delivery management, it is important
-        for a Hospital or Hospital Systems to develop quality metrics using
-        information available within your non integrated or integrated IT
-        systems. Collection of data for health care facilities is a challenging
-        & continuously changing science. It is imperative to have several
-        quality measurements to form the most complete picture of hospital’s
-        total quality care. Our methodologies focus on Hospital’s ability to
-        compile and retrieve such complex data so as to provide best possible
-        health care.
+    <div className="flex flex-col gap-4">
+      <h3 className="text-primary-green text-[18.5px] leading-5">Service</h3>
+      <p className=" capitalize text-[14.5px]">
+        MediQlogix’s software technology products are developed on clourd
+        technology platforms for easy integration with your existing IT systems
+        (Ex: COPE, Nursing, RX and Lab) in addition to an being a platform based
+        technology for future enhancement. The MediQlogix’s technology is also
+        available on on Cloud model, which is designed with flexibility to
+        implement systems at a large hospital group..
       </p>
       <p>
-        Our software and portal integration helps hospitals to comply with
-        Center for Medicare and Medicaid services (CMS) guidelines and JCO
-        requirements. One of the CMS initiatives is to improve Hospital Quality
-        Initiative (HQI) whose goals are to improve the patient care provided by
-        hospitals, to provide quality information to consumers and others. This
-        not only reduces costs of healthcare delivery but improve overall
-        profitability.
+        Our main goal is to help hospitals become self-sufficient. We assist in
+        developing AI-enabled software and processes for compliance. It is
+        important to show hospitals the financial benefits of quality
+        enhancement along with immediate advantages including lower occupancy
+        rates and readmissions. We also excel in collecting data that reveals
+        financial gains and can be presented in financial reports to
+        continuously review the financial position of the healthcare
+        organization. One big challenge for hospitals looking to improve their
+        quality processes is having enough smart staff like doctors and nurses
+        who can make the changes happen. We assist our clients by bringing in
+        the right experts to help with patient care, allowing the hospital to
+        focus on giving health care while we work on training and supporting
+        their staff. This way, we train doctors, nurses, and other staff to
+        handle things on their own, needing less help from us.
       </p>
-      <p>
-        Through our well documented consulting methodologies we help our partner
-        hospitals to improve Quality Metrics which in turn provide best patient
-        care while the patient is still in the hospital. Though the standard
-        consulting model is shown below, we customize out approach to each
-        individual hospital needs to hospital systems.
-      </p>
-      <h3 className="text-primary-green font-bold">Quality Coulsulting</h3>
-      <p>
-        Once your hospital decides to comply with the standards like CMS, joint
-        commission guidelines we will help you with our proprietary software
-        portal built with the help of decades of expertise of leading medical
-        professionals whose anecdotal knowledge has gone in to designing the
-        portal.
-      </p>
-      <p>
-        Our focus includes different aspects of treatment for a heart attack,
-        heart failure, pneumonia, or having surgery. Our support includes
-        keeping your quality process up to date. CMS also announces new measures
-        and retires existing measures. This is another important area for you to
-        stay continuously tuned in to latest expectations and guidelines.
-      </p>
-      <div className="flex flex-col sm:flex-row items-center justify-between bg-white my-10">
-        <img className=" mt-6 " src="/images/flow.jpg" />
-        <p className="mr-40 font-bold"> Recreate </p>
-      </div>
-      <div>
-        <Blog />
-      </div>
+      {/* <Blog /> */}
     </div>
   );
 };

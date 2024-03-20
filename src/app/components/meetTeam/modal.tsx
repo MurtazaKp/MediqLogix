@@ -45,10 +45,10 @@ const Modal = ({ handleClose, openIndex }: any) => {
 
       {/* <!-- Modal --> */}
       <div className="relative w-full cursor-pointer pointer-events-none transition my-auto p-4">
-        <div className="w-full  bg-[#111111] cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-3xl lg:rounded-[50px] mx-auto max-w-xl lg:max-w-6xl px-16 py-16">
+        <div className="w-full  bg-[#111111] cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-3xl lg:rounded-[50px] mx-auto max-w-xl lg:max-w-6xl px-10  lg:px-16 py-16">
           <button
             type="button"
-            className="absolute top-8 right-8 rtl:right-auto rtl:left-2"
+            className="absolute top-4 right-4 lg:top-8 lg:right-8 rtl:right-auto rtl:left-2"
           >
             <svg
               className="h-10 p-2 w-10 bg-gray-600 rounded-full cursor-pointer text-gray-400"
@@ -74,18 +74,18 @@ const Modal = ({ handleClose, openIndex }: any) => {
                 src={teamMembers[openIndex]?.imageSrc}
               />
             </div>
-            <div className="text-white lg:w-9/12">
+            <div className="text-white lg:w-8/12">
               <div className="pb-5">
-                <h3 className="text-primary-green">
+                <h3 className="text-primary-green HelveticaNeue-Regular">
                   {teamMembers[openIndex]?.name}
                 </h3>
                 <p>{teamMembers[openIndex]?.role}</p>
               </div>
               <div
                 id="meetTeam"
-                className="h-[407px] flex flex-col gap-5 overflow-y-scroll pe-10"
+                className="h-[407px] flex flex-col gap-5 overflow-y-scroll pe-10 HelveticaNeue-Regular"
               >
-                <p>
+                <p className="HelveticaNeue-Regular">
                   Mr. Navin worked in the information technology industry - NEC,
                   Bay Networks, Nortel, Com21 and Lucent Technologies in
                   software/product development, marketing and management

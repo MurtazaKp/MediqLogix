@@ -65,8 +65,10 @@ const MeetTeam = () => {
               alt=""
             />
             <div className="text-white absolute w-full ps-5 opacity-95 bg-secondary-black group-hover:bg-primary-green transition duration-500">
-              <h3 className="pt-4">{member.name}</h3>
-              <p className="text-xs pb-9">{member.role}</p>
+              <h3 className="pt-4 HelveticaNeue-Regular">{member.name}</h3>
+              <p className="text-xs pb-7 HelveticaNeue-Regular">
+                {member.role}
+              </p>
             </div>
           </div>
         ))}

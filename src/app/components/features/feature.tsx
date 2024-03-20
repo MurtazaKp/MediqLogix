@@ -65,7 +65,7 @@ const Features = () => {
   return (
     <div className="px-10 lg:px-36 py-14">
       <h4 className="  text-tertiary-heading text-center mb-8 font-semibold">
-        Benefits
+        Benefits of MediQM
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {FeatureData.map((feature, index) => {
@@ -79,7 +79,7 @@ const Features = () => {
                   <FeatureLink {...feature} />
                 </div>
                 <div>
-                  <h2 className=" text-[18.5px] text-primary-green font-semibold">
+                  <h2 className=" text-tertiary-heading text-primary-green font-semibold">
                     {feature.heading}
                   </h2>
                   <p className="text-[14.5px]">{feature.description}</p>

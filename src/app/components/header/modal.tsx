@@ -155,7 +155,7 @@ const Modal = ({ handleClose }: any) => {
               })}
             </ul>
 
-            <div className="mt-14 ps-3 gap-4 flex justify-between">
+            <div className="mt-14 2xl:mt-[134px] ps-3 gap-4 flex justify-between">
               <span className="lg:w-6/12">
                 <p className="text-[#adadad] mb-3">Follow us</p>
                 <div className="flex gap-2 ">

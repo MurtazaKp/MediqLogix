@@ -22,18 +22,18 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="py-12 bg-secondary-gray min-h-[100vh]">
-      <div className=" mx-auto sm:px-6 lg:px-32 px-8 ">
+    <div className=" py-8 bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
+      <div className=" mx-auto sm:px-6 lg:px-[139px] px-8 ">
         <div className="w-full pb-1 overflow-x-auto">
           <nav className="flex flex-col lg:flex-row justify-between items-stretch sm:items-center gap-4 py-1">
-            <p className="text-tertiary-heading text-primary-blue font-bold">
+            <p className="text-[18.5px] leading-5 text-primary-blue font-bold">
               {activeLink}
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-4">
               {tabs.map((link) => (
                 <div className="relative w-full lg:w-auto" key={link.id}>
                   <button
-                    className={`py-2 px-2 w-full lg:w-auto  z-10   rounded-full border border-black ${
+                    className={`py-2 px-2 w-full HelveticaNeue-Regular sm:w-[170px] lg:w-auto  xl:w-[170px]  z-10 text-[14.5px]    rounded-full border border-black ${
                       activeLink === link.label ? "bg-black text-white " : ""
                     }`}
                     onClick={(e) => {
@@ -51,7 +51,7 @@ const AboutUs = () => {
             </div>
           </nav>
         </div>
-        <div className=" pt-6 mx-auto  ">
+        <div className=" pt-[30px] mx-auto  ">
           {activeLink === "About Us" && (
             <div>
               <AboutContent />

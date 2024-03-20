@@ -6,6 +6,7 @@ const ProductGrid = () => {
     {
       icon: "cloudSolution",
       label: "Cloud Solution",
+      activeLink: "Cloud MediQM",
       paragrapgh:
         "Cloud solutions to the Hospital and Healthcare organizations.",
       buttonCta: {
@@ -19,6 +20,7 @@ const ProductGrid = () => {
     {
       icon: "cloudSolution",
       label: "Mobility",
+      activeLink: "MediQM Mobility",
       paragrapgh:
         "Provides Mobile services for Hospital Quality, Education and Hospital safety.",
       buttonCta: {
@@ -32,6 +34,8 @@ const ProductGrid = () => {
     {
       icon: "cloudSolution",
       label: "Consulting",
+      activeLink: "MediQM Platform",
+
       paragrapgh:
         "Experts in Hospital Quality providing solutions to improve profitability.",
       buttonCta: {
@@ -45,6 +49,7 @@ const ProductGrid = () => {
     {
       icon: "cloudSolution",
       label: "Data Analytics",
+      activeLink: "MediQM Solution",
       paragrapgh:
         "Request for Demo please click and provide your basic contact details.",
       buttonCta: {
@@ -80,7 +85,7 @@ const ProductGrid = () => {
               </p>
               <Link
                 className="rounded-full text-[14.54px] hover:bg-white hover:text-black text-white border border-white w-6/12 py-2 text-center"
-                href={product.buttonCta.href}
+                href={`${product.buttonCta.href}?active=${product.activeLink}`}
               >
                 {product.buttonCta.label}
               </Link>

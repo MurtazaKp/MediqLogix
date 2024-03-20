@@ -13,7 +13,7 @@ const MediQMContent = () => {
         available on on Cloud model, which is designed with flexibility to
         implement systems at a large hospital group..
       </p>
-      <Blog />
+      {/* <Blog /> */}
     </div>
   );
 };

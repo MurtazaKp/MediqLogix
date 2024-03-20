@@ -11,7 +11,7 @@ const config: Config = {
       fontSize: {
         "primary-heading": "82.24px",
         "secondary-heading": "36.9px",
-        "tertiary-heading": "22.8px",
+        "tertiary-heading": "22.5px",
         "body-font": "16.5px",
         "secondary-body-font": "14.1px",
         "small-text": "12px",

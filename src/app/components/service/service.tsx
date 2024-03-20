@@ -20,21 +20,21 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-12 bg-secondary-gray min-h-[100vh]">
-      <div className=" mx-auto sm:px-6 xl:px-32 px-8 ">
+    <div className="py-12 pb-[30px] bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
+      <div className=" mx-auto sm:px-10 xl:px-[139px] px-8 ">
         <div className="w-full pb-1 overflow-x-auto">
           <nav className="flex flex-col lg:flex-row justify-between items-stretch sm:items-center gap-4 py-1">
-            <p className="text-tertiary-heading lg:w-4/12 xl:w-3/12 text-primary-blue font-bold">
+            <p className="text-[18.5px] lg:w-4/12 xl:w-3/12 text-primary-blue font-bold">
               {activeLink}
             </p>
-            <div className="flex flex-col items-stretch sm:flex-row lg:w-8/12 gap-3">
+            <div className="flex flex-col items-stretch sm:flex-row justify-end lg:w-8/12 gap-4">
               {tabs.map((link) => (
                 <div
-                  className="relative flex w-full items-stretch"
+                  className="relative flex w-auto items-stretch"
                   key={link.id}
                 >
                   <button
-                    className={`py-1 px-4 w-full   z-10   rounded-full border border-black ${
+                    className={`py-1 px-4 w-full lg:w-[200px] text-[14.5px] HelveticaNeue-Regular   z-10   rounded-full border border-black ${
                       activeLink === link.label ? "bg-black text-white " : ""
                     }`}
                     onClick={(e) => {
@@ -53,8 +53,8 @@ const Services = () => {
           </nav>
         </div>
         <div className="flex gap-6">
-          <div className="lg:w-9/12">
-            <div className=" pt-6 mx-auto  ">
+          <div>
+            <div className=" pt-10 mx-auto  ">
               {activeLink === "Service" && (
                 <div>
                   <ServiceContent />
@@ -77,9 +77,9 @@ const Services = () => {
               )}
             </div>
           </div>
-          <div className="hidden border-s-2 ps-7 border-gray-300 mt-6 lg:block lg:w-3/12 p-2 pt-0">
+          {/* <div className="hidden border-s-2 ps-7 border-gray-300 mt-6 lg:block lg:w-3/12 p-2 pt-0">
             <LatestWork />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

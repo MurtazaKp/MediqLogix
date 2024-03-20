@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutContent = () => {
   return (
-    <div className="flex flex-col gap-5 mt-9">
+    <div className="flex flex-col gap-5 ">
       <p>
         <span className="font-bold">MediQlogix </span>is a healthcare software
         company developing SaaS database products for the hospital quality and

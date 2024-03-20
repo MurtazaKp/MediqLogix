@@ -20,7 +20,7 @@ const QualityManagement = () => {
         their staff. This way, we train doctors, nurses, and other staff to
         handle things on their own, needing less help from us.
       </div>
-      <Blog />
+      {/* <Blog /> */}
     </div>
   );
 };

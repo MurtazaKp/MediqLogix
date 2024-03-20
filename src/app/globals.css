@@ -7,6 +7,15 @@
   z-index: 10000;
 }
 
+@font-face {
+  font-family: "HelveticaNeue-Regular";
+  src: url("/font/Helvetica.ttf");
+}
+
+.HelveticaNeue-Regular {
+  font-family: "HelveticaNeue-Regular" !important;
+}
+
 body {
   font-family: "Montserrat", sans-serif !important;
   font-optical-sizing: auto;

@@ -18,7 +18,7 @@ export default function Home() {
       <Features />
       <CaseStudy />
       <PartnerSlider />
-      <News />
+      {/* <News /> */}
     </div>
   );
 }
