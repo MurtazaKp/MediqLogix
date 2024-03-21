@@ -15,16 +15,16 @@ const MediQmPlatform = () => {
         from hospital IT systems which cuts costs and boosts performance
         instantly.s and boosts performance instantly.
       </p>
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-[30px]">
-        <div className="lg:w-7/12 flex ">
+      <div className="flex flex-col lg:flex-row items-center gap-[30px]">
+        <div className="lg:w-7/12 2xl:w-3/12 flex ">
           <img
-            className="w-full rounded-lg"
+            className="w-full  rounded-lg"
             src="images/platform.jpeg"
             alt=""
           />
         </div>
-        <div className="lg:w-5/12 flex items-start justify-between flex-col gap-3">
-          <span className="flex flex-col gap-3 pb-10">
+        <div className="lg:w-5/12 2xl:w-9/12 flex items-start justify-between flex-col gap-3">
+          <span className="flex flex-col gap-3 pb-10 mt-3">
             <p>
               In North America, over 5000 hospitals have implemented EMR
               systems. These systems gather patient data, financial details, and
