@@ -21,7 +21,7 @@ const Header = () => {
           </Link>
           <div className=" flex gap-6">
             <Link
-              href={"/contact"}
+              href={"/mediQM"}
               className="border text-sm HelveticaNeue-Regular  hover:bg-black hover:text-white border-black rounded-full flex justify-center items-center px-2 "
             >
               Get in touch
