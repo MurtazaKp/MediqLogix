@@ -77,18 +77,23 @@ const CaseStudy = () => {
       >
         {partnerSliderData.partners.map((partner, index) => {
           return (
-            <div key={index} className="!flex px-1 h-full  justify-center">
-              <div className="bg-white p-9 active  rounded-lg flex flex-col justify-between  ">
-                <img
-                  className={`${
-                    index === 2 ? "w-5/12 -mt-5" : "w-8/12"
-                  } mb-6  `}
-                  src={partner.logoSrc}
-                />
-                <h2 className="mb-4 font-black text-black">
-                  {partner.companyName}
-                </h2>
-                <p className="text-xs">{partner.description}</p>
+            <div key={index} className="!flex px-1 py-2  h-full justify-center">
+              <div className="bg-white relative p-8   border-white hover:border-b-8 border-b-8  transition duration-300 hover:border-primary-green 2xl:h-[400px] active  rounded-lg flex flex-col justify-between  ">
+                <span>
+                  <img
+                    className={`${
+                      index === 2 ? "w-5/12 -mt-5" : "w-8/12"
+                    } mb-6  `}
+                    src={partner.logoSrc}
+                  />
+                  <span>
+                    <h2 className="mb-4 font-black text-black">
+                      {partner.companyName}
+                    </h2>
+                    <p className="text-xs">{partner.description}</p>
+                  </span>
+                </span>
+
                 <div className="flex gap-1 mt-10 ">
                   <StarIcon color="#4387ea" />
                   <StarIcon color="#4387ea" />

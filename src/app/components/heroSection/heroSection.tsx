@@ -26,10 +26,10 @@ const HeroSection = () => {
               className=" object-cover w-full h-full"
               src="/images/Cloud_Solutions.png"
             />
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 bg-black opacity-70"></div>
           </div>
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
-            <span className="text-primary-green ">Digital </span>Solution
+            <span className="text-[#4ef721] font-bold">Digital </span>Solution
           </h1>
 
           <div>
@@ -45,10 +45,10 @@ const HeroSection = () => {
               className="object-cover w-full h-full"
               src="/images/Mobility.png"
             />
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 bg-black opacity-70"></div>
           </div>
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
-            <span className="text-primary-green ">Mobility </span>Services
+            <span className="text-[#4ef721] font-bold">Mobility </span>Services
           </h1>
 
           <div>
@@ -65,10 +65,10 @@ const HeroSection = () => {
               className="object-cover w-full h-full"
               src="/images/Consulting.png"
             />
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 bg-black opacity-70"></div>
           </div>
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
-            <span className="text-primary-green ">Consulting</span>
+            <span className="text-[#4ef721] font-bold">Consulting</span>
             <br />
             Services
           </h1>
@@ -87,10 +87,10 @@ const HeroSection = () => {
               className="object-cover w-full h-full"
               src="/images/DataAnalytics.png"
             />
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 bg-black opacity-70"></div>
           </div>
           <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
-            <span className="text-primary-green "> Data </span>
+            <span className="text-[#4ef721] font-bold"> Data </span>
             Analitics
           </h1>
 
