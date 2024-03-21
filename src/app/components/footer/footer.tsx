@@ -45,7 +45,7 @@ const Footer = () => {
       logo: "/images/logo.svg",
       email: "info@Mediqlogix.com",
       address: "  15, Downing Town, Pa 12345 USA",
-      phone: "USA Phone : +1 123 456 7891",
+      phone: "Phone : +1 123 456 7891",
       website: "http://www.mediqlogix.com",
     },
     copyRight: {

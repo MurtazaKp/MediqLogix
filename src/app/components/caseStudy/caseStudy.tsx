@@ -64,7 +64,7 @@ const CaseStudy = () => {
           <StarIcon /> {partnerSliderData.heading}
           <StarIcon />
         </h2>
-        <p className=" pb-9 lg:w-8/12 2xl:w-6/12 mx-auto">
+        <p className=" pb-9 lg:w-8/12 2xl:w-6/12 mx-auto capitalize">
           {partnerSliderData.description}
         </p>
       </div>
@@ -87,9 +87,9 @@ const CaseStudy = () => {
                     src={partner.logoSrc}
                   />
                   <span>
-                    <h2 className="mb-4 font-black text-black">
+                    <p className="mb-4 font-bold  text-[16.5px]">
                       {partner.companyName}
-                    </h2>
+                    </p>
                     <p className="text-xs">{partner.description}</p>
                   </span>
                 </span>

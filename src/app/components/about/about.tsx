@@ -22,7 +22,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className=" py-8 bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
+    <div className=" py-12 pb-[30px] bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
       <div className=" mx-auto sm:px-6 lg:px-[139px] px-8 ">
         <div className="w-full pb-1 overflow-x-auto">
           <nav className="flex flex-col lg:flex-row justify-between items-stretch sm:items-center gap-4 py-1">

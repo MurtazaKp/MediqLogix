@@ -15,7 +15,7 @@ const Services = () => {
 
   const tabs = [
     { id: 1, label: "Hospital Quality Consulting" },
-    { id: 2, label: "Quality Management Education and Training" },
+    { id: 2, label: "Quality Management Education & Training" },
     { id: 3, label: "Hospital Safety Consulting" },
   ];
 
@@ -65,7 +65,7 @@ const Services = () => {
                   <HospitalQuality />
                 </div>
               )}
-              {activeLink === "Quality Management Education and Training" && (
+              {activeLink === "Quality Management Education & Training" && (
                 <div>
                   <QualityManagement />
                 </div>

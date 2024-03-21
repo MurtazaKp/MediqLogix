@@ -14,7 +14,7 @@ const AboutContent = () => {
         organization”.MediQlogix focuses on the following values:
       </p>
       <div>
-        <p className="font-bold mb-5">Quality and Safety</p>
+        <p className="font-bold ">Quality and Safety</p>
         <p className="mb-5">
           At MediQlogix, we believe that information and AI-enabled data tools
           are essential to raising organizational standards for excellence in
@@ -49,11 +49,19 @@ const AboutContent = () => {
       </div>
       <div>
         <p className="font-bold ">Technology</p>
+        <p className="mb-5">
+          MediQlogix develops sophisticated AI-powered software seamlessly that
+          integrates into your existing IT systems such as COPE, Nursing, RX,
+          and Lab. Additionally, their cutting-edge technology is available
+          through the Software as a Service (SaaS) model, allowing for seamless
+          implementation in the major hospital groups.
+        </p>
         <p>
-          In the future, the company will be focusing on mobile and
-          communication technologies that will help the healthcare organizations
-          to improve quality and safety of the patient population on the real
-          time basis.
+          The MediQlogix product MediQM is developed with the customer in mind.
+          It has a single user interface (screen) that makes it simple for the
+          user to display the information they need, whether its the
+          organizations performance or the present state of data pertaining to
+          the patient quality matrix.
         </p>
       </div>
     </div>

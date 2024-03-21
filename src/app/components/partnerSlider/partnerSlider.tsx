@@ -47,8 +47,10 @@ const PartnerSlider = () => {
   return (
     <div className="px-10 lg:px-32 py-20 bg-primary-green">
       <div className="text-center text-white">
-        <h2 className="text-[22.5px] pb-3">{partnerSliderData.heading}</h2>
-        <p className=" pb-9 lg:w-8/12 2xl:w-6/12 mx-auto">
+        <h2 className="text-[22.5px] pb-3 font-semibold">
+          {partnerSliderData.heading}
+        </h2>
+        <p className=" pb-9 text-[16.5px] lg:w-8/12 2xl:w-6/12 mx-auto capitalize">
           {partnerSliderData.description}
         </p>
       </div>
