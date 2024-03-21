@@ -4,7 +4,6 @@ import Blog from "../../blog/blog";
 const MediQMContent = () => {
   return (
     <div className="flex flex-col gap-7">
-      <h3 className="text-primary-green text-xl">Service</h3>
       <p className=" capitalize">
         MediQlogix’s software technology products are developed on clourd
         technology platforms for easy integration with your existing IT systems

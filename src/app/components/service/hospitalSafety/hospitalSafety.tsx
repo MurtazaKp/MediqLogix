@@ -2,21 +2,34 @@ import React from "react";
 
 const HospitalSafety = () => {
   return (
-    <div className="flex flex-col gap-6 capitalize">
-      Our main goal is to help hospitals become self-sufficient. We assist in
-      developing AI-enabled software and processes for compliance. It is
-      important to show hospitals the financial benefits of quality enhancement
-      along with immediate advantages including lower occupancy rates and
-      readmissions. We also excel in collecting data that reveals financial
-      gains and can be presented in financial reports to continuously review the
-      financial position of the healthcare organization. One big challenge for
-      hospitals looking to improve their quality processes is having enough
-      smart staff like doctors and nurses who can make the changes happen. We
-      assist our clients by bringing in the right experts to help with patient
-      care, allowing the hospital to focus on giving health care while we work
-      on training and supporting their staff. This way, we train doctors,
-      nurses, and other staff to handle things on their own, needing less help
-      from us.
+    <div className="flex text-[14.5px] leading-5 flex-col gap-6 capitalize">
+      <p>
+        Recently, there has been a thorough examination of the Patient Safety
+        Goals. Specifically, the Joint Commission on Accreditation of Healthcare
+        Organizations (JCAHO) has modified the National Patient Safety Goals
+        (NPSG). Our AI-powered platform information integration feature will
+        assist hospitals in ongoing enhancement and adherence to NPSGs as a
+        component of the Standards Improvement Initiative (SII).
+      </p>
+      <p>
+        As per the WHO records, approximately one out of every ten patients
+        experiences harm in healthcare settings, leading to over three million
+        deaths annually as a result of unsafe care. In low-to-middle-income
+        countries, up to four out of every one hundred individuals succumb to
+        the consequences of inadequate medical treatment.
+      </p>
+      <p>
+        Our services cover emergency management, worker safety, fire protection,
+        and more. We also help plan, build, and operate new hospitals. Disaster
+        Resilience - New hospitals need to withstand disasters, ensuring they
+        stay functional. We help mitigate risks and bolster existing healthcare
+        facilities. Hospitals are a big investment for any nation and losing
+        them is costly, including non-structural expenses. Natural disasters
+        increase healthcare demand and hospitals also need to resume services
+        quickly. This is crucial for public health systems as losing them has
+        lasting effects. Resilient hospitals protect lives and maintain
+        operations effectively.
+      </p>
     </div>
   );
 };

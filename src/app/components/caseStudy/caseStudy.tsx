@@ -40,23 +40,27 @@ const CaseStudy = () => {
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.",
       },
       {
-        logoSrc: "/images/sentara.svg",
-        companyName: "Sentara Virginia Beach General Hospital",
+        logoSrc: "/images/Cleveland.svg",
+        companyName: "Akron General - Cleveland Clinic",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.",
       },
       {
-        logoSrc: "/images/sentara.svg",
-        companyName: "Sentara Virginia Beach General Hospital",
+        logoSrc: "/images/Covenant.png",
+        companyName: "Parkwest Medical Center",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.",
       },
     ],
   };
   return (
-    <div className="px-10 lg:px-32 py-24 bg-[#002f71]">
-      <div className="text-center text-white">
-        <h2 className="text-[22.5px] pb-3 flex justify-center items-center gap-2">
+    <div className="px-10 relative lg:px-32 py-24 case-study">
+      <div className="absolute -z-10 inset-0">
+        <img src="/images/Map.svg" />
+        <div className="absolute inset-0 bg-blue-700 opacity-65"></div>
+      </div>
+      <div className="text-center text-white active">
+        <h2 className="text-[22.5px] pb-3  flex justify-center items-center gap-2">
           <StarIcon /> {partnerSliderData.heading}
           <StarIcon />
         </h2>
@@ -64,22 +68,33 @@ const CaseStudy = () => {
           {partnerSliderData.description}
         </p>
       </div>
-      <Slider {...setting} className="" slidesToShow={3}>
+      <Slider
+        centerMode
+        centerPadding="0"
+        {...setting}
+        className=""
+        slidesToShow={3}
+      >
         {partnerSliderData.partners.map((partner, index) => {
           return (
-            <div key={index} className="!flex  justify-center">
-              <div className="bg-white p-9  rounded-lg flex flex-col w-11/12 2xl:w-11/12 ">
-                <img className=" mb-6 w-9/12" src={partner.logoSrc} />
+            <div key={index} className="!flex px-1 h-full  justify-center">
+              <div className="bg-white p-9 active  rounded-lg flex flex-col justify-between  ">
+                <img
+                  className={`${
+                    index === 2 ? "w-5/12 -mt-5" : "w-8/12"
+                  } mb-6  `}
+                  src={partner.logoSrc}
+                />
                 <h2 className="mb-4 font-black text-black">
                   {partner.companyName}
                 </h2>
                 <p className="text-xs">{partner.description}</p>
+                <div className="flex gap-1 mt-10 ">
+                  <StarIcon color="#4387ea" />
+                  <StarIcon color="#4387ea" />
+                  <StarIcon color="#4387ea" />
+                </div>
               </div>
-              {/* <div className="flex gap-2 ">
-                <StarIcon color="#4387ea" />
-                <StarIcon color="#4387ea" />
-                <StarIcon color="#4387ea" />
-              </div> */}
             </div>
           );
         })}

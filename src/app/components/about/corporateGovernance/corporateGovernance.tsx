@@ -2,41 +2,58 @@ import React from "react";
 
 const CorporateGovernance = () => {
   return (
-    <div className="flex flex-col gap-10 mt-9">
+    <div className="flex flex-col gap-10 mt-9 capitalize">
       <p className="text-[14.5px] leading-5">
         “Good corporate governance practices instill in companies the essential
         vision, processes, and structures to make decisions that ensure
         longer-term sustainability. More than ever, we need companies that can
-        be profitable as well as achieving environmental, social, and economic
-        value for society.” Rachel Kyte | Vice President, Business Advisory
-        Services, IFC Governance and Citizenship at MediQlogix As a software
-        company, we work in healthcare and life science industry. MediQlogix’s
-        creates social and economic impact wherever we do business at the
-        hospitals. At MediQlogix, we are accountable to shareholders, customers,
-        employees, business partners, and we are committed to operating
-        responsibly and sustainably. Strong principles of corporate governance
-        are critical to fostering an environment in which activities are
-        conducted in an ethical and legally responsible manner. Accordingly, in
-        its corporate governance guidelines and committee charters, MediQlogix
-        have adopted corporate governance principles based on the following
-        fundamental values: High Corporate Governance Standards - Engaging in
-        conduct that conforms to current corporate governance standards and
-        monitoring evolving standards of corporate governance in an effort to
-        substantially exceed the consensus view of the minimally-acceptable
-        standards. Responsible Decision Making- Acting in the best interests of
-        the Company, taking into account the effect of its actions on the
-        Companys employees, customers, the environment and the communities in
-        which it operates. Ethical Behavior - Conducting the Companys business
-        in a fashion consistent with the highest standards of ethical conduct
-        and in such a fashion that complies with both the letter and the spirit
-        of the applicable laws, rules and regulations.
+        be profitable as well as achieve environmental, social, and economic
+        value for society.”
+        <p className="font-bold">
+          - Rachel Kyte | Vice President, Business Advisory Services, IFC
+        </p>
       </p>
-      <p className="text-[14.5] leading-5">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-        tempore, quae optio quaerat qui natus necessitatibus et quos? Officiis
-        eligendi enim pariatur! Natus iusto molestiae architecto tempore fugit
-        sit accusamus.
-      </p>
+      <div className="flex gap-5 flex-col capitalize text-[14.5px] leading-5">
+        <p className="font-bold">Governance and Citizenship at MediQlogix</p>
+        <p className="">
+          MediQlogix, a digital solution company, plays a pivotal role in
+          influencing the healthcare and life science industry. We are
+          accountable to our shareholders, customers, and employees. Our primary
+          objective is to conduct our operations with responsibility and
+          sustainability in mind. The application of corporate governance
+          principles serves to uphold standards of ethical and legal behavior.
+        </p>
+        <p className="font-bold">
+          MediQlogix has embraced corporate governance principles rooted in the
+          following core values:
+        </p>
+        <ul className=" list-disc ps-5 text-primary-green flex flex-col gap-3">
+          <li>
+            <p className="text-black">
+              Exemplary Corporate Governance Standards - Adhering to current
+              corporate governance norms and vigilantly monitoring the evolving
+              landscape of corporate governance to surpass the prevailing
+              standards significantly.
+            </p>
+          </li>
+          <li>
+            <p className="text-black">
+              Prudent Decision Making - Making decisions that serve the companys
+              best interests while considering the impact on its employees,
+              customers, the environment, and the communities in which it
+              operates.
+            </p>
+          </li>
+          <li>
+            <p className="text-black">
+              Upholding Ethical Standards - Conducting the companys affairs in a
+              manner aligned with the highest ethical standards and complying
+              with the latter and spirit of relevant laws, rules, and
+              regulations.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Partners from "./partners/partners";
 import Contact from "./contact/contact";
 
 const MediQM = () => {
-  const [activeLink, setActiveLink] = useState("MediQM");
+  const [activeLink, setActiveLink] = useState("Partners");
 
   const handleLinkClick = (link: any) => {
     setActiveLink(link);
@@ -18,7 +18,7 @@ const MediQM = () => {
   ];
 
   return (
-    <div className="py-12 bg-secondary-gray min-h-[100vh]">
+    <div className="py-12 pb-[30px] bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
       <div className=" mx-auto sm:px-6 xl:px-[139px] px-8 ">
         <div className="w-full pb-1 overflow-x-auto">
           <nav className="flex flex-col lg:flex-row justify-between items-stretch sm:items-center gap-4 py-1">
@@ -52,7 +52,7 @@ const MediQM = () => {
         </div>
         <div className=" gap-6">
           <div className=" w-full  ">
-            <div className=" pt-6 mx-auto  w-full ">
+            <div className=" pt-[30px] mx-auto  w-full ">
               {activeLink === "MediQM" && (
                 <div>
                   <MediQMContent />

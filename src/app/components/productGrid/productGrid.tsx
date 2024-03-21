@@ -5,10 +5,10 @@ const ProductGrid = () => {
   const productGridData = [
     {
       icon: "cloudSolution",
-      label: "Cloud Solution",
+      label: "AI-powered Cloud Solutions",
       activeLink: "Cloud MediQM",
       paragrapgh:
-        "Cloud solutions to the Hospital and Healthcare organizations.",
+        "AI-powered cloud solutions for hospital and healthcare organizations.",
       buttonCta: {
         label: "Know more",
         href: "/software",
@@ -22,7 +22,7 @@ const ProductGrid = () => {
       label: "Mobility",
       activeLink: "MediQM Mobility",
       paragrapgh:
-        "Provides Mobile services for Hospital Quality, Education and Hospital safety.",
+        "Providing mobile services to ensure the quality, education, and safety of hospitals",
       buttonCta: {
         label: "Know more",
         href: "software",
@@ -37,7 +37,8 @@ const ProductGrid = () => {
       activeLink: "MediQM Platform",
 
       paragrapgh:
-        "Experts in Hospital Quality providing solutions to improve profitability.",
+        "AI-powered tailored solutions by experts to enhance profitability",
+
       buttonCta: {
         label: "Know more",
         href: "software",

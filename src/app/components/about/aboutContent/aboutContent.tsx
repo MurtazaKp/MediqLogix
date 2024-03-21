@@ -2,48 +2,60 @@ import React from "react";
 
 const AboutContent = () => {
   return (
-    <div className="flex flex-col gap-5 ">
+    <div className="flex flex-col gap-5 capitalize text-[14.5px] ">
       <p>
-        <span className="font-bold">MediQlogix </span>is a healthcare software
-        company developing SaaS database products for the hospital quality and
-        safety management. The purpose of the MediQlogix database is to extract
-        quality information from the existing hospital or group hospital IT
-        systems to identify the missing information for the CMS suggested
-        quality bundles (AMI, CHF, SCIP and PN) and indicators. MediQlogix
-        software is available in SaaS business model and also as an internal LAN
-        network based installation component to help the hospital staff to
-        comply with CMS suggested protocols and procedures every time a patient
-        flows through the system.{" "}
+        <span className="font-bold capitalize text-[14.5px]">MediQlogix </span>
+        is a digital solution company providing AI and ML-powered platform to
+        hospitals and healthcare organizations’ needs to enhance their “Global
+        Quality Matrix”. The platform is based on Saas (Software As A Service)
+        or Internal Single Install Systems. The company’s foundation is “to
+        improve healthcare deliveries by reducing quality and safety issues,
+        re-admits and enhance the management structure of the healthcare
+        organization”.MediQlogix focuses on the following values:
       </p>
-      <p>
-        Currently, there are over 5000 hospitals in North American which are in
-        the process of implementing EMR Systems. Though EMR software can solve
-        the immediate needs of the healthcare organizations by capturing the
-        data related to patient population in terms of financial details,
-        physician order entry and clinical information, it is still important to
-        extract the data related to each patient and use the business
-        intelligence (BI) techniques to improve performance of the organization.
-      </p>{" "}
-      <p>
-        MediQlogix’s software products and custom development products can help
-        your organization by identifying the missing information related to
-        quality bundles to comply with US Govt(CMS) suggested reporting on each
-        patient in a record time by partnering with your organization.
-        MediQlogix offers an enterprise-ready platform with Microsoft SQL Server
-        and Oracle server environment. Your healthcare organization can get
-        insight into the clinical quality management data you will need through
-        an integrated, centrally managed, and trusted database. MediQlogix SaaS
-        DB can combine data from multiple sources into one location and provide
-        access to information in a unified, trusted manner. MediQlogix also
-        offers custom developed reports for JCO, NSQUIP and can also develop any
-        non standard reports using software – Crystal Reports and SAS based
-        reporting.
-      </p>{" "}
-      <p>
-        In the future, the company will be focusing on mobile and communication
-        technologies that will help the healthcare organizations to improve
-        quality and safety of the patient population on the real time basis.
-      </p>
+      <div>
+        <p className="font-bold mb-5">Quality and Safety</p>
+        <p className="mb-5">
+          At MediQlogix, we believe that information and AI-enabled data tools
+          are essential to raising organizational standards for excellence in
+          quality and safety. We believe that a healthcare organization will
+          distinguish itself as a top healthcare organization if it is willing
+          to invest in AI-enabled information technologies and collaborate with
+          doctors to create procedures and charts that enhance quality and
+          safety standards.
+        </p>
+        <p>
+          MediQlogix aspires to become your superior partner and strengthen your
+          capacity to serve the patient population.
+        </p>
+      </div>{" "}
+      <div className="">
+        <p className="font-bold ">Financial Benefit</p>
+        <p className="mb-5">
+          The team at MediQlogix feels that clinical quality and patient safety
+          management are critical to a hospital’s ability to succeed
+          financially. A hospital can decrease daily procedure costs, boost
+          profitability by decreasing the length of stay (LOS), and lower
+          re-admits by addressing clinical procedure errors before they arise.
+        </p>
+        <p>
+          MediQlogix software utilizes evidence-based medicine concepts, guided
+          by AI-enabled data analysis. It identifies missing quality data to
+          take corrective action. The MediQM platform extends its reach beyond
+          quality management to encompass financial performance, care
+          management, and supply chain oversight, thereby enhancing the
+          organization’s financial outcomes.
+        </p>
+      </div>
+      <div>
+        <p className="font-bold ">Technology</p>
+        <p>
+          In the future, the company will be focusing on mobile and
+          communication technologies that will help the healthcare organizations
+          to improve quality and safety of the patient population on the real
+          time basis.
+        </p>
+      </div>
     </div>
   );
 };

@@ -17,12 +17,10 @@ const VisionMission = () => {
             Our Vision
           </h3>
           <p className="text-center sm:text-start leading-5 text-[14.5px]">
-            MediQlogix is a healthcare software company developing SaaS database
-            products for the hospital quality and safety management. The purpose
-            of the MediQlogix database is to extract quality information from
-            the existing hospital or group hospital IT systems to identify the
-            missing information for the CMS suggested quality bundles (AMI, CHF,
-            SCIP and PN) and indicators.{" "}
+            “To revolutionize the healthcare industry by providing cutting-edge
+            AI and ML-powered platforms that enhance efficiency, accuracy, and
+            patient outcomes for hospitals and healthcare organizations
+            worldwide”.
           </p>
         </div>
       </div>
@@ -38,12 +36,13 @@ const VisionMission = () => {
             Our Mission
           </h3>
           <p className="text-center leading-5 sm:text-start text-[14.5px]">
-            MediQlogix is a healthcare software company developing SaaS database
-            products for the hospital quality and safety management. The purpose
-            of the MediQlogix database is to extract quality information from
-            the existing hospital or group hospital IT systems to identify the
-            missing information for the CMS suggested quality bundles (AMI, CHF,
-            SCIP and PN) and indicators.{" "}
+            Our mission is to empower hospitals and healthcare organizations
+            with sophisticated AI-powered platforms that are tailored to their
+            specific needs, enabling them to make data-driven decisions, improve
+            operational efficiency, and deliver high-quality care to their
+            patients. We are committed to continuously innovating and staying at
+            the forefront of technology to drive positive change in the
+            healthcare industry.
           </p>
         </div>
       </div>

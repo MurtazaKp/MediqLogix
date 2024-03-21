@@ -54,7 +54,7 @@ const Services = () => {
         </div>
         <div className="flex gap-6">
           <div>
-            <div className=" pt-10 mx-auto  ">
+            <div className=" pt-[30px] mx-auto  ">
               {activeLink === "Service" && (
                 <div>
                   <ServiceContent />

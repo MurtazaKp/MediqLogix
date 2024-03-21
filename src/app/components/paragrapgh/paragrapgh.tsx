@@ -11,13 +11,13 @@ const Paragrapgh = () => {
           {" "}
           MediQlogix
         </span>{" "}
-        provides hospitals and healthcare organizations with IT (Information
-        technology) solutions for Quality and Safety measures using SaaS
-        (Software as a Services) or Internal Single Install Systems. The company
-        is founded by a principle that to improve healthcare delivery, an
-        organization must address the quality and safety issues to avoid decease
-        complications and re-admits due to poor management of Quality within the
-        organization.
+        a digital solution company providing AI and ML-powered platform to
+        hospitals and healthcare organizations’ needs to enhance their “Global
+        Quality Matrix”. The platform is based on Saas (Software As A Service)
+        or Internal Single Install Systems. The company’s foundation is “to
+        improve healthcare deliveries by reducing quality and safety issues,
+        re-admits and enhance the management structure of the healthcare
+        organization”.
       </p>
     </div>
   );

@@ -29,12 +29,12 @@ const SoftwareProducts = () => {
   // }, [paramURL]);
   console.log("Active", activeLink);
   return (
-    <div className="py-12 bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
+    <div className="py-12 pb-[30px] bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
       <div className=" mx-auto sm:px-6 xl:px-32 px-8 ">
         <div className="w-full pb-1 overflow-x-auto">
           <nav className="flex flex-col lg:flex-row justify-between items-stretch sm:items-center gap-4 py-1">
             <p className="text-[22.5px]  leading-5 text-primary-blue font-bold">
-              {activeLink}
+              Software Products
             </p>
             <div className="flex flex-col items-stretch sm:flex-row justify-end  gap-3 lg:w-9/12">
               {tabs.map((link) => (
@@ -60,7 +60,7 @@ const SoftwareProducts = () => {
         </div>
         <div className="flex gap-6">
           <div className="">
-            <div className=" pt-6 mx-auto  ">
+            <div className=" pt-[30px] mx-auto  ">
               {activeLink === "Software Products" && (
                 <div>
                   <SoftwareContent />

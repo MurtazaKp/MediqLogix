@@ -28,8 +28,7 @@ const PartnerSlider = () => {
   };
   const partnerSliderData = {
     heading: "Our Digital Partners",
-    description:
-      "Building partnerships to help organizations secure everything they build and run in the cloud.",
+    description: "Our expanding network of service providers",
     partners: [
       {
         logoSrc: "/images/Apple.svg",
@@ -56,8 +55,11 @@ const PartnerSlider = () => {
       <Slider {...setting} slidesToShow={4}>
         {partnerSliderData.partners.map((partner, index) => {
           return (
-            <div key={index} className="!flex   justify-center items-center">
-              <div className="bg-white box-shadow rounded-lg flex justify-center items-center w-11/12 2xl:w-11/12 h-[124px]">
+            <div
+              key={index}
+              className="!flex px-2   justify-center items-center"
+            >
+              <div className="bg-white box-shadow rounded-lg flex justify-center items-center w-full   2xl:w-11/12 h-[124px]">
                 <img src={partner.logoSrc} />
               </div>
             </div>

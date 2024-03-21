@@ -10,7 +10,7 @@ const Features = () => {
     {
       heading: "Healthcare Quality",
       description:
-        "At MediQlogix, we believe that information and data tools play a critical role in improving the quality and safety.",
+        "At MediQlogix, we believe AI-powered data tools organize information to enhance the quality and safety standards of healthcare organizations.",
       icon: "quality",
       knowMoreCta: {
         label: "Know More",
@@ -20,7 +20,7 @@ const Features = () => {
     {
       heading: "Financial Benefit",
       description:
-        "MediQlogix’s team believes that for a hospital to be financially successful, the organization needs to excel in quality & patient safetyt",
+        "MediQlogix’s team believes in the excellence of quality and patient safety to increase hospitals’ profitability. ",
       icon: "financial",
       knowMoreCta: {
         label: "Know More",
@@ -30,7 +30,7 @@ const Features = () => {
     {
       heading: "Data Analytics",
       description:
-        "MediQlogix provides Big data and data analytics to improve Health Safety, Profit Margin and Customer Satisfaction",
+        "MediQlogix provides big data and data analytics to improve health safety, profit margin, and customer satisfaction of healthcare organizations. ",
       icon: "data",
       knowMoreCta: {
         label: "Know More",
@@ -40,7 +40,7 @@ const Features = () => {
     {
       heading: "Cloud Technology",
       description:
-        "MediQlogix provides Cloud solutions to the Hospital and Healthcare organizations.",
+        "MediQlogix provides an AI-powered cloud-based platform to hospitals and healthcare organizations.",
       icon: "cloud",
       knowMoreCta: {
         label: "Know More",
@@ -79,10 +79,12 @@ const Features = () => {
                   <FeatureLink {...feature} />
                 </div>
                 <div>
-                  <h2 className=" text-tertiary-heading text-primary-green font-semibold">
+                  <h2 className=" text-[18.5px] text-primary-green font-semibold">
                     {feature.heading}
                   </h2>
-                  <p className="text-[14.5px]">{feature.description}</p>
+                  <p className="text-[14.5px] leading-normal pe-2">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
             </div>

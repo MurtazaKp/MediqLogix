@@ -64,11 +64,9 @@ const MeetTeam = () => {
               src={member.imageSrc}
               alt=""
             />
-            <div className="text-white absolute w-full ps-5 opacity-95 bg-secondary-black group-hover:bg-primary-green transition duration-500">
-              <h3 className="pt-4 HelveticaNeue-Regular">{member.name}</h3>
-              <p className="text-xs pb-7 HelveticaNeue-Regular">
-                {member.role}
-              </p>
+            <div className="text-white absolute w-full py-2 h-20 px-4 opacity-95 bg-secondary-black group-hover:bg-primary-green transition duration-500">
+              <h3 className=" HelveticaNeue-Regular">{member.name}</h3>
+              <p className="text-xs HelveticaNeue-Regular">{member.role}</p>
             </div>
           </div>
         ))}
