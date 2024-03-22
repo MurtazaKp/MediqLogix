@@ -13,12 +13,12 @@ const teamMembers = [
   {
     name: "Somesh Saxena",
     role: " Vice President – Product Development",
-    imageSrc: "/images/teamtwo.jpg",
+    imageSrc: "/images/teamTwo.jpg",
   },
   {
     name: "Reena Saxsena",
     role: " Vice President – Product Development",
-    imageSrc: "/images/teamthree.jpg",
+    imageSrc: "/images/teamThree.jpg",
   },
   {
     name: "Jeffrey Dunn, MD MBA FACS",

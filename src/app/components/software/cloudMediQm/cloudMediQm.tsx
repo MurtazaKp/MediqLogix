@@ -14,7 +14,7 @@ const CloudMediQm = () => {
       </p>
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <div className="lg:w-7/12 bg-white p-5 rounded-lg">
-          <img className="w-full" src="images/infographic.png" alt="" />
+          <img className="w-full" src="images/Infographic.png" alt="" />
         </div>
         <div className="lg:w-5/12 flex items-start flex-col gap-3">
           <h3 className="text-[18.5px] leading-5 text-primary-green">
