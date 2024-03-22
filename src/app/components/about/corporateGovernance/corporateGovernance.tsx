@@ -14,7 +14,9 @@ const CorporateGovernance = () => {
         </p>
       </p>
       <div className="flex gap-5 flex-col capitalize text-[14.5px] leading-5">
-        <p className="font-bold">Governance and Citizenship at MediQlogix</p>
+        <p className="font-bold text-primary-green">
+          Governance and Citizenship at MediQlogix
+        </p>
         <p className="">
           MediQlogix, a digital solution company, plays a pivotal role in
           influencing the healthcare and life science industry. We are

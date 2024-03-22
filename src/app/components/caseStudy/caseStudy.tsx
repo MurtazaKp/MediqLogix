@@ -110,9 +110,9 @@ const CaseStudy = () => {
           return (
             <div
               key={index}
-              className="!flex px-1   h-full items-center justify-center"
+              className="!flex px-1 h-full py-2 hover:py-0 transition-all duration-500 items-center justify-center"
             >
-              <div className="bg-white relative p-8 h-[95%] hover:h-full  border-white hover:border-b-8 border-b-8  transition-all duration-300 hover:border-primary-green 2xl:h-[400px] active  rounded-lg flex flex-col justify-between  ">
+              <div className="bg-white relative p-8  h-full  border-white hover:border-b-8 border-b-8  transition-all duration-500 hover:border-primary-green  active  rounded-lg flex flex-col justify-between  ">
                 <span>
                   <img
                     className={`${
@@ -121,14 +121,16 @@ const CaseStudy = () => {
                     src={partner.logoSrc}
                   />
                   <span>
-                    <p className="mb-4 font-bold capitalize  text-[16.5px]">
+                    <p className="mb-4 h-10 font-bold capitalize  text-[16.5px]">
                       {partner.companyName}
                     </p>
-                    <p className="text-xs capitalize">{partner.description}</p>
+                    <p className="text-xs capitalize mb-10 ">
+                      {partner.description}
+                    </p>
                   </span>
                 </span>
 
-                <div className="flex gap-1 mt-10 ">
+                <div className="flex gap-1   absolute bottom-3">
                   <StarIcon color="#4387ea" />
                   <StarIcon color="#4387ea" />
                   <StarIcon color="#4387ea" />

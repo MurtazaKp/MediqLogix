@@ -4,7 +4,7 @@ const Partners = () => {
   return (
     <div>
       <div className=" mb-6">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center capitalize">
           <h4 className="text-[18.5px] font-bold leading-5   text-primary-green">
             Microsoft
           </h4>
@@ -22,7 +22,7 @@ const Partners = () => {
           interpreters for the Altair 8800, Microsoft rose to dominate the home
           computer operating system (OS) market with MS-DOS in the mid-1980s,
           followed by the Microsoft Windows line of OSs. Microsoft would also
-          come to dominate the office suite market with Microsoft Office
+          come to dominate the office suite market with Microsoft Office.
         </p>
       </div>
       <div className=" mb-6">
@@ -37,7 +37,7 @@ const Partners = () => {
         </div>
 
         <p>
-          racle provides the world’s most complete, open, and integrated
+          Oracle provides the world’s most complete, open, and integrated
           business software and hardware systems, with more than 370,000
           customers—including 100 of the Fortune 100—representing a variety of
           sizes and industries in more than 145 countries around the globe.

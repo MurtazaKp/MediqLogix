@@ -69,23 +69,23 @@ const ProductGrid = () => {
         {productGridData.map((product, index) => {
           return (
             <div
-              className={`text-white px-1 flex flex-col items-center lg:items-start justify-between gap-5 ${
+              className={`text-white px-1 flex flex-col items-center lg:items-start gap-5 justify-between  ${
                 index != 3 ? "lg:border-r border-white" : ""
               } `}
               key={index}
             >
               <img
-                className={` w-20 h-20 ${index == 0 ? "" : ""} `}
+                className={` w-20 h-22 ${index == 3 ? "mt-2" : ""} `}
                 src={product.image.src}
               />
-              <h2 className=" text-tertiary-heading text-center lg:text-start font-bold">
+              <h2 className=" text-tertiary-heading leading-normal text-center lg:text-start font-bold lg:h-16">
                 {product.label}
               </h2>
-              <p className="text-[16.5px] capitalize text-center lg:text-start">
+              <p className="text-[16.5px] capitalize text-center lg:text-start lg:h-20">
                 {product.paragrapgh}
               </p>
               <Link
-                className="rounded-full text-[14.54px] hover:bg-white hover:text-black text-white border border-white w-6/12 py-2 text-center"
+                className="rounded-full text-[14.54px] hover:bg-white mt-5 hover:text-black text-white border border-white w-6/12 py-2 text-center"
                 href={product.buttonCta.href}
               >
                 {product.buttonCta.label}

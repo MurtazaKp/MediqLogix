@@ -38,7 +38,7 @@ const Features = () => {
       },
     },
     {
-      heading: "Cloud Technology",
+      heading: "AI-powered Technology ",
       description:
         "MediQlogix provides an AI-powered cloud-based platform to hospitals and healthcare organizations.",
       icon: "cloud",

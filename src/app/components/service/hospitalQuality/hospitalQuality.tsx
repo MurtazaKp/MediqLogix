@@ -6,12 +6,15 @@ const HospitalQuality = () => {
     <div className="flex flex-col gap-8 capitalize text-[14.5px] leading-5">
       <div className="flex flex-col gap-4">
         <p className=" capitalize text-[14.5px]">
-          Recently, there has been a thorough examination of the Patient Safety
-          Goals. Specifically, the Joint Commission on Accreditation of
-          Healthcare Organizations (JCAHO) has modified the National Patient
-          Safety Goals (NPSG). Our AI-powered platform information integration
-          feature will assist hospitals in ongoing enhancement and adherence to
-          NPSGs as a component of the Standards Improvement Initiative (SII).
+          For effective healthcare system delivery management, hospitals and
+          hospital systems must establish quality metrics by leveraging
+          information from their integrated or non-integrated IT systems. The
+          collection of data in healthcare facilities is a complex and
+          ever-evolving process. It is crucial to employ multiple quality
+          measurements to gain a comprehensive understanding of a hospitals
+          overall quality of care. Our methodologies concentrate on the
+          hospitals capacity to gather and access intricate data to ensure the
+          provision of optimal healthcare.
         </p>
         <p className=" capitalize text-[14.5px] leading-5">
           Our AI-enabled software and portal integration facilitates hospitals
