@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="relative -mb-40 sm:mb-0">
           <iframe
             className="w-full relativez-40 h-[500px]   "
-            src="https://docs.google.com/forms/d/e/1FAIpQLScyzrB9sIKdovMJ5hebI3JZGKpLLAydy7db62rT_T6laHPcrQ/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdZ2LWscolnH9GZPY9A8-dBsBbYsYEpCjuDRpa-9boqwLxXPw/viewform?embedded=true"
           ></iframe>
           <div className="bg-white h-[100px] w-full bottom-4 sm:hidden absolute"></div>
         </div>
