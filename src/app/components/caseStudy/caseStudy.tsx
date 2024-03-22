@@ -124,7 +124,7 @@ const CaseStudy = () => {
                     <p className="mb-4 font-bold capitalize  text-[16.5px]">
                       {partner.companyName}
                     </p>
-                    <p className="text-xs">{partner.description}</p>
+                    <p className="text-xs capitalize">{partner.description}</p>
                   </span>
                 </span>
 
