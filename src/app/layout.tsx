@@ -4,7 +4,9 @@ import "./globals.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import { GoogleAnalyticsTracking } from "./components/googleAnalytics.tsx/googleAnalytics";
+
 import { Suspense } from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <GoogleAnalyticsTracking />
+        <GoogleAnalytics gaId="G-1QQFW51GEL" />
         <Header />
         <Suspense>{children}</Suspense>
         <Footer />

@@ -81,7 +81,7 @@ const ProductGrid = () => {
               <h2 className=" text-tertiary-heading font-bold">
                 {product.label}
               </h2>
-              <p className="text-[16.5px] text-center lg:text-start">
+              <p className="text-[16.5px] capitalize text-center lg:text-start">
                 {product.paragrapgh}
               </p>
               <Link

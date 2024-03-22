@@ -121,7 +121,7 @@ const CaseStudy = () => {
                     src={partner.logoSrc}
                   />
                   <span>
-                    <p className="mb-4 font-bold  text-[16.5px]">
+                    <p className="mb-4 font-bold capitalize  text-[16.5px]">
                       {partner.companyName}
                     </p>
                     <p className="text-xs">{partner.description}</p>
