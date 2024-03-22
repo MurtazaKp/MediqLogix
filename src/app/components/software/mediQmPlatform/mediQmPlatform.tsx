@@ -8,12 +8,12 @@ const MediQmPlatform = () => {
         MediQM Platform
       </h3>
       <p className=" capitalize text-[14.5px] pb-9 rounded-2xl">
-        Hospitals struggle to gather top-notch data for performance improvement.
-        They report to insurance companies, CMS, and NSQIP.”MediQM” helps in
-        data collection which removes the manual dependency, and saves time for
-        skilled clinical staff. It electronically captures data in real-time
-        from hospital IT systems which cuts costs and boosts performance
-        instantly.s and boosts performance instantly.
+        MediQlogix creates an advanced AI-powered database for hospitals quality
+        and safety management. This platform retrieves vital information
+        efficiently to fill in missing data for CMS quality bundles like AMI,
+        CHF, SCIP, and PNA indicators. The MediQlogix platform is available in
+        SaaS and LAN versions which helps hospital staff follow CMS protocols
+        for the best patient care.
       </p>
       <div className="flex flex-col lg:flex-row items-start gap-[30px]">
         <div className="lg:w-6/12 2xl:w-3/12 flex ">
@@ -47,7 +47,7 @@ const MediQmPlatform = () => {
             className="py-2 hover:bg-black hover:text-white transition duration-300 border-black rounded-full px-8 border flex justify-center items-center "
             href={"/mediQM?tab=Contact"}
           >
-            Inquire
+            Enquiry
           </Link>
         </div>
       </div>

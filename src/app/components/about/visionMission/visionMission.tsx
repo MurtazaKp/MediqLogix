@@ -16,7 +16,7 @@ const VisionMission = () => {
           <h3 className="text-[18.5px]  mb-3 font-bold leading-5 text-primary-green text-center sm:text-start">
             Our Vision
           </h3>
-          <p className="text-center sm:text-start leading-5 text-[14.5px]">
+          <p className="text-center sm:text-start capitalize leading-5 text-[14.5px]">
             “To revolutionize the healthcare industry by providing cutting-edge
             AI and ML-powered platforms that enhance efficiency, accuracy, and
             patient outcomes for hospitals and healthcare organizations
@@ -35,7 +35,7 @@ const VisionMission = () => {
           <h3 className="text-[18.5px] font-bold mb-3 leading-5 text-primary-green text-center sm:text-start">
             Our Mission
           </h3>
-          <p className="text-center leading-5 sm:text-start text-[14.5px]">
+          <p className="text-center leading-5 capitalize sm:text-start text-[14.5px]">
             Our mission is to empower hospitals and healthcare organizations
             with sophisticated AI-powered platforms that are tailored to their
             specific needs, enabling them to make data-driven decisions, improve
