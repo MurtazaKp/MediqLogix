@@ -31,7 +31,7 @@ const HeroSection = () => {
           <h1 className=" text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
             <span className="text-[#4ef721] font-bold">AI-powered</span>
             <br />
-            Cloud Solution
+            Cloud Solutions
           </h1>
 
           <div>
