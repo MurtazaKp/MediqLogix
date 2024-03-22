@@ -35,11 +35,11 @@ const SoftwareProducts = () => {
             <p className="text-[22.5px]  leading-5 text-primary-blue font-bold">
               Software Products
             </p>
-            <div className="flex flex-col items-stretch sm:flex-row justify-end  gap-3 lg:w-9/12">
+            <div className="flex flex-col items-stretch sm:flex-row justify-end sm:w-full  gap-3 lg:w-9/12">
               {tabs.map((link) => (
                 <div className="relative w-full lg:w-auto flex" key={link.id}>
                   <button
-                    className={`py-2 px-2 w-full HelveticaNeue-Regular lg:w-auto text-[14.5px]  z-10  rounded-full border border-black ${
+                    className={`py-2 px-2 w-full  HelveticaNeue-Regular lg:w-auto text-[14.5px]  z-10  rounded-full border border-black ${
                       activeLink === link.label ? "bg-black text-white " : ""
                     }`}
                     onClick={(e) => {
@@ -50,7 +50,7 @@ const SoftwareProducts = () => {
                     {link.label}
                   </button>
                   {activeLink === link.label && (
-                    <div className="w-4 absolute top-0 -left-1 z-[40] h-4 rounded-full bg-primary-green"></div>
+                    <div className="w-4 absolute top-0 left-0 sm:-left-1 z-[40] h-4 rounded-full bg-primary-green"></div>
                   )}
                 </div>
               ))}

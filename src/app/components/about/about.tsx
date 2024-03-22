@@ -29,7 +29,7 @@ const AboutUs = () => {
             <p className="text-[22.5px] leading-5 text-primary-blue font-bold">
               {activeLink}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 lg:gap-4">
               {tabs.map((link) => (
                 <div className="relative w-full lg:w-auto" key={link.id}>
                   <button
