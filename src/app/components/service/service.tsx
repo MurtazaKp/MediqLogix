@@ -45,7 +45,7 @@ const Services = () => {
                     {link.label}
                   </button>
                   {activeLink === link.label && (
-                    <div className="w-3 absolute top-0 left-0 sm:left-1 z-[40] h-3 rounded-full bg-primary-green"></div>
+                    <div className="w-4 absolute top-0 left-0 sm:left-1 z-[40] h-4 rounded-full bg-primary-green"></div>
                   )}
                 </div>
               ))}
