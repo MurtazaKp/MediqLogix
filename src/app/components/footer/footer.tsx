@@ -54,20 +54,17 @@ const Footer = () => {
           label: "Home",
           href: "/",
         },
-        {
-          label: "Solutions",
-          href: "/",
-        },
+
         {
           label: "Services",
           href: "/service",
         },
         {
           label: "Contact",
-          href: "/contact",
+          href: "/mediQM?tab=Contact",
         },
       ],
-      copyrightText: "Privacy © 2024 - mediqlogix.com",
+      copyrightText: "Privacy © 2024 - Mediqlogix.com",
     },
   };
 
@@ -139,11 +136,13 @@ const Footer = () => {
       </div>
       <div className="bg-primary-green py-2 px-2 lg:px-36">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
-          <div className="lg:col-span-3 flex-wrap flex gap-5 lg:gap-16">
+          <div className="lg:col-span-3 flex-wrap justify-center sm:justify-start items-center flex gap-7">
             {footerData.copyRight.copyrightLinks.map((link, index) => {
               return (
                 <Link
-                  className="font-semibold text-white"
+                  className={`font-semibold   text-xs text-white ${
+                    index != 2 ? "border-e-2 pe-7 " : ""
+                  }`}
                   key={index}
                   href={link.href}
                 >
@@ -152,7 +151,7 @@ const Footer = () => {
               );
             })}
           </div>
-          <div className="lg:col-span-1 text-white sm:flex sm:justify-end lg:justify-start">
+          <div className="lg:col-span-1 text-center sm:text-start mt-2 sm:mt-0 text-white text-xs sm:flex sm:justify-end lg:justify-start">
             {footerData.copyRight.copyrightText}
           </div>
         </div>

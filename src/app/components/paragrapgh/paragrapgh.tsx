@@ -6,7 +6,7 @@ const Paragrapgh = () => {
       <h2 className="text-xl sm:text-2xl mb-3 lg:text-[40px]">
         Welcome to <span className="text-primary-green">MediQlogix</span>
       </h2>
-      <p className="text-lg capitalize">
+      <p className="sm:text-lg text-sm  capitalize">
         <span className="text-primary-green leading-body-font">
           {" "}
           MediQlogix

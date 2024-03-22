@@ -35,7 +35,7 @@ const HeroSection = () => {
           </h1>
 
           <div>
-            <p className="text-sm sm:text-secondary-heading capitalize sm:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[750px]">
+            <p className="text-sm sm:text-2xl lg:text-secondary-heading capitalize sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-[750px]">
               AI-Powered cloud solutions for hospital and healthcare
               organizations.
             </p>
@@ -55,7 +55,7 @@ const HeroSection = () => {
           </h1>
 
           <div>
-            <p className="text-sm sm:text-secondary-heading capitalize lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[800px]">
+            <p className="text-sm sm:text-2xl lg:text-secondary-heading capitalize sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-[750px]">
               Providing mobile services to ensure the quality, education, and
               safety of hospitals
             </p>
@@ -77,7 +77,7 @@ const HeroSection = () => {
           </h1>
 
           <div>
-            <p className="text-sm capitalize sm:text-secondary-heading lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[700px]">
+            <p className="text-sm sm:text-2xl lg:text-secondary-heading capitalize sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-[750px]">
               AI-Powered tailored solutions by experts to enhance profitability
             </p>
             <p>{/* <button></button>{" "} */}</p>

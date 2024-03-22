@@ -78,7 +78,7 @@ const ProductGrid = () => {
                 className={` w-20 h-20 ${index == 0 ? "" : ""} `}
                 src={product.image.src}
               />
-              <h2 className=" text-tertiary-heading font-bold">
+              <h2 className=" text-tertiary-heading text-center lg:text-start font-bold">
                 {product.label}
               </h2>
               <p className="text-[16.5px] capitalize text-center lg:text-start">
