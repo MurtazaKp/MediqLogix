@@ -8,7 +8,8 @@ import News from "./components/news/news";
 import Features from "./components/features/feature";
 import PartnerSlider from "./components/partnerSlider/partnerSlider";
 import CaseStudy from "./components/caseStudy/caseStudy";
-import { LogoJsonLd, NextSeo } from "next-seo";
+import { DefaultSeo, LogoJsonLd, NextSeo } from "next-seo";
+import SEO from '../../next-seo.config';
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
       />
       <LogoJsonLd logo="images/logo.png" url="https://mediqlogix.com" />
       <div>
+      <DefaultSeo {...SEO} />
         <HeroSection />
         <Paragrapgh />
         <ProductGrid />
