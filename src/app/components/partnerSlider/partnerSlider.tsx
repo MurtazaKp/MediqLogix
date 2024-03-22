@@ -2,9 +2,38 @@
 import React from "react";
 import { FacebookIcon } from "../icons/facebook";
 import Slider from "react-slick";
+import { RightArrowIcon } from "../icons/rightArrow";
+import { LeftArrowIcon } from "../icons/leftArrow";
 
 const PartnerSlider = () => {
+  function LeftNavButton(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className="slick-arrow-left p-1 cursor-pointer"
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      >
+        <LeftArrowIcon />
+      </div>
+    );
+  }
+
+  function RightNavButton(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className="slick-arrow-right p-1 cursor-pointer"
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      >
+        <RightArrowIcon />
+      </div>
+    );
+  }
   const setting = {
+    prevArrow: <LeftNavButton />,
+    nextArrow: <RightNavButton />,
     responsive: [
       {
         breakpoint: 1024,

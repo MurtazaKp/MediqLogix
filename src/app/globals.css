@@ -68,3 +68,17 @@ h1 {
 .case-study .slick-slider .slick-list {
   display: flex;
 }
+
+.slick-arrow-left {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -25px;
+}
+
+.slick-arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -25px;
+}

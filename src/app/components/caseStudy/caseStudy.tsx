@@ -3,8 +3,36 @@ import React from "react";
 
 import Slider from "react-slick";
 import { StarIcon } from "../icons/star";
+import { FacebookIcon } from "../icons/facebook";
+import { LeftArrowIcon } from "../icons/leftArrow";
+import { RightArrowIcon } from "../icons/rightArrow";
 
 const CaseStudy = () => {
+  function LeftNavButton(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className="slick-arrow-left p-1 cursor-pointer"
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      >
+        <LeftArrowIcon />
+      </div>
+    );
+  }
+
+  function RightNavButton(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className="slick-arrow-right p-1 cursor-pointer"
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      >
+        <RightArrowIcon />
+      </div>
+    );
+  }
   const setting = {
     responsive: [
       {
@@ -31,25 +59,25 @@ const CaseStudy = () => {
   const partnerSliderData = {
     heading: "Customer Success Stories",
     description:
-      "Here are a few of our projects that deliver a great digital experience and success for our clients.",
+      "We assist our clients in reaching their objectives that enhance quality and safety management.",
     partners: [
       {
         logoSrc: "/images/sentara.svg",
         companyName: "Sentara Virginia Beach General Hospital",
         description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.",
+          "The Virginia-based hospital specializes in various medical services like cancer, heart and vascular, etc. By using MediQlogix’s AI-powered platform it was able to collect and analyze data for its operating room and generate reports for CMS. ",
       },
       {
         logoSrc: "/images/Cleveland.svg",
         companyName: "Akron General - Cleveland Clinic",
         description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.",
+          "The Ohio-based clinic used MediQlogix’s AI-powered platform to transform its operating room and enhance safety and quality management. ",
       },
       {
         logoSrc: "/images/Covenant.png",
         companyName: "Parkwest Medical Center",
         description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,.",
+          "The US-based medical center provides healthcare services for cardiac, cancer, ENT, critical care, etc. With the use of MediQlogix’s AI-powered platform, it was able to create a database to improve its quality and safety management and meet reporting requirements. ",
       },
     ],
   };
@@ -74,6 +102,9 @@ const CaseStudy = () => {
         {...setting}
         className=""
         slidesToShow={3}
+        prevArrow={<LeftNavButton />}
+        nextArrow={<RightNavButton />}
+        // prevArrow={<LeftNavButton />}
       >
         {partnerSliderData.partners.map((partner, index) => {
           return (

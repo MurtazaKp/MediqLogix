@@ -16,9 +16,9 @@ const Header = () => {
   return (
     <>
       <div className="">
-        <div className="flex justify-between  px-2 lg:px-36 py-4">
-          <Link className="flex items-center" href={"/"}>
-            <img className=" w-[164px] h-[35px]" src="/images/logo.svg" />
+        <div className="flex justify-between  px-2 lg:px-[139px] py-4">
+          <Link className="flex items-center " href={"/"}>
+            <img className=" " src="/images/logo.svg" />
           </Link>
           <div className=" flex gap-6">
             <Link

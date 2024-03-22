@@ -1,37 +1,65 @@
 import React from "react";
+import {
+  TeamFive,
+  TeamFour,
+  TeamOne,
+  TeamSix,
+  TeamThree,
+  TeamTwo,
+} from "../TeamContent";
+const TeamContent: any = {
+  teamOne: TeamOne,
+  teamTwo: TeamTwo,
+  teamThree: TeamThree,
+  teamFour: TeamFour,
+  teamFive: TeamFive,
+  teamSix: TeamSix,
+  // Add more social media icons as needed
+};
 
-const Modal = ({ handleClose, openIndex }: any) => {
-  console.log("Open", openIndex);
+const TeamDataContent = ({ teamNumber }: any) => {
+  const IconComponent = TeamContent[teamNumber];
+
+  return <IconComponent />;
+};
+
+const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
   const teamMembers = [
     {
       name: "Naveen Pola",
       role: "MS, Managing Director",
       imageSrc: "/images/teamOne.jpg",
+      teamNumber: "teamOne",
     },
     {
       name: "Joey Smith",
       role: " Vice President – Product Development",
       imageSrc: "/images/teamtwo.jpg",
+      teamNumber: "teamTwo",
     },
     {
       name: "Reena Saxsena",
       role: " Vice President – Product Development",
       imageSrc: "/images/teamthree.jpg",
+      teamNumber: "teamOne",
     },
     {
       name: "Mathew smith",
       role: "Vice President – Clinical Management",
       imageSrc: "/images/teamFour.jpg",
+      teamNumber: "teamFour",
     },
     {
       name: "Reena Saxsena",
       role: " Vice President - Sales",
       imageSrc: "/images/teamFive.jpg",
+      teamNumber: "teamFive",
     },
     {
       name: "Mary Hudson",
       role: "Chief Technical Officer",
       imageSrc: "/images/teamSix.jpg",
+      teamNumber: "teamSix",
     },
   ];
 
@@ -71,21 +99,25 @@ const Modal = ({ handleClose, openIndex }: any) => {
             <div className=" lg:w-4/12">
               <img
                 className="w-full border rounded-lg border-[#707070] h-full flex justify-center items-end"
-                src={teamMembers[openIndex]?.imageSrc}
+                src={teamDetail?.imageSrc}
               />
             </div>
             <div className="text-white lg:w-8/12">
               <div className="pb-5">
                 <h3 className="text-primary-green text-[18.5px]  HelveticaNeue-Regular">
-                  {teamMembers[openIndex]?.name}
+                  {teamDetail?.name}
                 </h3>
-                <p className="text-[14.5px]">{teamMembers[openIndex]?.role}</p>
+                <p className="text-[14.5px]">{teamDetail?.role}</p>
               </div>
               <div
                 id="meetTeam"
                 className="h-[407px] flex flex-col gap-5 overflow-y-scroll pe-10 HelveticaNeue-Regular"
+                // dangerouslySetInnerHTML={{ __html: teamDetail?.teamDetail }}
               >
-                <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
+                <teamDetail.teamDetail />
+                {/* {teamDetail.teamDetail} */}
+
+                {/* <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
                   Mr. Navin worked in the information technology industry - NEC,
                   Bay Networks, Nortel, Com21 and Lucent Technologies in
                   software/product development, marketing and management
@@ -114,7 +146,7 @@ const Modal = ({ handleClose, openIndex }: any) => {
                   capacity of Director. He was instrumental in convincing the
                   management of iCST (USA) and successfully launching part of
                   operations in India.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

@@ -29,10 +29,10 @@ const MediQmMobility = () => {
             </span>
           </div>
           <Link
-            className="py-3 hover:bg-black hover:text-white transition duration-300 border-black rounded-full px-8 border flex justify-center items-center "
+            className="py-2 hover:bg-black hover:text-white transition duration-300 border-black rounded-full px-8 border flex justify-center items-center "
             href={"/mediQM?tab=Contact"}
           >
-            Enquire
+            Inquire
           </Link>
         </div>
       </div>

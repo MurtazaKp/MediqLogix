@@ -119,9 +119,9 @@ const Footer = () => {
                 {footerData.address.phone}
               </p>
               <p className="border-b border-[#707070]  p-1">
-                Email:{footerData.address.email}
+                Email : {footerData.address.email}
               </p>
-              <p className="ps-1">Website:{footerData.address.website}</p>
+              <p className="ps-1">Website : {footerData.address.website}</p>
             </div>
             <div className="flex mt-10 gap-2">
               <a target="_blank" href="https://www.facebook.com/">

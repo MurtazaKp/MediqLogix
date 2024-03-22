@@ -15,16 +15,16 @@ const MediQmPlatform = () => {
         from hospital IT systems which cuts costs and boosts performance
         instantly.s and boosts performance instantly.
       </p>
-      <div className="flex flex-col lg:flex-row items-center gap-[30px]">
-        <div className="lg:w-7/12 2xl:w-3/12 flex ">
+      <div className="flex flex-col lg:flex-row items-start gap-[30px]">
+        <div className="lg:w-6/12 2xl:w-3/12 flex ">
           <img
             className="w-full  rounded-lg"
             src="images/platform.jpeg"
             alt=""
           />
         </div>
-        <div className="lg:w-5/12 2xl:w-9/12 flex items-start justify-between flex-col gap-3">
-          <span className="flex flex-col gap-3 pb-10 mt-3">
+        <div className="lg:w-6/12 2xl:w-9/12 flex items-start justify-between flex-col gap-3">
+          <span className="flex flex-col gap-3 pb-10 ">
             <p>
               In North America, over 5000 hospitals have implemented EMR
               systems. These systems gather patient data, financial details, and
@@ -44,10 +44,10 @@ const MediQmPlatform = () => {
             </p>
           </span>
           <Link
-            className="py-3 hover:bg-black hover:text-white transition duration-300 border-black rounded-full px-8 border flex justify-center items-center "
+            className="py-2 hover:bg-black hover:text-white transition duration-300 border-black rounded-full px-8 border flex justify-center items-center "
             href={"/mediQM?tab=Contact"}
           >
-            Enquire
+            Inquire
           </Link>
         </div>
       </div>
