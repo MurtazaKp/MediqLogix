@@ -28,13 +28,16 @@ const HeroSection = () => {
             />
             <div className="absolute inset-0 bg-black opacity-70"></div>
           </div>
-          <h1 className="w-2/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
-            <span className="text-[#4ef721] font-bold">Digital </span>Solution
+          <h1 className=" text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
+            <span className="text-[#4ef721] font-bold">AI-powered</span>
+            <br />
+            Cloud Solution
           </h1>
 
           <div>
             <p className="text-sm sm:text-secondary-heading sm:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[750px]">
-              Digital solutions to the Hospital and Healthcare organizations.
+              AI-powered cloud solutions for hospital and healthcare
+              organizations.
             </p>
             <p> </p>
           </div>
@@ -52,9 +55,9 @@ const HeroSection = () => {
           </h1>
 
           <div>
-            <p className="text-sm sm:text-secondary-heading lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[750px]">
-              Provides Mobile services for Hospital Quality, Education and
-              Hospital safety.
+            <p className="text-sm sm:text-secondary-heading lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[800px]">
+              Providing mobile services to ensure the quality, education, and
+              safety of hospitals
             </p>
             <p>{/* <button></button>{" "} */}</p>
           </div>
@@ -75,8 +78,7 @@ const HeroSection = () => {
 
           <div>
             <p className="text-sm sm:text-secondary-heading lg:text-secondary-heading lg:leading-secondary-heading text-white w-full sm:w-[450px] lg:w-[700px]">
-              Experts in Hospital Quality providing solutions to improve
-              profitability.
+              AI-powered tailored solutions by experts to enhance profitability
             </p>
             <p>{/* <button></button>{" "} */}</p>
           </div>

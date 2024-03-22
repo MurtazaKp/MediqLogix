@@ -77,8 +77,11 @@ const CaseStudy = () => {
       >
         {partnerSliderData.partners.map((partner, index) => {
           return (
-            <div key={index} className="!flex px-1 py-2  h-full justify-center">
-              <div className="bg-white relative p-8   border-white hover:border-b-8 border-b-8  transition duration-300 hover:border-primary-green 2xl:h-[400px] active  rounded-lg flex flex-col justify-between  ">
+            <div
+              key={index}
+              className="!flex px-1   h-full items-center justify-center"
+            >
+              <div className="bg-white relative p-8 h-[95%] hover:h-full  border-white hover:border-b-8 border-b-8  transition-all duration-300 hover:border-primary-green 2xl:h-[400px] active  rounded-lg flex flex-col justify-between  ">
                 <span>
                   <img
                     className={`${

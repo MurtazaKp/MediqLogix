@@ -4,9 +4,14 @@ import LatestWork from "../latestWork/latestWork";
 import MediQMContent from "./mediQMContent/mediQmContent";
 import Partners from "./partners/partners";
 import Contact from "./contact/contact";
+import { useSearchParams } from "next/navigation";
 
 const MediQM = () => {
-  const [activeLink, setActiveLink] = useState("Partners");
+  const paramURL = useSearchParams();
+
+  const active = paramURL.get("tab");
+
+  const [activeLink, setActiveLink] = useState(active || "Partners");
 
   const handleLinkClick = (link: any) => {
     setActiveLink(link);

@@ -57,9 +57,10 @@ const MeetTeam = () => {
             key={index}
             className="rounded-xl group grayscale mx-auto hover:grayscale-0 transition duration-300 relative overflow-y-hidden flex justify-center items-end  w-[260px] h-[260px]"
           >
-            <img
-              width={100}
-              height={100}
+            <Image
+              priority={true}
+              width={500}
+              height={500}
               className="w-full absolute -top-3"
               src={member.imageSrc}
               alt=""

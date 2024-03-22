@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Blog from "../blog/blog";
 import SoftwareContent from "./softwareContent/softwareContent";
 import CloudMediQm from "./cloudMediQm/cloudMediQm";
 import MediQmMobility from "./mediQmMobility/mediQmMobility";

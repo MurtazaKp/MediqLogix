@@ -12,6 +12,7 @@ const Header = () => {
   const handleClose = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
       <div className="">
@@ -21,7 +22,7 @@ const Header = () => {
           </Link>
           <div className=" flex gap-6">
             <Link
-              href={"/mediQM"}
+              href={"/mediQM?tab=Contact"}
               className="border text-sm HelveticaNeue-Regular  hover:bg-black hover:text-white border-black rounded-full flex justify-center items-center px-2 "
             >
               Get in touch
