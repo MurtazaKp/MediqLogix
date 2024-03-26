@@ -9,16 +9,20 @@ const Footer = () => {
         heading: "PRODUCTS",
         links: [
           {
-            label: "Mediqm Solution",
-            href: "/software",
+            label: "Cloud Mediqm",
+            href: "/software/cloudMediQM",
           },
           {
-            label: "Saas Mediqm",
-            href: "/software",
+            label: "Mediqm Mobility",
+            href: "/software/mediqmMobility",
           },
           {
             label: "Mediqm Platform",
-            href: "/software",
+            href: "/software/mediqmPlatform",
+          },
+          {
+            label: "Mediqm Solution",
+            href: "/software/mediqmSolution",
           },
         ],
       },
@@ -27,15 +31,15 @@ const Footer = () => {
         links: [
           {
             label: "Hospital Quality Consulting",
-            href: "/service",
+            href: "/service/hospitalQuality",
           },
           {
             label: "Quality Management Education & Training",
-            href: "/service",
+            href: "/service/qualityManagement",
           },
           {
             label: "Hospital Safety Consulting",
-            href: "/service",
+            href: "/service/hospitalSafety",
           },
         ],
       },
@@ -61,7 +65,7 @@ const Footer = () => {
         },
         {
           label: "Contact",
-          href: "/mediQM?tab=Contact",
+          href: "/mediQM/contact",
         },
       ],
       copyrightText: "Privacy © 2024 - Mediqlogix.com",

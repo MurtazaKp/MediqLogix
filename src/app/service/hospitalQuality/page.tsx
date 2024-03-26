@@ -1,13 +1,10 @@
+import HospitalQuality from "@/app/components/service/hospitalQuality/hospitalQuality";
+import TabLayout from "@/app/components/tabLayout/tabLayout";
 import React from "react";
-import Services from "../components/service/service";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import TabLayout from "../components/tabLayout/tabLayout";
-import ServiceContent from "../components/service/serviceContent/serviceContent";
 
-const Service = () => {
+const HospitalQualityPage = () => {
   const tabs = {
-    heading: "Service",
+    heading: "Hospital Quality",
     tabs: [
       {
         id: 1,
@@ -29,10 +26,10 @@ const Service = () => {
   return (
     <div>
       <TabLayout {...tabs}>
-        <ServiceContent />
+        <HospitalQuality />
       </TabLayout>
     </div>
   );
 };
 
-export default Service;
+export default HospitalQualityPage;

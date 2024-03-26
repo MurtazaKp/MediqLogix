@@ -23,7 +23,7 @@ const MediQmSolution = () => {
         <div className="lg:w-6/12 2xl:w-4/12 ">
           <img
             className="w-full rounded-lg"
-            src="images/platform.jpeg"
+            src="/images/platform.jpeg"
             alt=""
           />
         </div>
