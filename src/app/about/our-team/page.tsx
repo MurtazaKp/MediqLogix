@@ -6,13 +6,13 @@ const OurTeamPage = () => {
   const tabs = {
     heading: "Our Team",
     tabs: [
-      { id: 1, label: "Company Profile", href: "/about/companyProfile" },
-      { id: 2, label: "Vision and Mission", href: "/about/visionMission" },
-      { id: 3, label: "Our Team", href: "/about/ourTeam" },
+      { id: 1, label: "Company Profile", href: "/about/company-profile" },
+      { id: 2, label: "Vision and Mission", href: "/about/vision-mission" },
+      // { id: 3, label: "Our Team", href: "/about/our-team" },
       {
-        id: 4,
+        id: 3,
         label: "Corporate Governance",
-        href: "/about/corporateGovernance",
+        href: "/about/corporate-governance",
       },
     ],
   };

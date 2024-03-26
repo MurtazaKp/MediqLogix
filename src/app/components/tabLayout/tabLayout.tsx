@@ -27,9 +27,13 @@ const TabLayout = ({ children, tabs, heading }: any) => {
                 <div className="relative w-full lg:w-auto" key={link.id}>
                   <Link
                     href={link.href}
-                    className={`py-2 px-2 inline-block w-full HelveticaNeue-Regular sm:w-[170px] lg:w-auto  xl:w-[170px]  z-10 text-[14.5px] text-center   rounded-full border border-black ${
+                    className={` inline-block w-full HelveticaNeue-Regular sm:w-[170px] lg:w-auto  xl:w-[170px]  z-10 text-[14.5px] text-center   rounded-full border border-black ${
                       pathname === link.href ? "bg-black text-white " : ""
-                    }`}
+                    } ${
+                      pathname.includes("service")
+                        ? "px-2 py-1 leading-4"
+                        : "py-2 px-2"
+                    } `}
                   >
                     {link.label}
                   </Link>

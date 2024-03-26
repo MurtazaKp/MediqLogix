@@ -44,7 +44,7 @@ const HeroSection = () => {
 
   return (
     <div className="bg-black relative hero-section">
-      <Slider className="z-20" {...settings}>
+      <Slider className="z-10" {...settings}>
         {slidesData.map((slide, index) => (
           <div
             key={index}
@@ -54,7 +54,7 @@ const HeroSection = () => {
               <img className="object-cover w-full h-full" src={slide.image} />
               <div className="absolute inset-0 bg-black opacity-70"></div>
             </div>
-            <h1 className="w-8/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
+            <h1 className="sm:w-8/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-10 lg:text-primary-heading lg:leading-primary-heading lg:pt-[106px] lg:pb-[157px] text-primary-blue ">
               <span className="text-[#4ef721] font-bold">{slide.title}</span>
               <br />
               {slide.subtitle}

@@ -10,19 +10,19 @@ const Footer = () => {
         links: [
           {
             label: "Cloud Mediqm",
-            href: "/software/cloudMediQM",
+            href: "/software/cloud-mediqm",
           },
           {
             label: "Mediqm Mobility",
-            href: "/software/mediqmMobility",
+            href: "/software/mediqm-mobility",
           },
           {
             label: "Mediqm Platform",
-            href: "/software/mediqmPlatform",
+            href: "/software/mediqm-platform",
           },
           {
             label: "Mediqm Solution",
-            href: "/software/mediqmSolution",
+            href: "/software/mediqm-solution",
           },
         ],
       },
@@ -31,15 +31,15 @@ const Footer = () => {
         links: [
           {
             label: "Hospital Quality Consulting",
-            href: "/service/hospitalQuality",
+            href: "/service/hospital-quality",
           },
           {
             label: "Quality Management Education & Training",
-            href: "/service/qualityManagement",
+            href: "/service/quality-management",
           },
           {
             label: "Hospital Safety Consulting",
-            href: "/service/hospitalSafety",
+            href: "/service/hospital-safety",
           },
         ],
       },
@@ -89,8 +89,8 @@ const Footer = () => {
                         return (
                           <Link
                             className={`text-white w-max border-[#707070] ${
-                              index != 2
-                                ? " border-b border-[#707070]  p-1"
+                              index != 3
+                                ? " border-b border-[#707070]  pb-1"
                                 : "ps-1"
                             } `}
                             key={index}
@@ -112,17 +112,25 @@ const Footer = () => {
           <div className="col-span-1">
             <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
             <div className="text-white flex flex-col gap-3 text-xs">
-              <FooterLogoIcon />
+              <Link href={"/"}>
+                <FooterLogoIcon />
+              </Link>
               <p className="border-b border-[#707070]  p-1">
                 {footerData.address.address}
               </p>
               <p className="border-b border-[#707070]  p-1">
-                {footerData.address.phone}
+                <a href={`tel:${footerData.address.phone} `}>
+                  {footerData.address.phone}
+                </a>
               </p>
               <p className="border-b border-[#707070]  p-1">
-                Email : {footerData.address.email}
+                Email :
+                <a href={`mailto:${footerData.address.email}`}>
+                  {" "}
+                  {footerData.address.email}
+                </a>
               </p>
-              <p className="ps-1">Website : {footerData.address.website}</p>
+              {/* <p className="ps-1">Website : {footerData.address.website}</p> */}
             </div>
             <div className="flex mt-10 gap-2">
               <a target="_blank" href="https://www.facebook.com/">
@@ -139,8 +147,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-primary-green py-2 px-2 lg:px-36">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
-          <div className="lg:col-span-3 flex-wrap justify-center sm:justify-start items-center flex gap-7">
+        <div className="grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-4 gap-2 xl:gap-0 ">
+          <div className="xl:col-span-1 flex-wrap justify-center sm:justify-center items-center flex gap-7">
             {footerData.copyRight.copyrightLinks.map((link, index) => {
               return (
                 <Link
@@ -155,8 +163,18 @@ const Footer = () => {
               );
             })}
           </div>
-          <div className="lg:col-span-1 text-center sm:text-start mt-2 sm:mt-0 text-white text-xs sm:flex sm:justify-end lg:justify-start">
+          <div className="xl:col-span-2 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center  xl:justify-center">
             {footerData.copyRight.copyrightText}
+          </div>
+          <div className="xl:col-span-1 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center xl:justif-end">
+            Created by{" "}
+            <a
+              target="blank"
+              className="underline ps-2"
+              href="https://www.setoo.co/"
+            >
+              Setoo Solutions
+            </a>
           </div>
         </div>
       </div>

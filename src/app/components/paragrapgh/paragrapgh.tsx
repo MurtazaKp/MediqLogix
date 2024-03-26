@@ -12,7 +12,7 @@ const Paragrapgh = () => {
           MediQlogix
         </span>{" "}
         is a digital solution company providing AI and ML-powered platform to
-        hospitals and healthcare organizations’ needs to enhance their “Global
+        hospitals and healthcare organizations’ ,To enhance their “Global
         Quality Matrix”. The platform is based on Saas (Software As A Service)
         or Internal Single Install Systems. The company’s foundation is “to
         improve healthcare deliveries by reducing quality and safety issues,

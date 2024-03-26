@@ -69,7 +69,7 @@ const ProductGrid = () => {
         {productGridData.map((product, index) => {
           return (
             <div
-              className={`text-white px-1 flex flex-col items-center lg:items-start gap-5 justify-between  ${
+              className={`text-white px-1 flex flex-col items-center  lg:items-start gap-5 justify-between  ${
                 index != 3 ? "lg:border-r border-white" : ""
               } `}
               key={index}

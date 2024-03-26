@@ -1,33 +1,33 @@
-import HospitalSafety from "@/app/components/service/hospitalSafety/hospitalSafety";
+import QualityManagement from "@/app/components/service/qualityManagement/qualityManagement";
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import React from "react";
 
-const HospitalSafetyPage = () => {
+const QualityManagementPage = () => {
   const tabs = {
     heading: "Hospital Quality",
     tabs: [
       {
         id: 1,
         label: "Hospital Quality Consulting",
-        href: "/service/hospitalQuality",
+        href: "/service/hospital-quality",
       },
       {
         id: 2,
         label: "Quality Management Education & Training",
-        href: "/service/qualityManagement",
+        href: "/service/quality-management",
       },
       {
         id: 3,
         label: "Hospital Safety Consulting",
-        href: "/service/hospitalSafety",
+        href: "/service/hospital-safety",
       },
     ],
   };
   return (
     <TabLayout {...tabs}>
-      <HospitalSafety />
+      <QualityManagement />
     </TabLayout>
   );
 };
 
-export default HospitalSafetyPage;
+export default QualityManagementPage;
