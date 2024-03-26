@@ -14,82 +14,18 @@ const Modal = ({ handleClose }: any) => {
       {
         label: "About Us",
         href: "/about",
-        subLinks: [
-          {
-            label: "Company Profile",
-            href: "/companyProfile",
-          },
-          {
-            label: "Vision and Mission",
-            href: "/vision",
-          },
-          {
-            label: "Company Profile",
-            href: "/ourTeam",
-          },
-          {
-            label: "Company Profile",
-            href: "/corporate",
-          },
-        ],
       },
       {
         label: "Software Products",
         href: "/software",
-        subLinks: [
-          {
-            label: "CloudMediQm",
-            href: "/cloudmediqm",
-          },
-          {
-            label: "mediqmMobility",
-            href: "/mediqmMobility",
-          },
-          {
-            label: "mediqmplatform",
-            href: "/mediqmplatform",
-          },
-          {
-            label: "mediqmsolution",
-            href: "/mediqmsolution",
-          },
-        ],
       },
       {
         label: "Service",
         href: "/service",
-        subLinks: [
-          {
-            label: "CloudMediQm",
-            href: "/CloudMediQm",
-          },
-          {
-            label: "Quality Management",
-            href: "/qualityManagement",
-          },
-          {
-            label: "hospitalSafety",
-            href: "/mediqmplatform",
-          },
-        ],
       },
       {
         label: "My MediQM",
         href: "/mediQM",
-        subLinks: [
-          {
-            label: "CloudMediQm",
-            href: "/CloudMediQm",
-          },
-          {
-            label: "Quality Management",
-            href: "/qualityManagement",
-          },
-          {
-            label: "hospitalSafety",
-            href: "/mediqmplatform",
-          },
-        ],
       },
     ],
   };

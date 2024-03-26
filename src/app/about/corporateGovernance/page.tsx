@@ -1,13 +1,10 @@
-import AboutUs from "@/app/components/about/about";
+import CorporateGovernance from "@/app/components/about/corporateGovernance/corporateGovernance";
+import TabLayout from "@/app/components/tabLayout/tabLayout";
 import React from "react";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import TabLayout from "../components/tabLayout/tabLayout";
-import AboutContent from "../components/about/aboutContent/aboutContent";
 
-const About = () => {
+const CorporateGovernancPage = () => {
   const tabs = {
-    heading: "About us",
+    heading: "Corporate Governance",
     tabs: [
       { id: 1, label: "Company Profile", href: "/about/companyProfile" },
       { id: 2, label: "Vision and Mission", href: "/about/visionMission" },
@@ -20,12 +17,12 @@ const About = () => {
     ],
   };
   return (
-    <div className="">
+    <div>
       <TabLayout {...tabs}>
-        <AboutContent />
+        <CorporateGovernance />
       </TabLayout>
     </div>
   );
 };
 
-export default About;
+export default CorporateGovernancPage;

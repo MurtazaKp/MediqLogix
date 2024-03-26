@@ -19,7 +19,7 @@ const MediQmPlatform = () => {
         <div className="lg:w-6/12 2xl:w-3/12 flex ">
           <img
             className="w-full  rounded-lg"
-            src="images/platform.jpeg"
+            src="/images/platform.jpeg"
             alt=""
           />
         </div>

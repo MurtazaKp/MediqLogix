@@ -16,8 +16,8 @@ export default function Home() {
       <Paragrapgh />
       <ProductGrid />
       <Features />
-      <CaseStudy />
-      <PartnerSlider />
+      {/* <CaseStudy />
+      <PartnerSlider /> */}
       {/* <News /> */}
     </div>
   );
