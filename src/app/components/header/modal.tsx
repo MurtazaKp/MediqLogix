@@ -20,7 +20,7 @@ const Modal = ({ handleClose }: any) => {
         href: "/software",
       },
       {
-        label: "Service",
+        label: "Services",
         href: "/service",
       },
       {

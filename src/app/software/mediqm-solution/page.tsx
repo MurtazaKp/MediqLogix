@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Mediqm Solution | Mediqlogix",
+  title: "MediQm Solution | Mediqlogix",
   description: "Mediqm Solution page ",
   alternates: {
     canonical: "https://mediqlogix.com/software/mediqm-solution",

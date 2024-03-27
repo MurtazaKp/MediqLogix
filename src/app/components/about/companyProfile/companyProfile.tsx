@@ -11,7 +11,7 @@ const CompanyProfile = () => {
       <div className="lg:w-7/12 py-6 flex flex-col gap-3">
         <p className="w-full">
           MediQlogix was established in 2004. MediQlogix launched its star
-          product “MediQM”. MediQM is a platform built on SaaS or Internal
+          product “MediQm”. MediQm is a platform built on SaaS or Internal
           Single Install Systems to streamline the quality management of
           hospitals and healthcare organizations. It keeps data secure and helps
           in reporting for the Joint Commission on Accreditation of Healthcare

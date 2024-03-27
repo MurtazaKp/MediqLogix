@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 const HospitalQualityPage = () => {
   const tabs = {
-    heading: "Hospital Quality",
+    heading: "Hospital Quality Consulting",
     tabs: [
       {
         id: 1,

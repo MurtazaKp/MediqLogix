@@ -63,7 +63,7 @@ const Header = () => {
         ],
       },
       {
-        label: "Service",
+        label: "Services",
         href: "/service",
         sublink: [
           {
@@ -149,7 +149,7 @@ const Header = () => {
 
             <Link
               href={"/contact"}
-              className="border text-base HelveticaNeue-Regular py-2 text-[#c6c6c6]C  hover:bg-white hover:text-black border-white rounded-full flex justify-center items-center px-2 "
+              className="border text-base HelveticaNeue-Regular py-2 text-[#c6c6c6]  hover:bg-white hover:text-black border-white rounded-full flex justify-center items-center px-2 "
             >
               Get in touch
             </Link>

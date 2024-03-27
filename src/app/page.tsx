@@ -11,7 +11,7 @@ import CaseStudy from "./components/caseStudy/caseStudy";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | Mediqlogix",
+  title: "Home | MediQlogix",
   description: "Homepage ",
   alternates: {
     canonical: "https://mediqlogix.com",

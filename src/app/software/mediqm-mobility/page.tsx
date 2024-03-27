@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Mediqm Mobility | Mediqlogix",
-  description: "Mediqm Mobility page ",
+  title: "MediQm Mobility | Mediqlogix",
+  description: "MediQm Mobility page ",
   alternates: {
     canonical: "https://mediqlogix.com/software/mediqm-mobility",
   },
