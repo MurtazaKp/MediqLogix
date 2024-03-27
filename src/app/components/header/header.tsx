@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Modal from "./modal";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FooterLogoIcon } from "../icons/footerLogo";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,16 +26,16 @@ const Header = () => {
         sublink: [
           {
             label: "Company Profile",
-            href: "about/company-profile",
+            href: "/company-profile",
           },
 
           {
             label: "Vission and Mission",
-            href: "about/vision-mission",
+            href: "/vision-mission",
           },
           {
             label: "Corporate Governance",
-            href: "about/corporate-governance",
+            href: "/corporate-governance",
           },
         ],
       },
@@ -43,17 +44,21 @@ const Header = () => {
         href: "/software",
         sublink: [
           {
-            label: "Company Profile",
-            href: "about/company-profile",
+            label: "Cloud MediQM",
+            href: "/software/cloud-mediqm",
           },
 
           {
-            label: "Vission and Mission",
-            href: "about/vision-mission",
+            label: "MediQM Mobility",
+            href: "/software/mediqm-mobility",
           },
           {
-            label: "Corporate Governance",
-            href: "about/corporate-governance",
+            label: "MediQM platform",
+            href: "/software/mediqm-platform",
+          },
+          {
+            label: "MediQM Solution",
+            href: "/software/mediqm-solution",
           },
         ],
       },
@@ -62,36 +67,32 @@ const Header = () => {
         href: "/service",
         sublink: [
           {
-            label: "Company Profile",
-            href: "about/company-profile",
+            label: "Hospital Quality",
+            href: "/service/hospital-quality",
           },
 
           {
-            label: "Vission and Mission",
-            href: "about/vision-mission",
+            label: "Hospital Safety",
+            href: "/service/hospital-safety",
           },
           {
-            label: "Corporate Governance",
-            href: "about/corporate-governance",
+            label: "Quality Management",
+            href: "/service/quality-management",
           },
         ],
       },
       {
         label: "My MediQM",
-        href: "/mediQM/partners",
+        href: "/partners",
         sublink: [
           {
-            label: "Company Profile",
-            href: "about/company-profile",
+            label: "Contact",
+            href: "/contact",
           },
 
           {
-            label: "Vission and Mission",
-            href: "about/vision-mission",
-          },
-          {
-            label: "Corporate Governance",
-            href: "about/corporate-governance",
+            label: "Partners",
+            href: "/partners",
           },
         ],
       },
@@ -100,26 +101,31 @@ const Header = () => {
 
   return (
     <>
-      <div className="sticky top-0 bg-white z-50">
-        <div className="flex justify-between  px-2 lg:px-[139px] py-4">
-          <Link className="flex items-center " href={"/"}>
-            <img className=" " src="/images/logo.svg" />
+      <div className="sticky py-4 xl:py-0 top-0 bg-black text-white z-30">
+        <div className="flex justify-between  px-2 sm:px-10 xl:px-[139px] ">
+          <Link className="flex items-center w-5/12 sm:w-auto " href={"/"}>
+            <FooterLogoIcon />
           </Link>
-          <div className=" flex gap-6 items-center">
+          <div className=" flex justify-end w-7/12 sm:w-full gap-6 items-center">
             <div className="hidden xl:flex gap-6 ">
               {NavigationData.navLinks.map((link, index) => {
                 return (
-                  <div className="relative group -ml-px" key={index}>
+                  <div
+                    className="relative lg:py-5 cursor-pointer group -ml-px"
+                    key={index}
+                  >
                     <Link
-                      className={`${
-                        pathname.includes(link.href) ? "text-primary-green" : ""
-                      } hover:text-primary-green`}
+                      className={` ${
+                        pathname.includes(link.href)
+                          ? "text-white font-bold"
+                          : "text-[#c6c6c6]"
+                      } hover:text-white  hover:font-bold`}
                       href={link.href}
                     >
                       {link.label}
                     </Link>
                     {link.sublink && (
-                      <div className="bg-primary-green rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-white py-3 flex-col gap-3 w-max   top-12 absolute z-20">
+                      <div className="bg-[white] rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-[#3c3c3c] py-3 flex-col gap-2 w-[200px]   top-16 absolute z-[999]">
                         {link.sublink.map((navLinks, index) => {
                           return (
                             <div
@@ -142,8 +148,8 @@ const Header = () => {
             </div>
 
             <Link
-              href={"/mediQM/contact"}
-              className="border text-sm HelveticaNeue-Regular py-2  hover:bg-black hover:text-white border-black rounded-full flex justify-center items-center px-2 "
+              href={"/contact"}
+              className="border text-base HelveticaNeue-Regular py-2 text-[#c6c6c6]C  hover:bg-white hover:text-black border-white rounded-full flex justify-center items-center px-2 "
             >
               Get in touch
             </Link>

@@ -3,7 +3,7 @@ import React from "react";
 
 const MediQmMobility = () => {
   return (
-    <div className="flex text-[14.5px] capitalize flex-col gap-6">
+    <div className="flex text-[14.5px]  flex-col gap-6">
       <div className="flex flex-col lg:flex-row gap-[30px]">
         <div className="lg:w-6/12 2xl:w-4/12">
           <img className=" rounded-[18px]" src="/images/Mobility.jpeg" alt="" />

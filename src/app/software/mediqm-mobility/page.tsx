@@ -1,6 +1,33 @@
 import MediQmMobility from "@/app/components/software/mediQmMobility/mediQmMobility";
 import TabLayout from "@/app/components/tabLayout/tabLayout";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Mediqm Mobility | Mediqlogix",
+  description: "Mediqm Mobility page ",
+  alternates: {
+    canonical: "https://mediqlogix.com/software/mediqm-mobility",
+  },
+  openGraph: {
+    url: "https://mediqlogix.com/software/mediqm-mobility",
+    title: "Mediqm Mobility | Mediqlogix",
+    description: "Mediqm Mobility",
+    images: {
+      url: "/images/seoImage.png",
+      width: 800,
+      height: 600,
+      alt: "Mediqlogix Mediqm Mobility page Thumbnail",
+      type: "image/png",
+    },
+    siteName: "MediQlogix",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: "/images/seoImage.png",
+    site: "https://mediqlogix.com/software/mediqm-mobility",
+  },
+};
 
 const MediqmMobilityPage = () => {
   const tabs = {

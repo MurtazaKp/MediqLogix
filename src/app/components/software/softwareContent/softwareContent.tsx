@@ -3,7 +3,7 @@ import React from "react";
 const SoftwareContent = () => {
   return (
     <div>
-      <p className=" capitalize text-[14.5px] leading-5">
+      <p className="  text-[14.5px] leading-5">
         <strong>MediQlogix</strong> develops an AI-driven platform designed for
         seamless integration with your IT systems. The platform is constructed
         on cloud technology frameworks such as COPE, Nursing, RX, and Lab,

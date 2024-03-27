@@ -3,11 +3,11 @@ import React from "react";
 
 const MediQmPlatform = () => {
   return (
-    <div className="flex gap-4 sm:gap-7 lg:gap-4 flex-col capitalize text-[14.5px]">
+    <div className="flex gap-4 sm:gap-7 lg:gap-4 flex-col  text-[14.5px]">
       <h3 className="text-[18.5px] leading-5 text-primary-green">
         MediQM Platform
       </h3>
-      <p className=" capitalize text-[14.5px] pb-9 rounded-2xl">
+      <p className="  text-[14.5px] pb-9 rounded-2xl">
         MediQlogix creates an advanced AI-powered database for hospitals quality
         and safety management. This platform retrieves vital information
         efficiently to fill in missing data for CMS quality bundles like AMI,

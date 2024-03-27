@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutContent = () => {
   return (
-    <div className="flex flex-col gap-5 capitalize text-[14.5px] ">
+    <div className="flex flex-col gap-5  text-[14.5px] ">
       <p>
-        <span className="font-bold capitalize text-[14.5px]">MediQlogix </span>
+        <span className="font-bold  text-[14.5px]">MediQlogix </span>
         is a digital solution company providing AI and ML-powered platform to
         hospitals and healthcare organizations’ needs to enhance their “Global
         Quality Matrix”. The platform is based on Saas (Software As A Service)

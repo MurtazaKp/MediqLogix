@@ -2,7 +2,7 @@ import React from "react";
 
 const CorporateGovernance = () => {
   return (
-    <div className="flex flex-col gap-10 mt-9 capitalize">
+    <div className="flex flex-col gap-10 mt-9 ">
       <p className="text-[14.5px] leading-5">
         “Good corporate governance practices instill in companies the essential
         vision, processes, and structures to make decisions that ensure
@@ -13,7 +13,7 @@ const CorporateGovernance = () => {
           - Rachel Kyte | Vice President, Business Advisory Services, IFC
         </p>
       </p>
-      <div className="flex gap-5 flex-col capitalize text-[14.5px] leading-5">
+      <div className="flex gap-5 flex-col  text-[14.5px] leading-5">
         <p className="font-bold text-primary-green">
           Governance and Citizenship at MediQlogix
         </p>

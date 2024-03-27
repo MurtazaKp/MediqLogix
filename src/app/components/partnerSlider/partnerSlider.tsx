@@ -79,7 +79,7 @@ const PartnerSlider = () => {
         <h2 className="text-[22.5px] pb-3 font-semibold">
           {partnerSliderData.heading}
         </h2>
-        <p className=" pb-9 text-[16.5px] lg:w-8/12 2xl:w-6/12 mx-auto capitalize">
+        <p className=" pb-9 text-[16.5px] lg:w-8/12 2xl:w-6/12 mx-auto ">
           {partnerSliderData.description}
         </p>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const HospitalSafety = () => {
   return (
-    <div className="flex text-[14.5px] leading-5 flex-col gap-6 capitalize">
+    <div className="flex text-[14.5px] leading-5 flex-col gap-6 ">
       <p>
         Recently, there has been a thorough examination of the Patient Safety
         Goals. Specifically, the Joint Commission on Accreditation of Healthcare

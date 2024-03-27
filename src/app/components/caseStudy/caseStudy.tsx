@@ -92,7 +92,7 @@ const CaseStudy = () => {
           <StarIcon /> {partnerSliderData.heading}
           <StarIcon />
         </h2>
-        <p className=" pb-9 lg:w-8/12 2xl:w-6/12 mx-auto capitalize">
+        <p className=" pb-9 lg:w-8/12 2xl:w-6/12 mx-auto ">
           {partnerSliderData.description}
         </p>
       </div>
@@ -121,12 +121,10 @@ const CaseStudy = () => {
                     src={partner.logoSrc}
                   />
                   <span>
-                    <p className="mb-4 h-10 font-bold capitalize  text-[16.5px]">
+                    <p className="mb-4 h-10 font-bold   text-[16.5px]">
                       {partner.companyName}
                     </p>
-                    <p className="text-xs capitalize mb-10 ">
-                      {partner.description}
-                    </p>
+                    <p className="text-xs  mb-10 ">{partner.description}</p>
                   </span>
                 </span>
 

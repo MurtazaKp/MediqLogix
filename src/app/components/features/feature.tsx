@@ -63,7 +63,7 @@ const Features = () => {
     return <IconComponent />;
   };
   return (
-    <div className="px-10 lg:px-36 py-14">
+    <div className="px-10 xl:px-36 py-14">
       <h4 className="  text-tertiary-heading text-center mb-8 font-semibold">
         Benefits of MediQM
       </h4>
@@ -82,7 +82,7 @@ const Features = () => {
                   <h2 className=" text-[18.5px] text-primary-green font-semibold">
                     {feature.heading}
                   </h2>
-                  <p className="text-[14.5px] capitalize leading-normal pe-2">
+                  <p className="text-[14.5px]  leading-normal pe-2">
                     {feature.description}
                   </p>
                 </div>

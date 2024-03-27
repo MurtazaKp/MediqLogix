@@ -3,9 +3,9 @@ import React from "react";
 
 const HospitalQuality = () => {
   return (
-    <div className="flex flex-col gap-8 capitalize text-[14.5px] leading-5">
+    <div className="flex flex-col gap-8  text-[14.5px] leading-5">
       <div className="flex flex-col gap-4">
-        <p className=" capitalize text-[14.5px]">
+        <p className="  text-[14.5px]">
           For effective healthcare system delivery management, hospitals and
           hospital systems must establish quality metrics by leveraging
           information from their integrated or non-integrated IT systems. The
@@ -16,7 +16,7 @@ const HospitalQuality = () => {
           hospitals capacity to gather and access intricate data to ensure the
           provision of optimal healthcare.
         </p>
-        <p className=" capitalize text-[14.5px] leading-5">
+        <p className="  text-[14.5px] leading-5">
           Our AI-enabled software and portal integration facilitates hospitals
           in adhering to the guidelines of the Centers for Medicare and Medicaid
           Services (CMS) and the requirements of JCAHO. One of the key

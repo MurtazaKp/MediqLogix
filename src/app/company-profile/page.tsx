@@ -1,26 +1,23 @@
-import AboutUs from "@/app/components/about/about";
-import React from "react";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import TabLayout from "../components/tabLayout/tabLayout";
-import AboutContent from "../components/about/aboutContent/aboutContent";
+import CompanyProfile from "@/app/components/about/companyProfile/companyProfile";
+import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 
+import React from "react";
 export const metadata: Metadata = {
-  title: "About | Mediqlogix",
-  description: "Aboutpage ",
+  title: "Company Profile | Mediqlogix",
+  description: "Company Profile page ",
   alternates: {
-    canonical: "https://mediqlogix.com/about",
+    canonical: "https://mediqlogix.com/company-profile",
   },
   openGraph: {
-    url: "https://mediqlogix.com/about",
-    title: "About | Mediqlogix",
-    description: "About",
+    url: "https://mediqlogix.com/company-profile",
+    title: "Company Profile | Mediqlogix",
+    description: "Company Profile",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix About page Thumbnail",
+      alt: "Mediqlogix Company Profile Page Thumbnail",
       type: "image/png",
     },
     siteName: "MediQlogix",
@@ -28,13 +25,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/about",
+    site: "https://mediqlogix.com/company-profile",
   },
 };
 
-const About = () => {
+const CompanyProfilePage = () => {
   const tabs = {
-    heading: "About Us",
+    heading: "Comapany Profile",
     tabs: [
       { id: 1, label: "Company Profile", href: "/company-profile" },
       { id: 2, label: "Vision and Mission", href: "/vision-mission" },
@@ -47,12 +44,12 @@ const About = () => {
     ],
   };
   return (
-    <div className="">
+    <div>
       <TabLayout {...tabs}>
-        <AboutContent />
+        <CompanyProfile />
       </TabLayout>
     </div>
   );
 };
 
-export default About;
+export default CompanyProfilePage;

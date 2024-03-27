@@ -48,7 +48,7 @@ const HeroSection = () => {
         {slidesData.map((slide, index) => (
           <div
             key={index}
-            className="flex flex-col px-10 lg:px-36 pb-12 2xl:pb-16 relative"
+            className="flex flex-col px-10 xl:px-36 pb-12 2xl:pb-16 relative"
           >
             <div className="absolute inset-0 -z-10">
               <img className="object-cover w-full h-full" src={slide.image} />
@@ -60,7 +60,7 @@ const HeroSection = () => {
               {slide.subtitle}
             </h1>
             <div>
-              <p className="text-sm sm:text-2xl lg:text-secondary-heading capitalize sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-[800px]">
+              <p className="text-sm sm:text-2xl lg:text-secondary-heading  sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-[800px]">
                 {slide.description}
               </p>
             </div>
