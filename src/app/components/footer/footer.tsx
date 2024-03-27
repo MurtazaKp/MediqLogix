@@ -9,25 +9,25 @@ const Footer = () => {
         heading: "PRODUCTS",
         links: [
           {
-            label: "Cloud Mediqm",
+            label: "Cloud MediQm",
             href: "/software/cloud-mediqm",
           },
           {
-            label: "Mediqm Mobility",
+            label: "MediQm Mobility",
             href: "/software/mediqm-mobility",
           },
           {
-            label: "Mediqm Platform",
+            label: "MediQm Platform",
             href: "/software/mediqm-platform",
           },
           {
-            label: "Mediqm Solution",
+            label: "MediQm Solution",
             href: "/software/mediqm-solution",
           },
         ],
       },
       {
-        heading: "SERVICE",
+        heading: "SERVICES",
         links: [
           {
             label: "Hospital Quality Consulting",

@@ -57,7 +57,7 @@ const PartnerSlider = () => {
   };
   const partnerSliderData = {
     heading: "Our Digital Partners",
-    description: "Our expanding network of service providers",
+    description: "Our expanding network of services providers",
     partners: [
       {
         logoSrc: "/images/Apple.svg",

@@ -7,8 +7,8 @@ import ServiceContent from "../components/service/serviceContent/serviceContent"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Service | Mediqlogix",
-  description: "Service page ",
+  title: "Services | Mediqlogix",
+  description: "Services page ",
   alternates: {
     canonical: "https://mediqlogix.com/service",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 const Service = () => {
   const tabs = {
-    heading: "Service",
+    heading: "Services",
     tabs: [
       {
         id: 1,
@@ -49,7 +49,7 @@ const Service = () => {
       {
         id: 3,
         label: "Hospital Safety Consulting",
-        href: "/service/service",
+        href: "/service/hospital-safety",
       },
     ],
   };
