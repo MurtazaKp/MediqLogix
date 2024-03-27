@@ -2,7 +2,7 @@ import React from "react";
 
 const CompanyProfile = () => {
   return (
-    <div className="flex flex-col lg:flex-row text-[14.5px] capitalize  justify-center items-center leading-5 gap-9 ">
+    <div className="flex flex-col lg:flex-row text-[14.5px]   justify-center items-center leading-5 gap-9 ">
       <img
         className="w-[400px] h-[266px] rounded-lg"
         src="/images/Company_Profile.png"

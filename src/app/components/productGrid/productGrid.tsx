@@ -64,24 +64,24 @@ const ProductGrid = () => {
   ];
 
   return (
-    <div className=" bg-primary-green py-14 px-10 lg:px-36">
+    <div className=" bg-primary-green py-14 px-10 xl:px-36">
       <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-9 justify-evenly ">
         {productGridData.map((product, index) => {
           return (
             <div
-              className={`text-white px-1 flex flex-col items-center lg:items-start gap-5 justify-between  ${
+              className={`text-white xl:px-5 flex flex-col items-center  lg:items-start gap-5 justify-between  ${
                 index != 3 ? "lg:border-r border-white" : ""
               } `}
               key={index}
             >
               <img
-                className={` w-20 h-22 ${index == 3 ? "mt-2" : ""} `}
+                className={` w-20 h-24 ${index == 3 ? "mt-2" : ""} `}
                 src={product.image.src}
               />
-              <h2 className=" text-tertiary-heading leading-normal text-center lg:text-start font-bold lg:h-16">
+              <h2 className="text-lg lg:text-lg xl:text-tertiary-heading leading-normal text-center lg:text-start font-bold lg:h-16">
                 {product.label}
               </h2>
-              <p className="text-[16.5px] capitalize text-center lg:text-start lg:h-20">
+              <p className="text-base sm:text-[16.5px]  text-center lg:text-start lg:h-20">
                 {product.paragrapgh}
               </p>
               <Link

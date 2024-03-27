@@ -25,7 +25,7 @@ const Modal = ({ handleClose }: any) => {
       },
       {
         label: "My MediQM",
-        href: "/mediQM",
+        href: "/partners",
       },
     ],
   };

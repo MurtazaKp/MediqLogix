@@ -1,26 +1,23 @@
-import AboutUs from "@/app/components/about/about";
-import React from "react";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import TabLayout from "../components/tabLayout/tabLayout";
-import AboutContent from "../components/about/aboutContent/aboutContent";
+import MeetTeam from "@/app/components/meetTeam/meetTeam";
+import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: "About | Mediqlogix",
-  description: "Aboutpage ",
+  title: "Our Team | Mediqlogix",
+  description: "Our Team ",
   alternates: {
-    canonical: "https://mediqlogix.com/about",
+    canonical: "https://mediqlogix.com/our-team",
   },
   openGraph: {
-    url: "https://mediqlogix.com/about",
-    title: "About | Mediqlogix",
-    description: "About",
+    url: "https://mediqlogix.com/our-team",
+    title: "Our Team | Mediqlogix",
+    description: "Our Team",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix About page Thumbnail",
+      alt: "Mediqlogix Our Team Page Thumbnail",
       type: "image/png",
     },
     siteName: "MediQlogix",
@@ -28,11 +25,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/about",
+    site: "https://mediqlogix.com/our-team",
   },
 };
 
-const About = () => {
+const OurTeamPage = () => {
   const tabs = {
     heading: "About Us",
     tabs: [
@@ -47,12 +44,12 @@ const About = () => {
     ],
   };
   return (
-    <div className="">
+    <div>
       <TabLayout {...tabs}>
-        <AboutContent />
+        <MeetTeam />
       </TabLayout>
     </div>
   );
 };
 
-export default About;
+export default OurTeamPage;

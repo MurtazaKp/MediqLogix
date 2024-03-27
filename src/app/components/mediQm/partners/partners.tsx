@@ -2,9 +2,9 @@ import React from "react";
 
 const Partners = () => {
   return (
-    <div className=" capitalize">
+    <div className=" ">
       <div className=" mb-6">
-        <div className="flex justify-between items-center capitalize">
+        <div className="flex justify-between items-center ">
           <h4 className="text-[18.5px] font-bold leading-5    text-primary-green">
             Microsoft
           </h4>

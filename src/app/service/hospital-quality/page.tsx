@@ -1,26 +1,23 @@
-import React from "react";
-import Services from "../components/service/service";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import TabLayout from "../components/tabLayout/tabLayout";
-import ServiceContent from "../components/service/serviceContent/serviceContent";
+import HospitalQuality from "@/app/components/service/hospitalQuality/hospitalQuality";
+import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: "Service | Mediqlogix",
-  description: "Service page ",
+  title: "Hospital Quality | Mediqlogix",
+  description: "Hospital Quality page ",
   alternates: {
-    canonical: "https://mediqlogix.com/service",
+    canonical: "https://mediqlogix.com/service/hospital-quality",
   },
   openGraph: {
-    url: "https://mediqlogix.com/service",
-    title: "Service | Mediqlogix",
-    description: "Service",
+    url: "https://mediqlogix.com/service/hospital-quality",
+    title: "Hospital Quality | Mediqlogix",
+    description: "Hospital Quality",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Service page Thumbnail",
+      alt: "Mediqlogix Hospital Quality page Thumbnail",
       type: "image/png",
     },
     siteName: "MediQlogix",
@@ -28,13 +25,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/service",
+    site: "https://mediqlogix.com/service/hospital-quality",
   },
 };
 
-const Service = () => {
+const HospitalQualityPage = () => {
   const tabs = {
-    heading: "Service",
+    heading: "Hospital Quality",
     tabs: [
       {
         id: 1,
@@ -49,17 +46,17 @@ const Service = () => {
       {
         id: 3,
         label: "Hospital Safety Consulting",
-        href: "/service/service",
+        href: "/service/hospital-safety",
       },
     ],
   };
   return (
     <div>
       <TabLayout {...tabs}>
-        <ServiceContent />
+        <HospitalQuality />
       </TabLayout>
     </div>
   );
 };
 
-export default Service;
+export default HospitalQualityPage;

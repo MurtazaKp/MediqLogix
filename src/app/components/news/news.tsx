@@ -34,7 +34,7 @@ const News = () => {
   return (
     <div className="bg-black text-white py-14">
       <h2 className="text-center mb-8 text-2xl">{blogData.heading}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-5 px-10 lg:px-36">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-5 px-10 xl:px-36">
         {blogData.blog.map((blog, index) => {
           return (
             <div

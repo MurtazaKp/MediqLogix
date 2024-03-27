@@ -3,8 +3,8 @@ import React from "react";
 
 const CloudMediQm = () => {
   return (
-    <div className="flex gap-4 sm:gap-7 lg:gap-4 flex-col capitalize text-[14.5px]">
-      <p className=" capitalize text-[14.5px]">
+    <div className="flex gap-4 sm:gap-7 lg:gap-4 flex-col  text-[14.5px]">
+      <p className="  text-[14.5px]">
         Hospitals struggle to gather top-notch data for performance improvement.
         They report to insurance companies, CMS, and NSQIP. MediQM platform
         helps in data collection which removes manual dependency and saves time
@@ -43,7 +43,7 @@ const CloudMediQm = () => {
         </div>
       </div>
 
-      <p className=" capitalize text-[14.5px]">
+      <p className="  text-[14.5px]">
         The automatic data extraction module from{" "}
         <span className="font-bold"> MediQM </span>can improve your bottom line
         by taking the place of full-time employees who are currently gathering
@@ -57,7 +57,7 @@ const CloudMediQm = () => {
         patient-centered activities that offer value.
       </p>
 
-      <p className=" capitalize text-[14.5px]">
+      <p className="  text-[14.5px]">
         By implementing SaaS, <span className="font-black">MediQLogix</span>{" "}
         will set itself apart from its competitors in the industry. For the
         following capabilities, we can offer hospital chains a platform that is

@@ -4,7 +4,7 @@ import Blog from "../../blog/blog";
 const QualityManagement = () => {
   return (
     <div>
-      <div className="flex flex-col gap-6 capitalize text-[14.5px] leading-5">
+      <div className="flex flex-col gap-6  text-[14.5px] leading-5">
         <p>
           Our main goal is to help hospitals become self-sufficient. We assist
           in developing AI-enabled software and processes for compliance. It is
