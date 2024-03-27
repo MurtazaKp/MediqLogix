@@ -68,29 +68,29 @@ const Footer = () => {
           href: "/contact",
         },
       ],
-      copyrightText: "Privacy © 2024 - Mediqlogix.com",
+      copyrightText: "Privacy © 2024 - MediQlogix.com",
     },
   };
 
   return (
     <>
-      <div className=" relative z-50 bg-primary-black px-5 xl:px-36 py-14">
+      <div className=" relative z-50 bg-primary-black px-10 xl:px-36 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:grid-cols-4">
           <div className=" lg:col-span-3 lg:w-9/12">
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 ">
               {footerData.footerLinks.map((links, index) => {
                 return (
                   <div key={index}>
-                    <h3 className="mb-7 text-sm text-white ">
+                    <h3 className="mb-7 text-base text-white ">
                       {links.heading}
                     </h3>
-                    <ul className="flex flex-col gap-3 text-xs">
+                    <ul className="flex flex-col gap-3 text-sm">
                       {links.links.map((link, index) => {
                         return (
                           <Link
                             className={`text-white w-max border-[#707070] ${
-                              index != 3
-                                ? " border-b border-[#707070]  pb-1"
+                              index !== links.links.length - 1
+                                ? " underline underline-offset-[14px] decoration-[#707070]    pb-1"
                                 : ""
                             } `}
                             key={index}
@@ -111,7 +111,7 @@ const Footer = () => {
           </div>
           <div className="col-span-1">
             <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
-            <div className="text-white flex flex-col gap-3 text-xs">
+            <div className="text-white flex flex-col gap-3 text-sm">
               <Link href={"/"}>
                 <FooterLogoIcon />
               </Link>
@@ -146,9 +146,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-primary-green py-2 px-2 xl:px-36">
-        <div className="grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-4 gap-2 xl:gap-0 ">
-          <div className="xl:col-span-1 flex-wrap justify-center sm:justify-center items-center flex gap-7">
+      <div className="bg-primary-green py-2 px-10 xl:px-36">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 gap-2 xl:gap-0 ">
+          <div className="lg:col-span-2 flex-wrap justify-center sm:justify-center lg:justify-start items-center flex gap-7">
             {footerData.copyRight.copyrightLinks.map((link, index) => {
               return (
                 <Link
@@ -163,10 +163,10 @@ const Footer = () => {
               );
             })}
           </div>
-          <div className="xl:col-span-2 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center  xl:justify-center">
+          <div className="lg:col-span-2 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center  xl:justify-center">
             {footerData.copyRight.copyrightText}
           </div>
-          <div className="xl:col-span-1 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center xl:justif-end">
+          <div className="lg:col-span-2 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center lg:justify-end">
             Created by{" "}
             <a
               target="blank"
