@@ -30,7 +30,7 @@ const Header = () => {
           },
 
           {
-            label: "Vission and Mission",
+            label: "Vision and Mission",
             href: "/vision-mission",
           },
           {

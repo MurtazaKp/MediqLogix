@@ -76,13 +76,12 @@ const MediQmSolution = () => {
       <p className="  text-[14.5px]">
         MediQlogix creates an advanced AI-powered platform for hospitals’
         quality and safety management. This platform retrieves vital information
-        efficiently to fill in missing data for CMS quality bundles like AMI,
-        CHF, SCIP, and PNA indicators.
+        efficiently to fill in missing data for CMS
       </p>
 
       <p className="  text-[14.5px]">
-        MediQM’s AI-enabled software product healthcare organizations access to
-        clinical quality management data. MediQlogix SaaS platform integrates
+        MediQM’s AI-enabled SaaS platform gives healthcare organizations access
+        to clinical quality management data. MediQlogix SaaS platform integrates
         data from various sources securely and keeps it united. It offers
         personalized reports for JCAHO and NSQUIP. Additionally, it creates
         specialized reports using advanced AI-based software.

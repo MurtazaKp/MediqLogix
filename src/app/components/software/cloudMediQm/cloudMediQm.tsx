@@ -25,13 +25,14 @@ const CloudMediQm = () => {
             Cloud MediQM
           </h3>
           <span>
-            <p className="font-bold">The MediQlogix SaaS Operating Model</p>
+            <p className="font-bold">MediQlogix SaaS Operating Model</p>
             <p>
-              extraction features which cater to the needs of the hospitals.
-              MediQM can provide sophisticated business intelligence (BI)
-              reporting and data aggregation features since the program is
-              provided on a “software as a service” model and is simple to
-              integrate with existing internal IT systems.
+              MediQlogix’s SaaS-based platform has AI-enabled data extraction
+              features that cater to the needs of the hospitals. MediQM can
+              provide sophisticated AI-enabled reporting and data aggregation
+              features since the program is provided on a Software as a Service
+              model and is simple to integrate with existing internal IT
+              systems.
             </p>
           </span>
           <Link
