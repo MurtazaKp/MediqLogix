@@ -127,7 +127,7 @@ const Header = () => {
                   >
                     <div className="flex gap-2 items-center">
                       <Link
-                        className={`text-xs lg:text-sm ${
+                        className={`text-xs lg:text-sm xl:text-base ${
                           pathname.includes(link.href)
                             ? "text-white font-bold"
                             : "text-[#c6c6c6]"
