@@ -12,7 +12,7 @@ const Paragrapgh = () => {
         to hospitals and healthcare organizations to enhance their{" "}
         <span className="font-bold">Global Quality Matrix</span> by taking
         advantage of the business benefits of cloud-based solutions. The
-        company’s business vision is “To improve healthcare delivery by
+        company’s business vision is to improve healthcare delivery by
         increasing quality, safety, reducing re-admits and finally transforming
         the operative room to enhance the healthcare delivery experience to
         patients at large.

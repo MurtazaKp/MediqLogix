@@ -73,7 +73,7 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
 
       {/* <!-- Modal --> */}
       <div className="relative w-full cursor-pointer pointer-events-none transition my-auto p-4">
-        <div className="w-full  bg-[#111111] cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-3xl lg:rounded-[50px] mx-auto max-w-xl lg:max-w-6xl px-10  lg:px-16 py-16">
+        <div className="w-full  bg-[#111111] cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-3xl lg:rounded-[50px] mx-auto max-w-xl lg:max-w-5xl xl:max-w-6xl px-10  lg:px-16 py-16 lg:py-8 xl:py-16">
           <button
             type="button"
             className="absolute top-4 right-4 lg:top-8 lg:right-8 rtl:right-auto rtl:left-2"
@@ -95,7 +95,7 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
             <span className="sr-only">Close</span>
           </button>
 
-          <div className="flex flex-col lg:flex-row gap-5 lg:gap-11 xl:gap-16 ">
+          <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-11 xl:gap-16 ">
             <div className=" lg:w-4/12">
               <img
                 className="w-full border rounded-lg border-[#707070] h-full flex justify-center items-end"

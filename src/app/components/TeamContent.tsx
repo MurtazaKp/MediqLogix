@@ -61,31 +61,26 @@ export const TeamThree = () => {
   return (
     <>
       <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
-        Mr. Navin worked in the information technology industry - NEC, Bay
-        Networks, Nortel, Com21 and Lucent Technologies in software/product
-        development, marketing and management leadership. Currently Mr. Pola is
-        responsible operations and managing their software development
-        operations in India.
+        Gopi Krishna Pidatala is the Group CEO of Vista Health Care and CSO of
+        Maxwell EMR Research Centre Pvt Ltd. Mr. Pidatala has 30 years of
+        experience in Strategy Operations, Infrastructure Development, Business
+        Development and Procurement, and Supply Chain Management. He has
+        provided operational support for organizations including The National
+        Dairy Development Board and the AP Netherlands Biotech Program under the
+        Ministry of Foreign Affairs.
       </p>
       <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
-        Since 2001, Mr. Navin, has been involved in starting up US companies in
-        India - Time2Market (Chip design company, parent company based out of
-        California, USA), MIC Electronics (LED, Embedded Systems Company based
-        out of Hyderabad, India) , BayNest (IT Consulting), MicroNet (ISP), and
-        iCST. During the start up phase for “Time2Market”, India, Mr. Navin was
-        involved in strategic decisions of company on new product development
-        and product marketing planning for Indian Market.{" "}
+        Mr. Pidatala holds an MBA degree in Strategy, Operations, and Human
+        Resources, and also a postgraduate degree in Agricultural Sciences. He
+        has done Doctorate in Leadership Communications. He is the Coordinator
+        of the Sri Sathya Sai National Leadership Program for
+        Self-Transformation of the Sri Sathya Sai Seva Organizations, India.
       </p>
       <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
-        Mr. Pola’s expertise includes working with the Indian government in
-        establishing technology development centers, operations of companies and
-        managing Indian operations from scratch. In his capacity as a director
-        for “Time2Market” Mr. Pola has significant experience in setting up the
-        operations, participated in the merger of “Time2Market” with InfoTech,
-        Hyderabad, India. Mr. Pola has also successfully completed assignments
-        for MicroNet co-founder and iCSt (India) in the capacity of Director. He
-        was instrumental in convincing the management of iCST (USA) and
-        successfully launching part of operations in India.
+        Mr. Pidatala is a Trustee of the Sri Sathya Sai Grama Seva Trust,
+        Chairman of Sri Sathya Sai Higher Secondary School, Hyderabad, and a
+        Trustee of Thalassemia Support Foundation, India. He is an avid
+        sportsman, a loving husband, and a doting father.
       </p>
     </>
   );
@@ -98,41 +93,13 @@ export const TeamFour = () => {
         Dr. Dunn is one of the initial founding members of the company and
         helped the company understand the healthcare industry and its challenges
         including quality programs across hospital departments in North America.
-        Dr. Dunn is an advisor and mainly focuses on IT software products to
-        help improve patient care and Healthcare Insurance.
       </p>
-      <div>
-        <p>
-          Dr Dunn’s experience and expertise provide MediQlogix with a unique
-          viewpoint and leadership both as a physician and business leader. His
-          focus at MediQLogix includes:
-        </p>
-        <ul className="list-disc ps-5">
-          <li className="text-primary-green">
-            <p className="text-white">
-              Strategic Development of MediQlogix healthcare direction and
-              products
-            </p>
-          </li>
-          <li className="text-primary-green">
-            <p className="text-white">
-              Collaboration and liaison with government and private health
-              quality organizations
-            </p>
-          </li>
-          <li className="text-primary-green">
-            <p className="text-white">
-              Collaboration and liaison with client hospital executives and
-              physician leaders
-            </p>
-          </li>
-          <li className="text-primary-green">
-            <p className="text-white">
-              Support software development and implementation
-            </p>
-          </li>
-        </ul>
-      </div>
+      <p>
+        He brings to MediQLogix more than 35 years of experience as a physician
+        leader and integrated health system executive.Dr Dunn’s experience and
+        expertise provide MediQlogix with a unique viewpoint and leadership both
+        as a physician and business leader.
+      </p>
       <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
         Before working with MediQlogix, Dr Dunn was the National Senior Medical
         Director for VHA Clinical Performance focusing on hospital clinical
@@ -154,6 +121,7 @@ export const TeamFour = () => {
         the system’s entry into an approved CMS demonstration Gain Sharing
         Program.
       </p>
+
       <div>
         <p>
           During his tenure at Meridian, Dr Dunn led the successful effort to
@@ -271,6 +239,87 @@ export const TeamSix = () => {
         pursuits with his wife Shelley and three small children. Mr Deem was an
         avid collegiate rower and has completed four Ironman Triathlons and
         several Adventure races.
+      </p>
+    </>
+  );
+};
+
+export const TeamSeven = () => {
+  return (
+    <>
+      <p>
+        Dr. Preethi Adoni is a medical professional with 20-plus years of
+        experience in clinical anesthesiology practice and hospital
+        administration. She is skilled at driving hospital improvements to
+        achieve high-quality and performance standards which is useful for
+        multiple accreditations and continuous quality improvement.
+      </p>
+      <p>
+        Dr. Preethi Adoni was Deputy Medical Director at Milann Infertility
+        Centres Bangalore and Bhagawan Mahaveer Jain Hospital, Bangalore. She
+        has worked as a medical officer and intensivist at Mallya Hospital,
+        Bangalore. Previously she was a consultant anaesthesiologist at
+        Basaveshwara Medical College Hospital, Chitradurga, and Basappa Memorial
+        Hospital, Mysore.
+      </p>
+    </>
+  );
+};
+
+export const TeamEight = () => {
+  return (
+    <>
+      <p>
+        Mr. Johnson has over 20 years of experience in IT and is a seasoned
+        leader as well as an IT strategist in delivering modern cloud-based
+        digital platforms and solutions for diverse industries such as retail,
+        health care, and insurance. As a Director of Global Integrations at
+        Walgreens, Mr. Johnson was accountable for building the platforms in
+        Azure cloud and business APIs for nationwide solutions of Walgreens
+        digital pharmacy.
+      </p>
+      <p>
+        Mr. Johnson is an expert in driving innovation and optimizing technology
+        solutions for organizational success and customer satisfaction. As a
+        certified TOGAF practitioner, Mr. Johnson has strong expertise in
+        enterprise architecture, data and analytics, integration, and
+        application portfolio management. Mr. Johnson has successfully led and
+        executed several initiatives to enable strategic enterprise IT
+        platforms, modernize legacy systems, establish integration centers of
+        competence, and orchestrate smart cloud adoption.
+      </p>
+    </>
+  );
+};
+
+export const TeamNine = () => {
+  return (
+    <>
+      <p>
+        Mr. Annadanam is an accomplished and integrity-driven professional with
+        over 30 years of experience in the Strategy, Development, and Execution
+        of Technology Solutions to business challenges and technology leadership
+        in a wide range of industry verticals.
+      </p>
+      <p>
+        Mr. Annadanam is experienced in telecommunications, infrastructure,
+        cloud computing, cyber security, fixed and mobile network solutions, and
+        aerospace research and development. He advises C-level executives in
+        transformative technology solutions to address their business goals to
+        customers in healthcare, financial services, hospitality, automotive
+        parts, manufacturing, and it services verticals among others. He held
+        leadership roles in all phases of the telecommunications and cyber
+        security managed services.
+      </p>
+      <p>
+        Mr. Annadanam holds an MBA in Finance & Strategy, an MS in Computer
+        Science, and an ME in Aeronautical Engineering. Mr. Annadanam is on the
+        board of non-profit organizations. In his second term, he serves as a
+        Secretary at the Telugu Fine Arts Society (TFAS). He lives in New Jersey
+        with his family. He is passionate about volunteering, corporate and
+        social responsibility, and giving back to the community in various ways,
+        including supporting various non-governmental organizations, for the
+        upliftment of society.{" "}
       </p>
     </>
   );

@@ -139,7 +139,7 @@ const Header = () => {
                       {link.sublink && <DownArrowIcon />}
                     </div>
                     {link.sublink && (
-                      <div className="bg-[white] rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-[#3c3c3c] py-3 flex-col gap-2 w-[200px]   lg:top-[77px] xl:top-16 absolute z-[999]">
+                      <div className="bg-[white] rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-[#3c3c3c] py-3 flex-col gap-2 w-[200px]   lg:top-[77px] xl:top-[60px] absolute z-[999]">
                         {link.sublink.map((navLinks, index) => {
                           return (
                             <div
