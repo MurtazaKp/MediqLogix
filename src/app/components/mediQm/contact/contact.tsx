@@ -3,7 +3,7 @@ import { FooterLogoIcon } from "../../icons/footerLogo";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col lg:flex-row  justify-center h-full w-full">
+    <div className="flex flex-col lg:flex-row lg:w-10/12 xl:w-full mx-auto  justify-center h-full w-full">
       <div className="bg-primary-green lg:rounded-s-xl  lg:w-3/12 text-white flex flex-col items-center py-11 justify-between">
         <div className=" text-[18.5px] font-bold">
           {" "}

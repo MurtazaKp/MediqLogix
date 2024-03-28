@@ -6,11 +6,11 @@ const CloudMediQm = () => {
     <div className="flex gap-4 sm:gap-7 lg:gap-4 flex-col  text-[14.5px]">
       <p className="  text-[14.5px]">
         Hospitals struggle to gather top-notch data for performance improvement.
-        They report to insurance companies, CMS, and NSQIP. MediQM platform
-        helps in data collection which removes manual dependency and saves time
-        for skilled clinical staff. It electronically captures data in real-time
-        from hospitals’ IT systems which cuts costs and boosts performance
-        instantly.
+        They report to insurance companies, CMS, and NSQIP.{" "}
+        <span className="font-bold">MediQM</span> platform helps in data
+        collection which removes manual dependency and saves time for skilled
+        clinical staff. It electronically captures data in real-time from
+        hospitals’ IT systems which cuts costs and boosts performance instantly.
       </p>
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <div className="lg:w-7/12 bg-white p-5 rounded-lg">

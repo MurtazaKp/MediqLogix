@@ -19,7 +19,7 @@ const TabLayout = ({ children, tabs, heading }: any) => {
       <div className=" mx-auto sm:px-6 xl:px-[139px] px-8 ">
         <div className="w-full pb-1 overflow-x-auto">
           <nav className="flex flex-col lg:flex-row justify-between items-stretch sm:items-center gap-4 py-1">
-            <p className=" text-lg  sm:text-[22.5px]  leading-5 text-primary-blue font-bold">
+            <p className=" text-lg  sm:text-[22.5px]  leading-5 lg:leading-6 text-primary-blue font-bold">
               {heading}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 lg:gap-4">
@@ -31,8 +31,8 @@ const TabLayout = ({ children, tabs, heading }: any) => {
                       pathname === link.href ? "bg-black text-white " : ""
                     } ${
                       pathname.includes("service")
-                        ? "px-2 py-1 leading-4"
-                        : "py-2 px-2"
+                        ? "px-2 py-2 lg:py-1 leading-4"
+                        : "py-2 px-2 "
                     } `}
                   >
                     {link.label}

@@ -24,6 +24,10 @@ const Modal = ({ handleClose }: any) => {
         href: "/service",
       },
       {
+        label: "Data Analytics",
+        href: "data-analytics",
+      },
+      {
         label: "My MediQM",
         href: "/partners",
       },
@@ -42,7 +46,7 @@ const Modal = ({ handleClose }: any) => {
 
       {/* <!-- Modal --> */}
       <div className="relative w-full cursor-pointer pointer-events-none transition my-auto p-4">
-        <div className="w-full  bg-[#111111] cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-3xl lg:rounded-[50px] mx-auto max-w-xl lg:max-w-3xl py-20 pl-10 pr-7 lg:p-24">
+        <div className="w-full  bg-[#111111] cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-3xl lg:rounded-[50px] mx-auto max-w-xl lg:max-w-3xl py-16 pl-10 pr-7 lg:p-24">
           <button
             type="button"
             className="absolute top-8 right-8 rtl:right-auto rtl:left-2"
@@ -64,7 +68,7 @@ const Modal = ({ handleClose }: any) => {
             <span className="sr-only">Close</span>
           </button>
           <div>
-            <h5 className="text-[#adadad] mb-10 ps-3 text-xs lg:text-base">
+            <h5 className="text-[#adadad] mb-8 ps-3 text-xs lg:text-base">
               {ModalData.heading}
             </h5>
             <ul className="flex flex-col gap-6 ">
@@ -91,7 +95,7 @@ const Modal = ({ handleClose }: any) => {
               })}
             </ul>
 
-            <div className="mt-14 2xl:mt-[134px] ps-3 gap-4 flex justify-between">
+            <div className="mt-12 2xl:mt-[134px] ps-3 gap-4 flex justify-between">
               <span className="lg:w-6/12">
                 <p className="text-[#adadad] mb-3">Follow us</p>
                 <div className="flex gap-2 ">
@@ -107,9 +111,9 @@ const Modal = ({ handleClose }: any) => {
                   </a>
                 </div>
               </span>
-              <div className="flex justify-start lg:justify-end items-end">
-                <div className=" w-8/12 lg:6/12">
-                  <FooterLogoIcon />
+              <div className="flex justify-end lg:justify-end items-end">
+                <div className=" w-9/12 lg:6/12 ">
+                  <LogoIcon className="w-full" />
                 </div>
               </div>
             </div>

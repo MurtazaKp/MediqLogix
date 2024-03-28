@@ -7,14 +7,15 @@ const Paragrapgh = () => {
         Welcome to <span className="text-[#4ef721]">MediQlogix</span>
       </h2>
       <p className="sm:text-lg text-sm  ">
-        <span className="text-[#4ef721] leading-body-font"> MediQlogix</span> is
-        a digital solution company providing AI and ML-powered platform to
-        hospitals and healthcare organizations’ ,To enhance their “Global
-        Quality Matrix”. The platform is based on Saas (Software As A Service)
-        or Internal Single Install Systems. The company’s foundation is “to
-        improve healthcare deliveries by reducing quality and safety issues,
-        re-admits and enhance the management structure of the healthcare
-        organization”.
+        <span className="text-[#4ef721] leading-body-font"> MediQlogix </span>
+        is a digital solution company providing AI and ML-powered SaaS platform
+        to hospitals and healthcare organizations to enhance their{" "}
+        <span className="font-bold">Global Quality Matrix</span> by taking
+        advantage of the business benefits of cloud-based solutions. The
+        company’s business vision is to improve healthcare delivery by
+        increasing quality, safety, reducing re-admits and finally transforming
+        the operative room to enhance the healthcare delivery experience to
+        patients at large.
       </p>
     </div>
   );

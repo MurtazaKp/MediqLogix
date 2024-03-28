@@ -27,6 +27,12 @@ const slidesData = [
       "AI-Powered tailored solutions by experts to enhance profitability",
     image: "/images/Consulting.png",
   },
+  {
+    title: "Data ",
+    subtitle: "Analytics",
+    description: "Data analytics for hospitals and healthcare organizations. ",
+    image: "/images/Data.png",
+  },
 ];
 
 const HeroSection = () => {
@@ -54,13 +60,13 @@ const HeroSection = () => {
               <img className="object-cover w-full h-full" src={slide.image} />
               <div className="absolute inset-0 bg-black opacity-70"></div>
             </div>
-            <h1 className="sm:w-8/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-5 lg:text-[50px] lg:leading-primary-heading lg:pt-12 lg:pb-[140px] 2xl:pb-[245px] text-primary-blue ">
+            <h1 className="sm:w-8/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-5 lg:text-4xl xl:text-[50px] lg:leading-primary-heading lg:pt-8  xl:pt-12 lg:pb-[100px] xl:pb-[140px] 2xl:pb-[245px] text-primary-blue ">
               <span className="text-[#4ef721] font-bold">{slide.title}</span>
               <br />
               {slide.subtitle}
             </h1>
             <div>
-              <p className="text-sm sm:text-2xl lg:text-[26px] leading-10  sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-[800px]">
+              <p className="text-sm sm:text-2xl lg:text-[20px] xl:text-[26px] leading-5 lg:leading-10  sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-11/12 xl:w-[700px]">
                 {slide.description}
               </p>
             </div>

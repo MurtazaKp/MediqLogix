@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FooterLogoIcon } from "../icons/footerLogo";
+import { LogoIcon } from "../icons/logo";
 
 const Footer = () => {
   const footerData = {
@@ -13,15 +14,15 @@ const Footer = () => {
             href: "/software/cloud-mediqm",
           },
           {
-            label: "MediQm Mobility",
+            label: "MediQM Mobility",
             href: "/software/mediqm-mobility",
           },
           {
-            label: "MediQm Platform",
+            label: "MediQM Platform",
             href: "/software/mediqm-platform",
           },
           {
-            label: "MediQm Solution",
+            label: "MediQM Solution",
             href: "/software/mediqm-solution",
           },
         ],
@@ -74,8 +75,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className=" relative z-50 bg-primary-black px-10 xl:px-36 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:grid-cols-4">
+      <div className=" relative bg-primary-black px-10 xl:px-36 py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-0 xl:gap-10 lg:grid-cols-4">
           <div className=" lg:col-span-3 lg:w-9/12">
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 ">
               {footerData.footerLinks.map((links, index) => {
@@ -88,9 +89,9 @@ const Footer = () => {
                       {links.links.map((link, index) => {
                         return (
                           <Link
-                            className={`text-white w-max border-[#707070] ${
+                            className={`text-white flex flex-wrap lg:flex-nowrap   ${
                               index !== links.links.length - 1
-                                ? " underline underline-offset-[14px] decoration-[#707070]    pb-1"
+                                ? "border-b sm:border-0 sm:underline sm:underline-offset-[14px] lg:w-max decoration-[#707070]    pb-1"
                                 : ""
                             } `}
                             key={index}
@@ -113,7 +114,7 @@ const Footer = () => {
             <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
             <div className="text-white flex flex-col gap-3 text-sm">
               <Link href={"/"}>
-                <FooterLogoIcon />
+                <LogoIcon className="w-6/12 " />
               </Link>
               <p className="border-b border-[#707070]  p-1">
                 {footerData.address.address}
@@ -132,7 +133,7 @@ const Footer = () => {
               </p>
               {/* <p className="ps-1">Website : {footerData.address.website}</p> */}
             </div>
-            <div className="flex mt-10 gap-2">
+            {/* <div className="flex mt-10 gap-2">
               <a target="_blank" href="https://www.facebook.com/">
                 <img src="/images/Facebook.svg"></img>
               </a>
@@ -142,18 +143,18 @@ const Footer = () => {
               <a target="_blank" href="https://www.youtube.com">
                 <img src="/images/Youtube.svg"></img>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
       <div className="bg-primary-green py-2 px-10 xl:px-36">
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 gap-2 xl:gap-0 ">
-          <div className="lg:col-span-2 flex-wrap justify-center sm:justify-center lg:justify-start items-center flex gap-7">
+          <div className="lg:col-span-2 flex-wrap justify-center sm:justify-center lg:justify-start items-center flex gap-4 sm:gap-7">
             {footerData.copyRight.copyrightLinks.map((link, index) => {
               return (
                 <Link
-                  className={`font-semibold   text-xs text-white ${
-                    index != 2 ? "border-e-2 pe-7 " : ""
+                  className={`font-semibold  text-xs text-white ${
+                    index != 2 ? "border-e-2 pe-4 sm:pe-7  " : ""
                   }`}
                   key={index}
                   href={link.href}

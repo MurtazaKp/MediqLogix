@@ -7,9 +7,10 @@ const HospitalSafety = () => {
         Recently, there has been a thorough examination of the Patient Safety
         Goals. Specifically, the Joint Commission on Accreditation of Healthcare
         Organizations (JCAHO) has modified the National Patient Safety Goals
-        (NPSG). Our AI-powered platform information integration feature will
-        assist hospitals in ongoing enhancement and adherence to NPSGs as a
-        component of the Standards Improvement Initiative (SII).
+        (NPSG) and the National Accreditation Board for Hospitals & Healthcare
+        Providers (NABH).. Our AI-powered Saas platform information integration
+        feature will assist hospitals in ongoing enhancement and adherence to
+        NPSGs as a component of the Standards Improvement Initiative (SII).
       </p>
       <p>
         As per the WHO records, approximately one out of every ten patients

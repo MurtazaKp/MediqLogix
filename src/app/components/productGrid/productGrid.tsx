@@ -11,7 +11,7 @@ const ProductGrid = () => {
         "AI-powered cloud solutions for hospital and healthcare organizations.",
       buttonCta: {
         label: "Know more",
-        href: "/software",
+        href: "/software/cloud-mediqm",
       },
       image: {
         src: "/images/Data.svg",
@@ -25,7 +25,7 @@ const ProductGrid = () => {
         "Providing mobile services to ensure the quality, education, and safety of hospitals",
       buttonCta: {
         label: "Know more",
-        href: "software",
+        href: "software/mediqm-mobility",
       },
       image: {
         src: "/images/Mobility.svg",
@@ -41,7 +41,7 @@ const ProductGrid = () => {
 
       buttonCta: {
         label: "Know more",
-        href: "software",
+        href: "/service/hospital-safety",
       },
       image: {
         src: "/images/Consulting.svg",
@@ -55,7 +55,7 @@ const ProductGrid = () => {
         "Request for Demo please click and provide your basic contact details.",
       buttonCta: {
         label: "Know more",
-        href: "/software",
+        href: "/data-analytics",
       },
       image: {
         src: "/images/cloudSolution.svg",

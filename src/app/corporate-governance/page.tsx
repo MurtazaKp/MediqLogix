@@ -35,9 +35,9 @@ const CorporateGovernancPage = () => {
     tabs: [
       { id: 1, label: "Company Profile", href: "/company-profile" },
       { id: 2, label: "Vision and Mission", href: "/vision-mission" },
-      // { id: 3, label: "Our Team", href: "/about/our-team" },
+      { id: 3, label: "Our Team", href: "/our-team" },
       {
-        id: 3,
+        id: 4,
         label: "Corporate Governance",
         href: "/corporate-governance",
       },

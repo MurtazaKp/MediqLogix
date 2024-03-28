@@ -68,6 +68,27 @@ const Partners = () => {
           X operating system.
         </p>
       </div>
+      <div className=" mb-6">
+        <div className="flex justify-between items-center">
+          <h4 className="text-[18.5px] font-bold leading-5  text-primary-green">
+            Setoo Solutions
+          </h4>
+          <img
+            className=" mix-blend-darken w-[100px] me-10 h-[40px]"
+            src="/images/setoo-logo.jpeg"
+          />
+        </div>
+        <p>
+          Setoo is a niche design-led technology solution company. The company
+          provides technology solutions throughout the product life cycle. The
+          company focuses on advanced AI technological solutions to enhance the
+          websites and applications of its clients as per their needs. Setoo is
+          the development partner for MediQlogix. It has helped MediQlogix in
+          product development and provided various technological solutions to
+          execute them as per the needs of MediQlogix to enhance its digital
+          presence.
+        </p>
+      </div>
     </div>
   );
 };
