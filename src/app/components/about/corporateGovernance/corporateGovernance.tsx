@@ -2,17 +2,7 @@ import React from "react";
 
 const CorporateGovernance = () => {
   return (
-    <div className="flex flex-col gap-10 mt-9 ">
-      <p className="text-[14.5px] leading-5">
-        “Good corporate governance practices instill in companies the essential
-        vision, processes, and structures to make decisions that ensure
-        longer-term sustainability. More than ever, we need companies that can
-        be profitable as well as achieve environmental, social, and economic
-        value for society.”
-        <p className="font-bold">
-          - Rachel Kyte | Vice President, Business Advisory Services, IFC
-        </p>
-      </p>
+    <div className="flex flex-col gap-10  ">
       <div className="flex gap-5 flex-col  text-[14.5px] leading-5">
         <p className="font-bold text-primary-green">
           Governance and Citizenship at MediQlogix

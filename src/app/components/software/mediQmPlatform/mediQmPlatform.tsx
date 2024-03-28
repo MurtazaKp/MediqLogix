@@ -10,10 +10,9 @@ const MediQmPlatform = () => {
       <p className="  text-[14.5px] pb-9 rounded-2xl">
         MediQlogix creates an advanced AI-powered database for hospitals quality
         and safety management. This platform retrieves vital information
-        efficiently to fill in missing data for CMS quality bundles like AMI,
-        CHF, SCIP, and PNA indicators. The MediQlogix platform is available in
-        SaaS and LAN versions which helps hospital staff follow CMS protocols
-        for the best patient care.
+        efficiently to fill in missing data for CMS The MediQlogix platform is
+        available in SaaS and LAN versions which helps hospital staff follow CMS
+        protocols for the best patient care.
       </p>
       <div className="flex flex-col lg:flex-row items-start gap-[30px]">
         <div className="lg:w-6/12 2xl:w-3/12 flex ">

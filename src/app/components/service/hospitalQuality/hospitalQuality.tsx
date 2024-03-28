@@ -43,12 +43,13 @@ const HospitalQuality = () => {
           services.
         </p>
         <p>
-          Our AI-enabled platform helps hospitals follow CMS and JCAHO
-          guidelines. CMSs Hospital Quality Initiative aims to improve patient
-          care, provide quality data to patients, and cut healthcare costs for
-          better profits. We help hospitals improve their Quality Metrics
-          through detailed consulting, leading to better patient care. Our
-          consulting model can be tailored to fit each hospitals unique needs.
+          Our AI-enabled SaaS platform helps hospitals follow CMS and JCAHO
+          guidelines. CMS&#8217;s Hospital Quality Initiative aims to improve
+          patient care, provide quality data to patients, and cut healthcare
+          costs for better profits. We help hospitals improve their Quality
+          Metrics through detailed consulting, leading to better patient care.
+          Our consulting model can be tailored to fit each hospital &#8217;s
+          unique needs.
         </p>
       </div>
       {/* <Blog /> */}

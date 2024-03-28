@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Vision Mission | Mediqlogix",
   description: "Vision Mission ",
   alternates: {
-    canonical: "https://mediqlogix.com/vission-mission",
+    canonical: "https://mediqlogix.com/vision-mission",
   },
   openGraph: {
-    url: "https://mediqlogix.com/vission-mission",
+    url: "https://mediqlogix.com/vision-mission",
     title: "Vision Mission | Mediqlogix",
     description: "Vision Mission",
     images: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/vission-mission",
+    site: "https://mediqlogix.com/vision-mission",
   },
 };
 
