@@ -54,7 +54,7 @@ const HeroSection = () => {
               <img className="object-cover w-full h-full" src={slide.image} />
               <div className="absolute inset-0 bg-black opacity-70"></div>
             </div>
-            <h1 className="sm:w-8/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-5 lg:text-[50px] lg:leading-primary-heading lg:pt-12 lg:pb-[140px] 2xl:pb-[245px] text-primary-blue ">
+            <h1 className="sm:w-8/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-5 lg:text-[50px] lg:leading-primary-heading lg:pt-8  xl:pt-12 lg:pb-[100px] xl:pb-[140px] 2xl:pb-[245px] text-primary-blue ">
               <span className="text-[#4ef721] font-bold">{slide.title}</span>
               <br />
               {slide.subtitle}

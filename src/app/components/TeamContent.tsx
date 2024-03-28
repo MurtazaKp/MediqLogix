@@ -95,10 +95,11 @@ export const TeamFour = () => {
   return (
     <>
       <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
-        Jeff is the Executive Vice President, Chief Medical Officer, and
-        founding partner of MediQLogix. He brings to MediQLogix more than 35
-        years of experience as a physician leader and integrated health system
-        executive.
+        Dr. Dunn is one of the initial founding members of the company and
+        helped the company understand the healthcare industry and its challenges
+        including quality programs across hospital departments in North America.
+        Dr. Dunn is an advisor and mainly focuses on IT software products to
+        help improve patient care and Healthcare Insurance.
       </p>
       <div>
         <p>

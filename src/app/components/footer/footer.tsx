@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FooterLogoIcon } from "../icons/footerLogo";
+import { LogoIcon } from "../icons/logo";
 
 const Footer = () => {
   const footerData = {
@@ -13,15 +14,15 @@ const Footer = () => {
             href: "/software/cloud-mediqm",
           },
           {
-            label: "MediQm Mobility",
+            label: "MediQM Mobility",
             href: "/software/mediqm-mobility",
           },
           {
-            label: "MediQm Platform",
+            label: "MediQM Platform",
             href: "/software/mediqm-platform",
           },
           {
-            label: "MediQm Solution",
+            label: "MediQM Solution",
             href: "/software/mediqm-solution",
           },
         ],
@@ -113,7 +114,7 @@ const Footer = () => {
             <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
             <div className="text-white flex flex-col gap-3 text-sm">
               <Link href={"/"}>
-                <FooterLogoIcon />
+                <LogoIcon className="w-6/12" />
               </Link>
               <p className="border-b border-[#707070]  p-1">
                 {footerData.address.address}
@@ -132,7 +133,7 @@ const Footer = () => {
               </p>
               {/* <p className="ps-1">Website : {footerData.address.website}</p> */}
             </div>
-            <div className="flex mt-10 gap-2">
+            {/* <div className="flex mt-10 gap-2">
               <a target="_blank" href="https://www.facebook.com/">
                 <img src="/images/Facebook.svg"></img>
               </a>
@@ -142,7 +143,7 @@ const Footer = () => {
               <a target="_blank" href="https://www.youtube.com">
                 <img src="/images/Youtube.svg"></img>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

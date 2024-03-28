@@ -4,8 +4,11 @@ import Modal from "./modal";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FooterLogoIcon } from "../icons/footerLogo";
+import { DownArrowIcon } from "../icons/Down";
+import { LogoIcon } from "../icons/logo";
 
 const Header = () => {
+  const [isHovered, setIsHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => {
     setIsOpen(!isOpen);
@@ -32,6 +35,10 @@ const Header = () => {
           {
             label: "Vision and Mission",
             href: "/vision-mission",
+          },
+          {
+            label: "Our Team",
+            href: "/our-team",
           },
           {
             label: "Corporate Governance",
@@ -82,6 +89,10 @@ const Header = () => {
         ],
       },
       {
+        label: "Data Analytics",
+        href: "/data-analytics",
+      },
+      {
         label: "My MediQM",
         href: "/partners",
         sublink: [
@@ -104,28 +115,31 @@ const Header = () => {
       <div className="sticky py-4 xl:py-0 top-0 bg-black text-white z-30">
         <div className="flex justify-between  px-2 sm:px-10 xl:px-[139px] ">
           <Link className="flex items-center w-5/12 sm:w-auto " href={"/"}>
-            <FooterLogoIcon />
+            <LogoIcon />
           </Link>
           <div className=" flex justify-end w-7/12 sm:w-full gap-6 items-center">
-            <div className="hidden xl:flex gap-6 ">
+            <div className="hidden lg:flex lg:gap-4 xl:gap-6 ">
               {NavigationData.navLinks.map((link, index) => {
                 return (
                   <div
-                    className="relative lg:py-5 cursor-pointer group -ml-px"
+                    className="relative lg:py-5 text-sm cursor-pointer group -ml-px"
                     key={index}
                   >
-                    <Link
-                      className={` ${
-                        pathname.includes(link.href)
-                          ? "text-white font-bold"
-                          : "text-[#c6c6c6]"
-                      } hover:text-white  hover:font-bold`}
-                      href={link.href}
-                    >
-                      {link.label}
-                    </Link>
+                    <div className="flex gap-2 items-center">
+                      <Link
+                        className={`text-xs lg:text-sm ${
+                          pathname.includes(link.href)
+                            ? "text-white font-bold"
+                            : "text-[#c6c6c6]"
+                        } hover:text-white  hover:font-bold`}
+                        href={link.href}
+                      >
+                        {link.label}
+                      </Link>
+                      {link.sublink && <DownArrowIcon />}
+                    </div>
                     {link.sublink && (
-                      <div className="bg-[white] rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-[#3c3c3c] py-3 flex-col gap-2 w-[200px]   top-16 absolute z-[999]">
+                      <div className="bg-[white] rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-[#3c3c3c] py-3 flex-col gap-2 w-[200px]   lg:top-[77px] xl:top-16 absolute z-[999]">
                         {link.sublink.map((navLinks, index) => {
                           return (
                             <div
@@ -134,7 +148,10 @@ const Header = () => {
                               }`}
                               key={index}
                             >
-                              <Link className="text-sm" href={navLinks.href}>
+                              <Link
+                                className="lg:text-xs xl:text-sm"
+                                href={navLinks.href}
+                              >
                                 {navLinks.label}
                               </Link>
                             </div>
@@ -153,7 +170,7 @@ const Header = () => {
             >
               Get in touch
             </Link>
-            <button onClick={handleOpen} className="block xl:hidden">
+            <button onClick={handleOpen} className="block lg:hidden">
               <img src="/images/Menu.svg" />
             </button>
           </div>
