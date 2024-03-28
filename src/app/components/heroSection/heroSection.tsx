@@ -27,6 +27,12 @@ const slidesData = [
       "AI-Powered tailored solutions by experts to enhance profitability",
     image: "/images/Consulting.png",
   },
+  {
+    title: "Data ",
+    subtitle: "Analytics",
+    description: "Data analytics for hospitals and healthcare organizations. ",
+    image: "/images/Data.png",
+  },
 ];
 
 const HeroSection = () => {
@@ -60,7 +66,7 @@ const HeroSection = () => {
               {slide.subtitle}
             </h1>
             <div>
-              <p className="text-sm sm:text-2xl lg:text-[20px] xl:text-[26px] leading-5 lg:leading-10  sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-11/12 xl:w-[800px]">
+              <p className="text-sm sm:text-2xl lg:text-[20px] xl:text-[26px] leading-5 lg:leading-10  sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-11/12 xl:w-[700px]">
                 {slide.description}
               </p>
             </div>

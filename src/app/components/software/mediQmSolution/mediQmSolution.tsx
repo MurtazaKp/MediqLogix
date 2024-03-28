@@ -83,8 +83,8 @@ const MediQmSolution = () => {
         MediQM’s AI-enabled SaaS platform gives healthcare organizations access
         to clinical quality management data. MediQlogix SaaS platform integrates
         data from various sources securely and keeps it united. It offers
-        personalized reports for JCAHO and NSQUIP. Additionally, it creates
-        specialized reports using advanced AI-based software.
+        personalized reports for JCAHO and NSQUIP and NABH. Additionally, it
+        creates specialized reports using advanced AI-based software.
       </p>
     </div>
   );

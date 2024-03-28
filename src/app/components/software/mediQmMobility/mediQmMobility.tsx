@@ -15,12 +15,12 @@ const MediQmMobility = () => {
             </h3>
             <span className="flex flex-col gap-4">
               <p>
-                MediQlogix offers its star product{" "}
-                <span className="font-bold">MediQM</span> platform to ensure the
-                experience of mobility for its users. The AI-powered platform
-                helps our clients easily access crucial information in an
-                organized form to ensure quality management, data analytics, and
-                specific reporting.
+                <span className="font-bold">MediQlogix</span> offers its star
+                product <span className="font-bold">MediQM</span> platform to
+                ensure the experience of mobility for its users. The AI-powered
+                platform helps our clients easily access crucial information in
+                an organized form to ensure quality management, data analytics,
+                and specific reporting.
               </p>
               <p>
                 The AI-powered platform focuses on ensuring that secure

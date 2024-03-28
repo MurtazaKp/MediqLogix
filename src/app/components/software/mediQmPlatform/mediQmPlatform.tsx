@@ -38,8 +38,9 @@ const MediQmPlatform = () => {
               and Oracle. It provides healthcare organizations access to
               clinical quality management data. MediQlogix SaaS platform
               integrates data from various sources securely and keeps it united.
-              It offers personalized reports for JCAHO and NSQIP. Additionally,
-              it creates specialized reports using advanced AI-based software.
+              It offers personalized reports for JCAHO and NSQIP and NABH.
+              Additionally, it creates specialized reports using advanced
+              AI-based software.
             </p>
           </span>
           <Link

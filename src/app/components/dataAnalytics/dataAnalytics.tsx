@@ -13,13 +13,13 @@ const DataAnalytics = () => {
         </div>
         <div className="flex flex-col gap-8  text-[14.5px] leading-5 pt-[30px]">
           <p className="  text-[14.5px]">
-            MediQlogix’s SaaS-based platform provides data collection and
-            analytics features for hospitals and healthcare organizations. The
-            data is collected for patients, operating rooms, operational
-            procedures of hospitals, patient illness, patient readmissions,
-            preventive care, etc. Data for doctors, nurses, and other hospital
-            staff is collected related to their scope of work, functionalities,
-            etc.
+            <span className="font-bold"> MediQlogix’s</span> SaaS-based platform
+            provides data collection and analytics features for hospitals and
+            healthcare organizations. The data is collected for patients,
+            operating rooms, operational procedures of hospitals, patient
+            illness, patient readmissions, preventive care, etc. Data for
+            doctors, nurses, and other hospital staff is collected related to
+            their scope of work, functionalities, etc.
           </p>
           <p className="  text-[14.5px] leading-5">
             Data analytics plays an important role for any hospital and
