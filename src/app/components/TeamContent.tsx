@@ -64,10 +64,10 @@ export const TeamThree = () => {
         Gopi Krishna Pidatala is the Group CEO of Vista Health Care and CSO of
         Maxwell EMR Research Centre Pvt Ltd. Mr. Pidatala has 30 years of
         experience in Strategy Operations, Infrastructure Development, Business
-        Development and Procurement, and Supply Chain Management. He has
+        development and procurement, and supply chain management. He has
         provided operational support for organizations including The National
         Dairy Development Board and the AP Netherlands Biotech Program under the
-        Ministry of Foreign Affairs.
+        ministry of foreign affairs.
       </p>
       <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
         Mr. Pidatala holds an MBA degree in Strategy, Operations, and Human
@@ -181,7 +181,7 @@ export const TeamFive = () => {
   return (
     <>
       <p>
-        Kathy is a Registered Nurse and seasoned healthcare and business leader
+        Kathy is a registered nurse and seasoned healthcare and business leader
         with more than 25 years of experience. Kathy is a relationship builder
         who maintains alliances with medical companies, healthcare
         organizations, and national expert subject matter experts to keep
@@ -255,12 +255,12 @@ export const TeamSeven = () => {
         multiple accreditations and continuous quality improvement.
       </p>
       <p>
-        Dr. Preethi Adoni was Deputy Medical Director at Milann Infertility
+        Dr. Preethi Adoni was deputy medical director at Milann Infertility
         Centres Bangalore and Bhagawan Mahaveer Jain Hospital, Bangalore. She
-        has worked as a medical officer and intensivist at Mallya Hospital,
+        has worked as a medical officer and intensivist at Mallya hospital,
         Bangalore. Previously she was a consultant anaesthesiologist at
-        Basaveshwara Medical College Hospital, Chitradurga, and Basappa Memorial
-        Hospital, Mysore.
+        Basaveshwara Medical college hospital, Chitradurga, and Basappa Memorial
+        hospital, Mysore.
       </p>
     </>
   );
@@ -273,7 +273,7 @@ export const TeamEight = () => {
         Mr. Johnson has over 20 years of experience in IT and is a seasoned
         leader as well as an IT strategist in delivering modern cloud-based
         digital platforms and solutions for diverse industries such as retail,
-        health care, and insurance. As a Director of Global Integrations at
+        health care, and insurance. As a Director of global integrations at
         Walgreens, Mr. Johnson was accountable for building the platforms in
         Azure cloud and business APIs for nationwide solutions of Walgreens
         digital pharmacy.
@@ -297,8 +297,8 @@ export const TeamNine = () => {
     <>
       <p>
         Mr. Annadanam is an accomplished and integrity-driven professional with
-        over 30 years of experience in the Strategy, Development, and Execution
-        of Technology Solutions to business challenges and technology leadership
+        over 30 years of experience in the strategy, development, and execution
+        of technology solutions to business challenges and technology leadership
         in a wide range of industry verticals.
       </p>
       <p>
@@ -312,10 +312,10 @@ export const TeamNine = () => {
         security managed services.
       </p>
       <p>
-        Mr. Annadanam holds an MBA in Finance & Strategy, an MS in Computer
-        Science, and an ME in Aeronautical Engineering. Mr. Annadanam is on the
+        Mr. Annadanam holds an MBA in finance & strategy, an MS in computer
+        science, and an ME in aeronautical engineering. Mr. Annadanam is on the
         board of non-profit organizations. In his second term, he serves as a
-        Secretary at the Telugu Fine Arts Society (TFAS). He lives in New Jersey
+        secretary at the Telugu Fine Arts Society (TFAS). He lives in New Jersey
         with his family. He is passionate about volunteering, corporate and
         social responsibility, and giving back to the community in various ways,
         including supporting various non-governmental organizations, for the
