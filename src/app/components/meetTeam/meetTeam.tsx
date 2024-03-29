@@ -17,7 +17,7 @@ import {
 const teamMembers = [
   {
     name: "Naveen Pola",
-    role: "Ms Managing Director",
+    role: "Mr Managing Director",
     imageSrc: "/images/Male.svg",
     teamDetail: TeamOne,
   },
