@@ -35,6 +35,7 @@ const PartnersPage = () => {
     tabs: [
       { id: 1, label: "Partners", href: "/partners" },
       { id: 2, label: "Contact", href: "/contact" },
+      { id: 2, label: "Careers", href: "/careers" },
     ],
   };
   return (

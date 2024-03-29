@@ -105,6 +105,10 @@ const Header = () => {
             label: "Partners",
             href: "/partners",
           },
+          {
+            label: "Careers",
+            href: "/careers",
+          },
         ],
       },
     ],
@@ -118,20 +122,20 @@ const Header = () => {
             <LogoIcon />
           </Link>
           <div className=" flex justify-end w-7/12 sm:w-full gap-6 items-center">
-            <div className="hidden lg:flex lg:gap-4 xl:gap-6 ">
+            <div className="hidden lg:flex lg:gap-3 xl:gap-5 ">
               {NavigationData.navLinks.map((link, index) => {
                 return (
                   <div
-                    className="relative lg:py-5 text-sm cursor-pointer group -ml-px"
+                    className="relative lg:py-5 text-sm cursor-pointer group "
                     key={index}
                   >
                     <div className="flex gap-2 items-center">
                       <Link
-                        className={`text-xs lg:text-sm xl:text-base ${
+                        className={`text-xs lg:text-sm xl:text-base font-medium ${
                           pathname.includes(link.href)
                             ? "text-white font-bold"
                             : "text-[#c6c6c6]"
-                        } hover:text-white  hover:font-bold`}
+                        } hover:text-white  `}
                         href={link.href}
                       >
                         {link.label}
@@ -139,7 +143,7 @@ const Header = () => {
                       {link.sublink && <DownArrowIcon />}
                     </div>
                     {link.sublink && (
-                      <div className="bg-[white] rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-[#3c3c3c] py-3 flex-col gap-2 w-[200px]   lg:top-[77px] xl:top-[60px] absolute z-[999]">
+                      <div className="bg-[white] rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-[#3c3c3c] py-3 flex-col gap-2 w-[200px]   lg:top-[77px] xl:top-[64px] absolute z-[999]">
                         {link.sublink.map((navLinks, index) => {
                           return (
                             <div

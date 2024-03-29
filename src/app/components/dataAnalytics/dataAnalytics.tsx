@@ -36,7 +36,9 @@ const DataAnalytics = () => {
             healthcare organizations as well as generate specialized reports for
             insurance companies and regulatory authorities like the Joint
             Commission on Accreditation of Healthcare Organizations (JCAHO) and
-            the National Surgical Quality Improvement Program (NSQIP).
+            the National Surgical Quality Improvement Program (NSQIP) and the
+            National Accreditation Board for Hospitals & Healthcare Providers
+            (NABH).
           </p>
         </div>
 

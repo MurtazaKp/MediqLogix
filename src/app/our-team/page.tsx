@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 const OurTeamPage = () => {
   const tabs = {
-    heading: "About Us",
+    heading: "Our Team",
     tabs: [
       { id: 1, label: "Company Profile", href: "/company-profile" },
       { id: 2, label: "Vision and Mission", href: "/vision-mission" },

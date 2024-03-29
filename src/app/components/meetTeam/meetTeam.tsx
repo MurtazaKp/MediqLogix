@@ -16,60 +16,71 @@ import {
 
 const teamMembers = [
   {
-    name: "Naveen Pola",
-    role: "Mr Managing Director",
+    name: "Naveen Pola, ",
+    degree: "M.S.",
+    role: "Managing Director",
     imageSrc: "/images/Male.svg",
     teamDetail: TeamOne,
   },
   {
-    name: "Larry Deem MBA,",
-    role: "Vice President - Sales",
-    imageSrc: "/images/Male.svg",
-    teamDetail: TeamSix,
-  },
-  {
-    name: "Jeffrey Dunn, MD MBA FACS",
-    role: "Executive Vice Presidnent - Healthcare Business",
+    name: "Jeffrey Dunn, ",
+    degree: " M.D, MBA, F.A.C.S",
+    role: "Executive Vice President - Healthcare Business",
     imageSrc: "/images/Male.svg",
     teamDetail: TeamFour,
   },
   {
-    name: "Kathy Irvin, RN, BS",
+    name: "Somesh Saxena",
+    degree: "",
+    role: " Vice President – Product Development",
+    imageSrc: "/images/Male.svg",
+    teamDetail: TeamTwo,
+  },
+
+  {
+    name: "Kathy Irvin, ",
+    degree: "R.N, B.S.",
     role: " Vice President – Clinical Management",
     imageSrc: "/images/Female.svg",
     teamDetail: TeamFive,
   },
   {
-    name: "Gopi Krishna Pidatala",
-    role: "Healthcare Industry Advisor",
-    imageSrc: "/images/Male.svg",
-    teamDetail: TeamThree,
-  },
-  {
-    name: "Dr. Preethi Adoni",
-    role: "DA  M.B.B.S, Healthcare Advisor",
-    imageSrc: "/images/Female.svg",
-    teamDetail: TeamSeven,
-  },
-  {
     name: "Samual Johnson",
+    degree: "",
     role: "Chief Architect – Cloud Infrastructure ",
     imageSrc: "/images/Male.svg",
     teamDetail: TeamEight,
   },
   {
+    name: "Gopi Krishna Pidatala",
+    degree: "",
+    role: "Healthcare Industry Advisor",
+    imageSrc: "/images/Male.svg",
+    teamDetail: TeamThree,
+  },
+  {
+    name: "Dr. Preethi Adoni, ",
+    degree: "D.A, M.B.B.S",
+    role: "Healthcare Advisor",
+    imageSrc: "/images/Female.svg",
+    teamDetail: TeamSeven,
+  },
+
+  {
     name: "Ravi Krishna Annadanam",
+    degree: "",
     role: " Business Strategy Advisor – Cloud Cyber Security ",
     imageSrc: "/images/Male.svg",
     teamDetail: TeamNine,
   },
 
-  // {
-  //   name: "Somesh Saxena",
-  //   role: " Vice President – Product Development",
-  //   imageSrc: "/images/Male.svg",
-  //   teamDetail: TeamTwo,
-  // },
+  {
+    name: "Larry Deem, ",
+    degree: "MBA",
+    role: "Vice President - Sales",
+    imageSrc: "/images/Male.svg",
+    teamDetail: TeamSix,
+  },
 ];
 
 const MeetTeam = () => {
@@ -107,7 +118,12 @@ const MeetTeam = () => {
             />
             <div className="text-white absolute w-full py-2 h-20 px-4  bg-secondary-black group-hover:bg-primary-green transition duration-500">
               <h3 className=" HelveticaNeue-Regular lg:text-sm xl:text-base">
-                {member.name}
+                {member.name}{" "}
+                {member.degree && (
+                  <span className="text-[0.625rem] text-[#cccccc]">
+                    ( {member.degree} )
+                  </span>
+                )}
               </h3>
               <p className="text-xs HelveticaNeue-Regular">{member.role}</p>
             </div>

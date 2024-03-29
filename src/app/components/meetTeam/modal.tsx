@@ -105,7 +105,12 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
             <div className="text-white lg:w-8/12">
               <div className="pb-5">
                 <h3 className="text-primary-green text-[18.5px]  HelveticaNeue-Regular">
-                  {teamDetail?.name}
+                  {teamDetail?.name}{" "}
+                  {teamDetail.degree && (
+                    <span className="text-[0.625rem] text-[#cccccc]">
+                      ( {teamDetail?.degree} )
+                    </span>
+                  )}
                 </h3>
                 <p className="text-[14.5px]">{teamDetail?.role}</p>
               </div>

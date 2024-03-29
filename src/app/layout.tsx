@@ -7,38 +7,40 @@ import { GoogleAnalyticsTracking } from "./components/googleAnalytics.tsx/google
 
 import { Suspense } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  image: "https://www.example.com/example_image.jpg",
-  url: "https://www.example.com",
-  sameAs: [
-    "https://example.net/profile/example1234",
-    "https://example.org/example1234",
-  ],
-  logo: "https://www.example.com/images/logo.png",
-  name: "Example Corporation",
-  description:
-    "The example corporation is well-known for producing high-quality widgets",
-  email: "contact@example.com",
-  telephone: "+47-99-999-9999",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Rue Improbable 99",
-    addressLocality: "Paris",
-    addressCountry: "FR",
-    addressRegion: "Ile-de-France",
-    postalCode: "75001",
+// const schemaData = {
+//   "@context": "https://schema.org",
+//   "@type": "Organization",
+//   image: "https://www.example.com/example_image.jpg",
+//   url: "https://www.example.com",
+//   sameAs: [
+//     "https://example.net/profile/example1234",
+//     "https://example.org/example1234",
+//   ],
+//   logo: "https://www.example.com/images/logo.png",
+//   name: "Example Corporation",
+//   description:
+//     "The example corporation is well-known for producing high-quality widgets",
+//   email: "contact@example.com",
+//   telephone: "+47-99-999-9999",
+//   address: {
+//     "@type": "PostalAddress",
+//     streetAddress: "Rue Improbable 99",
+//     addressLocality: "Paris",
+//     addressCountry: "FR",
+//     addressRegion: "Ile-de-France",
+//     postalCode: "75001",
+//   },
+//   vatID: "FR12345678901",
+//   iso6523Code: "0199:724500PMK2A2M1SQQ228",
+// };
+export const metadata: Metadata = {
+  icons: {
+    icon: "/images/Favicon.svg",
   },
-  vatID: "FR12345678901",
-  iso6523Code: "0199:724500PMK2A2M1SQQ228",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -46,13 +48,61 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "image": "https://www.example.com/example_image.jpg",
+      "url": "https://www.example.com",
+      "sameAs": ["https://example.net/profile/example1234", "https://example.org/example1234"],
+      "logo": "https://www.example.com/images/logo.png",
+      "name": "Example Corporation",
+      "description": "The example corporation is well-known for producing high-quality widgets",
+      "email": "contact@example.com",
+      "telephone": "+47-99-999-9999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue Improbable 99",
+        "addressLocality": "Paris",
+        "addressCountry": "FR",
+        "addressRegion": "Ile-de-France",
+        "postalCode": "75001"
+      },
+      "vatID": "FR12345678901",
+      "iso6523Code": "0199:724500PMK2A2M1SQQ228"
+    }`,
+          }}
+        ></script>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: ` {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.example.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://query.example.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }`,
+          }}
+        ></script>
+      </head>
+      {/* <Head>
         <script
           id="my-seo"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         ></script>
-      </Head>
+      </Head> */}
 
       <body className={inter.className}>
         <GoogleAnalytics gaId="G-1QQFW51GEL" />

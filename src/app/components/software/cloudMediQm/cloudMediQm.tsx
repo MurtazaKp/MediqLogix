@@ -48,11 +48,11 @@ const CloudMediQm = () => {
         The automatic data extraction module from{" "}
         <span className="font-bold"> MediQM </span>can improve your bottom line
         by taking the place of full-time employees who are currently gathering
-        high-quality data thereby boosting hospital productivity.{" "}
-        <span className="font-bold">MediQM </span>will have the extra features
-        in the program to expand its workflow and business process management
-        skills, which can benefit the hospitals other business divisions
-        (financial reconciliation, supply chain management, and care
+        high-quality data thereby boosting hospital productivity. MediQM also
+        enhances the operating room performance. MediQM will have the extra
+        features in the program to expand its workflow and business process
+        management skills, which can benefit the hospitals other business
+        divisions (financial reconciliation, supply chain management, and care
         management). Each hospital client will greatly gain financially from
         this, as staff and costly nursing resources are reallocated to
         patient-centered activities that offer value.

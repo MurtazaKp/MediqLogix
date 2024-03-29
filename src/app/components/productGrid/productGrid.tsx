@@ -51,8 +51,7 @@ const ProductGrid = () => {
       icon: "cloudSolution",
       label: "Data Analytics",
       activeLink: "MediQM Solution",
-      paragrapgh:
-        "Request for Demo please click and provide your basic contact details.",
+      paragrapgh: "Data analytics for hospitals and healthcare organizations. ",
       buttonCta: {
         label: "Know more",
         href: "/data-analytics",

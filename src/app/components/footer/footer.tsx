@@ -49,8 +49,8 @@ const Footer = () => {
       heading: "ADDRESS",
       logo: "/images/logo.svg",
       email: "info@Mediqlogix.com",
-      address: "  15, Downing Town, Pa 12345 USA",
-      phone: "Phone : +1 123 456 7891",
+      address: "1st Floor,Plot #11,Shilpi Valley,Madhapur Hyderabad India",
+      phone: "Phone : +91 8008552566",
       website: "http://www.mediqlogix.com",
     },
     copyRight: {
