@@ -324,3 +324,97 @@ export const TeamNine = () => {
     </>
   );
 };
+
+export const TeamTen = () => {
+  return (
+    <>
+      <p>
+        Chief Architect and Technology Manager with expertise in solution
+        architecture, software development, business analysis, strategic
+        planning, and project life cycle management with emerging technologies.
+        Unite strong business insight with the ability to stimulate growth of
+        both start-up and established organizations.{" "}
+      </p>
+      <p>
+        Mr. Prasad was the lead architect with Amazon robotics and member of the
+        initial core group responsible for designing and developing the
+        automation with robots and machine learning.
+      </p>
+      <p>
+        Over 20 years of hands-on experience in product architecture,
+        development, strategy and team building. Extensive experience in
+        healthcare, telecom and finance domains with client mindset in the areas
+        of microservices, network security, distributed systems, infrastructure,
+        high availability & clustering, migration, data modeling, database
+        design and wireless networks. Vast experience with multiple flavors of
+        UNIX/Linux, Windows and J2EE/C++, Python, XML, SOA and design patterns.
+        Well exposed to Cloud computing, AI/ML and SAFe agile methodologies.
+      </p>
+    </>
+  );
+};
+
+export const TeamEleven = () => {
+  return (
+    <>
+      <p>
+        Nagi has held multiple leadership roles in professional services,
+        consulting, business development and alliance management. He has a
+        proven track record to incubating and scaling businesses.stimulate
+        growth of both start-up and established organizations.{" "}
+      </p>
+      <p>
+        Nagi’s experience includes stints in Digital Equipment Corporation, Tech
+        Mahindra (formerly Satyam), NTT (formerly Datacraft and Dimension Data)
+        and NTT Security. In his last role at NTT, Nagi was responsible for a
+        USD340M business across APAC.
+      </p>
+      <p>
+        Nagi is active in mentoring and advising start-ups since 2017. He is
+        currently engaged in advising an edtech startup and a post Series B Omni
+        Channel retail SaaS company focused on Order and Warehouse management.
+        He is an active mentor at T-Hub, Hyderabad (an incubator with over 600
+        startups) in areas of Strategy & Execution, MVP, GTM, sales growth &
+        governance and alliances. Nagi also assists in the selection of
+        executive talent for companies. Among the companies Nagi has mentored in
+        the recent past includes a cyber-security startup focused of Dev Sec Ops
+        . He has also helped in the setting up of an Indo Japan NGO.
+      </p>
+      <p>
+        Nagi is a permanent resident of Singapore and spends his time between
+        India and Singapore. An electronics engineer by qualification, Nagi is
+        an IEEE member for over 20+ years.
+      </p>
+    </>
+  );
+};
+
+export const TeamThirteen = () => {
+  return (
+    <>
+      <p>
+        Rama Velpuri has over 30 years of managerial and technical experience in
+        the IT industry and currently a Strategic Advisory to multiple startup
+        companies. Prior to that, Velpuri was a Vice President at Oracle
+        Corporation, leading the global HCM Product Development team of 160
+        engineers. Before that, Velpuri was the Global Head of Engineering at
+        Bravura Solutions Limited, a Wealth Management company.
+      </p>
+      <p>
+        As an Executive Director and expat at Oracle Corporation, Velpuri was
+        instrumental in establishing the Oracle India Product Engineering Center
+        in Bangalore and the Oracle Application Development Center (OADC) in
+        Cyber Towers, Hyderabad, India. He defined the business plan of OADC
+        with a footprint of 3000 engineers. Today, the teams in Bangalore and
+        Hyderabad are over 20,000.
+      </p>
+
+      <p>
+        Velpuri is acknowledged as a premier Oracle expert and author of seminal
+        publications on Oracle technology. His books have been translated into
+        several languages including German, Italian, Spanish, Korean, Dutch,
+        Japanese and Mandarin.
+      </p>
+    </>
+  );
+};

@@ -4,12 +4,15 @@ import React, { useState } from "react";
 import Modal from "./modal";
 import {
   TeamEight,
+  TeamEleven,
   TeamFive,
   TeamFour,
   TeamNine,
   TeamOne,
   TeamSeven,
   TeamSix,
+  TeamTen,
+  TeamThirteen,
   TeamThree,
   TeamTwo,
 } from "../TeamContent";
@@ -52,6 +55,13 @@ const teamMembers = [
     teamDetail: TeamEight,
   },
   {
+    name: "Prasad.J ",
+    degree: "",
+    role: "Chief Architect – Artificial Intelligence and Robotics",
+    imageSrc: "/images/Prasad.png",
+    teamDetail: TeamTen,
+  },
+  {
     name: "Gopi Krishna Pidatala",
     degree: "",
     role: "Healthcare Industry Advisor",
@@ -74,6 +84,20 @@ const teamMembers = [
     teamDetail: TeamNine,
   },
 
+  {
+    name: "Nagin. Kasinadhuni ",
+    degree: "",
+    role: "Strategic Advisor – Startups",
+    imageSrc: "/images/Nagin.png",
+    teamDetail: TeamEleven,
+  },
+  {
+    name: "Rama Velpuri, ",
+    degree: "",
+    role: "Strategic Advisor – Startups",
+    imageSrc: "/images/Rama.png",
+    teamDetail: TeamThirteen,
+  },
   {
     name: "Larry Deem, ",
     degree: "MBA",
@@ -102,12 +126,12 @@ const MeetTeam = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5  gap-4">
         {teamMembers.map((member, index) => (
           <div
             onClick={() => handleTeamMember(member)}
             key={index}
-            className="rounded-xl cursor-pointer group border border-gray-400 grayscale mx-auto hover:grayscale-0 transition duration-300 relative overflow-y-hidden flex justify-center items-end  w-full h-[250px] 2xl:w-[350px]"
+            className="rounded-xl cursor-pointer group border border-gray-400 grayscale mx-auto hover:grayscale-0 transition duration-300 relative overflow-y-hidden flex justify-center items-end  w-full h-[250px] "
           >
             <img
               width={100}
@@ -119,7 +143,7 @@ const MeetTeam = () => {
               alt=""
             />
             <div className="text-white absolute w-full py-2 h-[70px] 2xl:h-16 px-4  bg-secondary-black group-hover:bg-primary-green transition duration-500">
-              <h3 className=" HelveticaNeue-Regular lg:text-sm xl:text-base">
+              <h3 className=" HelveticaNeue-Regular sm:text-sm lg:text-sm xl:text-base">
                 {member.name}{" "}
                 {member.degree && (
                   <span className="text-[0.625rem] text-[#cccccc]">

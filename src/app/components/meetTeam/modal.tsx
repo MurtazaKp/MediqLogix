@@ -116,7 +116,7 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
               </div>
               <div
                 id="meetTeam"
-                className="h-[407px] flex flex-col gap-5 overflow-y-scroll pe-10 HelveticaNeue-Regular"
+                className="h-[407px] flex flex-col gap-5 overflow-y-scroll pe-10 HelveticaNeue-Regular HelveticaNeue-Regular text-[14.5px] leading-5"
                 // dangerouslySetInnerHTML={{ __html: teamDetail?.teamDetail }}
               >
                 <teamDetail.teamDetail />
