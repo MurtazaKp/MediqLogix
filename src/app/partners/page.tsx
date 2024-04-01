@@ -5,19 +5,22 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Partners | Mediqlogix",
-  description: "Partners page ",
+  description: "Discover our valued partners: Collaborating to advance healthcare with innovative solutions and unparalleled expertise",
   alternates: {
     canonical: "https://mediqlogix.com/partners",
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/partners",
     title: "Partners | Mediqlogix",
-    description: "Partners",
+    description: "Discover our valued partners: Collaborating to advance healthcare with innovative solutions and unparalleled expertise",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Partners page Thumbnail",
+      alt: "Mediqlogix Partners",
       type: "image/png",
     },
     siteName: "MediQlogix",
@@ -26,6 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: "/images/seoImage.png",
     site: "https://mediqlogix.com/partners",
+    description: "Discover our valued partners: Collaborating to advance healthcare with innovative solutions and unparalleled expertise"
   },
 };
 

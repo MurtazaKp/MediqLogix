@@ -21,7 +21,7 @@ const Modal = ({ handleClose }: any) => {
       },
       {
         label: "Services",
-        href: "/service",
+        href: "/services",
       },
       {
         label: "Data Analytics",

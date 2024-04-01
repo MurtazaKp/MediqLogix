@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { FooterLogoIcon } from "../../icons/footerLogo";
+import Image from "next/image";
 
 const Contact = () => {
   const [loading, setLoading] = useState(true);
@@ -16,13 +17,13 @@ const Contact = () => {
           <p>With Us!</p>
         </div>
         <div>
-          <img src="/images/Email.svg"></img>
+          <Image src="/images/Email.svg" alt="Email" width={120} height={40} />
         </div>
         <div>
           <FooterLogoIcon />
         </div>
       </div>
-      <div className="bg-white rounded-e-xl lg:w-9/12 pt-9 h-full  sm:px-8 pb-11 ">
+      <div className="bg-white rounded-e-xl lg:w-9/12 pt-9 h-full sm:px-8 pb-11 ">
         {/* <h3 className="text-[18.5px]  font-bold mb-6 text-primary-green">
           Contact
         </h3> */}

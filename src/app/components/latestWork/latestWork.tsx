@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Brochure from "../brochure/brochure";
+import Image from "next/image";
 
 const LatestWork = () => {
   var settings = {
@@ -66,10 +67,13 @@ const LatestWork = () => {
                 key={index}
               >
                 <div className="rounded-t-xl relative  overflow-hidden shadow-lg">
-                  <img
+                  <Image
                     className="w-full h-28 object-cover "
                     src={blog.image.src}
                     alt="Sunset in the mountains"
+                    width="0"
+                    height="0"
+                    sizes="100vw"
                   />
                 </div>
                 <div className="flex-grow p-4">

@@ -1,16 +1,21 @@
+import Image from "next/image";
 import React from "react";
 
 const Partners = () => {
   return (
     <div className=" ">
       <div className=" mb-6">
-        <div className="flex justify-between items-center ">
-          <h4 className="text-[18.5px] font-bold leading-5    text-primary-green">
+        <div className="flex justify-between items-center">
+          <h4 className="text-[18.5px] font-bold leading-5 text-primary-green">
             Microsoft
           </h4>
-          <img
+          <Image
             className=" mix-blend-darken w-[184px] h-[39px]"
             src="/images/Microsoft.svg"
+            alt="Microsoft"
+            width="0"
+            height="0"
+            sizes="100vw"
           />
         </div>
         <p>
@@ -30,9 +35,13 @@ const Partners = () => {
           <h4 className="text-[18.5px] font-bold leading-5   text-primary-green">
             Oracle
           </h4>
-          <img
+          <Image
             className=" mix-blend-darken w-[184px] h-[39px]"
             src="/images/Oracle.svg"
+            alt="Oracle"
+            width="0"
+            height="0"
+            sizes="100vw"
           />
         </div>
 
@@ -49,14 +58,18 @@ const Partners = () => {
         </p>
       </div>
 
-      <div className=" mb-6">
+      <div className="mb-6">
         <div className="flex justify-between items-center">
-          <h4 className="text-[18.5px] font-bold leading-5  text-primary-green">
+          <h4 className="text-[18.5px] font-bold leading-5 text-primary-green">
             Apple
           </h4>
-          <img
+          <Image
             className=" mix-blend-darken w-[184px] h-[39px]"
             src="/images/Apple.svg"
+            alt="Apple"
+            width="0"
+            height="0"
+            sizes="100vw"
           />
         </div>
         <p>
@@ -73,9 +86,13 @@ const Partners = () => {
           <h4 className="text-[18.5px] font-bold leading-5  text-primary-green">
             Setoo Solutions
           </h4>
-          <img
+          <Image
             className=" mix-blend-darken w-[100px] me-10 h-[40px]"
             src="/images/setoo-logo.jpeg"
+            alt="Setoo Solutions"
+            width="0"
+            height="0"
+            sizes="100vw"
           />
         </div>
         <p>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -49,10 +50,13 @@ const Blog = () => {
         return (
           <div className="bg-white rounded-xl  flex flex-col" key={index}>
             <div className="rounded-t-xl relative  overflow-hidden shadow-lg">
-              <img
+              <Image
                 className="w-full h-52 object-cover "
                 src={blog.image.src}
                 alt="Sunset in the mountains"
+                width="0"
+                height="0"
+                sizes="100vw"
               />
               <div className="w-full h-full absolute inset-0 z-40 bg-black opacity-50"></div>
               <p className="absolute z-50 top-3 left-5 text-white font-bold">

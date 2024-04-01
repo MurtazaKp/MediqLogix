@@ -7,6 +7,7 @@ import {
   TeamThree,
   TeamTwo,
 } from "../TeamContent";
+import Image from "next/image";
 const TeamContent: any = {
   teamOne: TeamOne,
   teamTwo: TeamTwo,
@@ -97,9 +98,13 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
 
           <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-11 xl:gap-16 ">
             <div className=" lg:w-4/12">
-              <img
+              <Image
                 className="w-full border rounded-lg border-[#707070] h-full flex justify-center items-end"
                 src={teamDetail?.imageSrc}
+                alt=""
+                width="0"
+                height="0"
+                sizes="100vw"
               />
             </div>
             <div className="text-white lg:w-8/12">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -16,10 +17,13 @@ const MediQmPlatform = () => {
       </p>
       <div className="flex flex-col lg:flex-row items-start gap-[30px]">
         <div className="lg:w-6/12 2xl:w-3/12 flex ">
-          <img
-            className="w-full  rounded-lg"
+          <Image
+            className="w-full h-auto rounded-lg"
             src="/images/platform.jpeg"
             alt=""
+            width="0"
+            height="0"
+            sizes="100vw"
           />
         </div>
         <div className="lg:w-6/12 2xl:w-9/12 flex items-start justify-between flex-col gap-3">

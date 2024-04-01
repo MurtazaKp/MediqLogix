@@ -4,15 +4,18 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Quality Management | Mediqlogix",
-  description: "Quality Management page ",
+  title: "Quality Management Services | Mediqlogix",
+  description: "Empower hospitals with AI-driven solutions for compliance and financial benefits. Elevate quality management through data-driven insights.",
   alternates: {
     canonical: "https://mediqlogix.com/services/quality-management",
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/services/quality-management",
-    title: "Quality Management | Mediqlogix",
-    description: "Quality Management",
+    title: "Quality Management Services | Mediqlogix",
+    description: "Empower hospitals with AI-driven solutions for compliance and financial benefits. Elevate quality management through data-driven insights.",
     images: {
       url: "/images/seoImage.png",
       width: 800,

@@ -5,14 +5,17 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Contact | Mediqlogix",
-  description: "Contact page ",
+  description: "Feel free to contact Mediqlogix for any questions and concerns",
   alternates: {
     canonical: "https://mediqlogix.com/contact",
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/contact",
     title: "Contact | Mediqlogix",
-    description: "Contact",
+    description: "Feel free to contact Mediqlogix for any questions and concerns",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -26,6 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: "/images/seoImage.png",
     site: "https://mediqlogix.com/contact",
+    description: "Feel free to contact Mediqlogix for any questions and concerns"
   },
 };
 
