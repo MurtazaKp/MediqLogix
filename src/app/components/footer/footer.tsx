@@ -32,15 +32,15 @@ const Footer = () => {
         links: [
           {
             label: "Hospital Quality Consulting",
-            href: "/service/hospital-quality",
+            href: "/services/hospital-quality",
           },
           {
             label: "Quality Management Education & Training",
-            href: "/service/quality-management",
+            href: "/services/quality-management",
           },
           {
             label: "Hospital Safety Consulting",
-            href: "/service/hospital-safety",
+            href: "/services/hospital-safety",
           },
         ],
       },
@@ -88,20 +88,21 @@ const Footer = () => {
                     <ul className="flex flex-col gap-3 text-sm">
                       {links.links.map((link, index) => {
                         return (
+                          <li key={index}>
                           <Link
                             className={`text-white flex flex-wrap lg:flex-nowrap   ${
                               index !== links.links.length - 1
                                 ? "border-b sm:border-0 sm:underline sm:underline-offset-[14px] lg:w-max decoration-[#707070]    pb-1"
                                 : ""
                             } `}
-                            key={index}
                             href={link.href}
                           >
                             {" "}
-                            <div>
+                            <ul>
                               <li className=" w-auto">{link.label}</li>
-                            </div>
+                            </ul>
                           </Link>
+                          </li>
                         );
                       })}
                     </ul>
@@ -113,36 +114,36 @@ const Footer = () => {
           <div className="col-span-1">
             <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
             <div className="text-white flex flex-col gap-3 text-sm">
-              <Link href={"/"}>
+              <Link href={"/"} aria-label="Footer Logo">
                 <LogoIcon className="w-6/12 " />
               </Link>
               <p className="border-b border-[#707070]  p-1">
                 {footerData.address.address}
               </p>
               <p className="border-b border-[#707070]  p-1">
-                <a href={`tel:${footerData.address.phone} `}>
+                <Link href={`tel:${footerData.address.phone} `}>
                   {footerData.address.phone}
-                </a>
+                </Link>
               </p>
               <p className="border-b border-[#707070]  p-1">
                 Email :
-                <a href={`mailto:${footerData.address.email}`}>
+                <Link href={`mailto:${footerData.address.email}`}>
                   {" "}
                   {footerData.address.email}
-                </a>
+                </Link>
               </p>
               {/* <p className="ps-1">Website : {footerData.address.website}</p> */}
             </div>
             {/* <div className="flex mt-10 gap-2">
-              <a target="_blank" href="https://www.facebook.com/">
+              <Link target="_blank" href="https://www.facebook.com/">
                 <img src="/images/Facebook.svg"></img>
-              </a>
-              <a target="_blank" href="https://www.linkedin.com/">
+              </Link>
+              <Link target="_blank" href="https://www.linkedin.com/">
                 <img src="/images/Linkdine.svg"></img>
-              </a>
-              <a target="_blank" href="https://www.youtube.com">
+              </Link>
+              <Link target="_blank" href="https://www.youtube.com">
                 <img src="/images/Youtube.svg"></img>
-              </a>
+              </Link>
             </div> */}
           </div>
         </div>
@@ -169,13 +170,14 @@ const Footer = () => {
           </div>
           <div className="lg:col-span-2 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center lg:justify-end">
             Created by{" "}
-            <a
+            <Link
               target="blank"
               className="underline ps-2"
               href="https://www.setoo.co/"
+              rel="nofollow"
             >
               Setoo Solutions
-            </a>
+            </Link>
           </div>
         </div>
       </div>

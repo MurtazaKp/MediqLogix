@@ -18,7 +18,7 @@ export const RightArrowIcon: FC<SquaredIconProps> = ({
         <rect width="13" height="22" />
       </clipPath>
     </defs>
-    <g id="Right" clip-path="url(#clip-Right)">
+    <g id="Right" clipPath="url(#clip-Right)">
       <g
         id="Group_2648"
         data-name="Group 2648"
@@ -37,7 +37,7 @@ export const RightArrowIcon: FC<SquaredIconProps> = ({
             fill="#fff"
             stroke="#fff"
             stroke-miterlimit="10"
-            stroke-width="1"
+            strokeWidth="1"
           />
         </g>
       </g>

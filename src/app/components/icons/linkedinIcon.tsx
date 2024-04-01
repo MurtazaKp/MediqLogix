@@ -19,7 +19,7 @@ export const LinkedinIcon: FC<SquaredIconProps> = ({
         <rect width="24" height="23" />
       </clipPath>
     </defs>
-    <g id="Linkdine" clip-path="url(#clip-Linkdine)">
+    <g id="Linkdine" clipPath="url(#clip-Linkdine)">
       <g
         id="Group_1015"
         data-name="Group 1015"

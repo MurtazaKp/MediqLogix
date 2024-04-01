@@ -27,9 +27,9 @@ export const VisionIcon: FC<SquaredIconProps> = ({
         <rect width="72" height="72" />
       </clipPath>
     </defs>
-    <g id="Vision_1" data-name="Vision – 1" clip-path="url(#clip-Vision_1)">
+    <g id="Vision_1" data-name="Vision 1" clipPath="url(#clip-Vision_1)">
       <g id="Group_1089" data-name="Group 1089" transform="translate(2 1)">
-        <g id="Group_1025" data-name="Group 1025" clip-path="url(#clip-path)">
+        <g id="Group_1025" data-name="Group 1025" clipPath="url(#clip-path)">
           <path
             id="Path_197"
             data-name="Path 197"

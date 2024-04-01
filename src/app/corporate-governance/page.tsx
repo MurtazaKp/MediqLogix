@@ -5,19 +5,22 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Corporate Governance | Mediqlogix",
-  description: "Corporate Governancepage ",
+  description: "MediQlogix has embraced corporate governance principles.",
   alternates: {
-    canonical: "https://mediqlogix.com/corporate-governance",
+    canonical: '/corporate-governance',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/corporate-governance",
     title: "Corporate Governance | Mediqlogix",
-    description: "Corporate Governance",
+    description: "MediQlogix has embraced corporate governance principles.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Corporate Governancepage Thumbnail",
+      alt: "Mediqlogix Corporate Governance",
       type: "image/png",
     },
     siteName: "MediQlogix",

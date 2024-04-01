@@ -5,19 +5,22 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "MediQm Mobility | Mediqlogix",
-  description: "MediQm Mobility page ",
+  description: "MediQM Mobility platform to ensure the experience of mobility for its users",
   alternates: {
-    canonical: "https://mediqlogix.com/software/mediqm-mobility",
+    canonical: '/software/mediqm-mobility',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/software/mediqm-mobility",
     title: "Mediqm Mobility | Mediqlogix",
-    description: "Mediqm Mobility",
+    description: "MediQM Mobility platform to ensure the experience of mobility for its users",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Mediqm Mobility page Thumbnail",
+      alt: "Mediqlogix Mediqm Mobility",
       type: "image/png",
     },
     siteName: "MediQlogix",

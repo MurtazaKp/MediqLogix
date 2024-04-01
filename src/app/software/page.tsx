@@ -8,15 +8,18 @@ import TabLayout from "../components/tabLayout/tabLayout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Software | Mediqlogix",
-  description: "Software page ",
+  title: "AI Driven Healthcare Management Software | Mediqlogix",
+  description: "MediQlogix develops an AI-driven software platform designed for seamless integration with your IT systems",
   alternates: {
-    canonical: "https://mediqlogix.com/software",
-  },
+    canonical: '/software',
+    languages: {
+      'en-US': '/en-US'
+    },
+  },  
   openGraph: {
     url: "https://mediqlogix.com/software",
-    title: "Software | Mediqlogix",
-    description: "Mediqm Platform",
+    title: "AI Driven Healthcare Management Software | Mediqlogix",
+    description: "MediQlogix develops an AI-driven software platform designed for seamless integration with your IT systems",
     images: {
       url: "/images/seoImage.png",
       width: 800,

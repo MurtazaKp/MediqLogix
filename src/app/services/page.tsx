@@ -8,19 +8,22 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services | Mediqlogix",
-  description: "Services page ",
+  description: "Mediqlogix provides a large no of services for hospital quality management",
   alternates: {
-    canonical: "https://mediqlogix.com/service",
+    canonical: "https://mediqlogix.com/services",
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
-    url: "https://mediqlogix.com/service",
+    url: "https://mediqlogix.com/services",
     title: "Service | Mediqlogix",
-    description: "Service",
+    description: "Mediqlogix provides a large no of services for hospital quality management",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Service page Thumbnail",
+      alt: "Mediqlogix Services",
       type: "image/png",
     },
     siteName: "MediQlogix",
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/service",
+    site: "https://mediqlogix.com/services",
   },
 };
 
@@ -39,17 +42,17 @@ const Service = () => {
       {
         id: 1,
         label: "Hospital Quality Consulting",
-        href: "/service/hospital-quality",
+        href: "/services/hospital-quality",
       },
       {
         id: 2,
         label: "Quality Management Education & Training",
-        href: "/service/quality-management",
+        href: "/services/quality-management",
       },
       {
         id: 3,
         label: "Hospital Safety Consulting",
-        href: "/service/hospital-safety",
+        href: "/services/hospital-safety",
       },
     ],
   };

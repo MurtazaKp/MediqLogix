@@ -5,19 +5,22 @@ import { Metadata } from "next";
 import React from "react";
 export const metadata: Metadata = {
   title: "Company Profile | Mediqlogix",
-  description: "Company Profile page ",
+  description: "Elevate healthcare quality management with MediQlogix's flagship SaaS platform, MediQm. Revolutionizing hospital operations since 2004.",
   alternates: {
-    canonical: "https://mediqlogix.com/company-profile",
+    canonical: '/company-profile',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/company-profile",
     title: "Company Profile | Mediqlogix",
-    description: "Company Profile",
+    description: "Elevate healthcare quality management with MediQlogix's flagship SaaS platform, MediQm. Revolutionizing hospital operations since 2004.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Company Profile Page Thumbnail",
+      alt: "Mediqlogix Company Profile",
       type: "image/png",
     },
     siteName: "MediQlogix",

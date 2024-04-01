@@ -22,16 +22,16 @@ export const CareerIcon: FC<SquaredIconProps> = ({
           height="101.711"
           fill="none"
           stroke="#fff"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
       </clipPath>
       <clipPath id="clip-CV">
         <rect width="140" height="112" />
       </clipPath>
     </defs>
-    <g id="CV" clip-path="url(#clip-CV)">
+    <g id="CV" clipPath="url(#clip-CV)">
       <g id="Group_2712" data-name="Group 2712" transform="translate(3 5)">
-        <g id="Group_2711" data-name="Group 2711" clip-path="url(#clip-path)">
+        <g id="Group_2711" data-name="Group 2711" clipPath="url(#clip-path)">
           <path
             id="Path_2583"
             data-name="Path 2583"
@@ -39,7 +39,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-86.419 -103.826)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2584"
@@ -48,7 +48,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(0 -66.19)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2585"
@@ -57,7 +57,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-83.149 0)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2586"
@@ -66,7 +66,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-83.14 -65.923)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2587"
@@ -75,7 +75,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-495.234 -65.907)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2588"
@@ -84,7 +84,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-496.576 -75.258)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2589"
@@ -93,7 +93,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-497.45 -74.495)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2590"
@@ -102,7 +102,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-497.454 -74.929)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2591"
@@ -111,7 +111,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-75.931 -95.21)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2592"
@@ -120,7 +120,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-84.602 -94.896)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2593"
@@ -129,7 +129,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-118.647 -353.414)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2594"
@@ -138,7 +138,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-74.912 -94.93)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2595"
@@ -147,7 +147,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-84.586 -94.896)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2596"
@@ -156,7 +156,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-120.625 -361.786)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2597"
@@ -165,7 +165,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-83.205 -103.901)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2598"
@@ -174,7 +174,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-118.647 -353.414)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2599"
@@ -183,7 +183,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-495.586 -95.186)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2600"
@@ -192,7 +192,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-496.372 -94.899)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2601"
@@ -201,7 +201,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-493.321 -353.446)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2602"
@@ -210,7 +210,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-494.704 -94.99)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2603"
@@ -219,7 +219,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-530.743 -94.899)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2604"
@@ -228,7 +228,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-493.321 -361.801)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2605"
@@ -237,7 +237,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-497.732 -103.903)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2606"
@@ -246,7 +246,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-496.548 -353.442)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2607"
@@ -255,7 +255,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-529.102 -103.909)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2608"
@@ -264,7 +264,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-58.254 -414.487)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2609"
@@ -273,7 +273,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-66.463 -396.524)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2610"
@@ -282,7 +282,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-288.779 -129.277)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2611"
@@ -291,7 +291,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-320.79 -140.928)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2612"
@@ -300,7 +300,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-320.833 -244.928)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2613"
@@ -309,7 +309,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-323.953 -71.773)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2614"
@@ -318,7 +318,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-156.312 -140.901)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2615"
@@ -327,7 +327,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-156.39 -244.929)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2616"
@@ -336,7 +336,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-320.821 -272.268)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2617"
@@ -345,7 +345,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-353.538 -192.804)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2618"
@@ -354,7 +354,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-353.554 -218.891)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2619"
@@ -363,7 +363,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-320.777 -324.217)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2620"
@@ -372,7 +372,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-353.561 -166.964)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2621"
@@ -381,7 +381,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-320.855 -298.4)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2622"
@@ -390,7 +390,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-206.004 -64.885)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2623"
@@ -399,7 +399,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-163.387 -64.428)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2624"
@@ -408,7 +408,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-347.914 -95.844)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2625"
@@ -417,7 +417,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-155.94 -270.797)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2626"
@@ -426,7 +426,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-205.081 -192.88)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2627"
@@ -435,7 +435,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-205.149 -218.898)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2628"
@@ -444,7 +444,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-155.841 -296.856)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2629"
@@ -453,7 +453,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-205.194 -167)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2630"
@@ -462,7 +462,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-156.358 -192.833)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2631"
@@ -471,7 +471,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-156.284 -218.899)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2632"
@@ -480,7 +480,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-156.366 -167.012)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2633"
@@ -489,7 +489,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-166.86 -14.628)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2634"
@@ -498,7 +498,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-194.446 -14.619)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
           <path
             id="Path_2635"
@@ -507,7 +507,7 @@ export const CareerIcon: FC<SquaredIconProps> = ({
             transform="translate(-138.67 -14.622)"
             fill="#fff"
             stroke="#fff"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
         </g>
       </g>

@@ -17,7 +17,7 @@ export const DownArrowIcon: FC<SquaredIconProps> = ({
         <rect width="15" height="9" />
       </clipPath>
     </defs>
-    <g id="Down" clip-path="url(#clip-Down)">
+    <g id="Down" clipPath="url(#clip-Down)">
       <g
         id="Group_2692"
         data-name="Group 2692"

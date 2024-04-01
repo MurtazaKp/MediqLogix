@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Hospital Quality | Mediqlogix",
   description: "Hospital Quality page ",
   alternates: {
-    canonical: "https://mediqlogix.com/service/hospital-quality",
+    canonical: "https://mediqlogix.com/services/hospital-quality",
   },
   openGraph: {
-    url: "https://mediqlogix.com/service/hospital-quality",
+    url: "https://mediqlogix.com/services/hospital-quality",
     title: "Hospital Quality | Mediqlogix",
     description: "Hospital Quality",
     images: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/service/hospital-quality",
+    site: "https://mediqlogix.com/services/hospital-quality",
   },
 };
 
@@ -36,17 +36,17 @@ const HospitalQualityPage = () => {
       {
         id: 1,
         label: "Hospital Quality Consulting",
-        href: "/service/hospital-quality",
+        href: "/services/hospital-quality",
       },
       {
         id: 2,
         label: "Quality Management Education & Training",
-        href: "/service/quality-management",
+        href: "/services/quality-management",
       },
       {
         id: 3,
         label: "Hospital Safety Consulting",
-        href: "/service/hospital-safety",
+        href: "/services/hospital-safety",
       },
     ],
   };

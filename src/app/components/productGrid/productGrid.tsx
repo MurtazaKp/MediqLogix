@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -41,7 +42,7 @@ const ProductGrid = () => {
 
       buttonCta: {
         label: "Know more",
-        href: "/service/hospital-safety",
+        href: "/services/hospital-safety",
       },
       image: {
         src: "/images/Consulting.svg",
@@ -63,7 +64,7 @@ const ProductGrid = () => {
   ];
 
   return (
-    <div className=" bg-primary-green py-14 px-10 xl:px-36">
+    <div className=" bg-primary-green py-14 px-10 xl:px-36 text-white">
       <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-9 justify-evenly ">
         {productGridData.map((product, index) => {
           return (
@@ -73,9 +74,13 @@ const ProductGrid = () => {
               } `}
               key={index}
             >
-              <img
-                className={` w-20 h-24 ${index == 3 ? "mt-2" : ""} `}
+              <Image
+                className={` w-20 h-auto ${index == 3 ? "mt-2" : ""} `}
                 src={product.image.src}
+                alt={product.label}
+                width="0"
+                height="0"
+                sizes="100vw"
               />
               <h2 className="text-lg lg:text-lg xl:mb-10 xl:text-tertiary-heading leading-normal text-center lg:text-start font-bold lg:h-10">
                 {product.label}

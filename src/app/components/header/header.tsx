@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Modal from "./modal";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FooterLogoIcon } from "../icons/footerLogo";
 import { DownArrowIcon } from "../icons/Down";
@@ -71,20 +72,20 @@ const Header = () => {
       },
       {
         label: "Services",
-        href: "/service",
+        href: "/services",
         sublink: [
           {
             label: "Hospital Quality",
-            href: "/service/hospital-quality",
+            href: "/services/hospital-quality",
           },
 
           {
             label: "Hospital Safety",
-            href: "/service/hospital-safety",
+            href: "/services/hospital-safety",
           },
           {
             label: "Quality Management",
-            href: "/service/quality-management",
+            href: "/services/quality-management",
           },
         ],
       },
@@ -118,7 +119,7 @@ const Header = () => {
     <>
       <div className="sticky py-4 xl:py-0 top-0 bg-black text-white z-30">
         <div className="flex justify-between  px-2 sm:px-10 xl:px-[139px] ">
-          <Link className="flex items-center w-5/12 sm:w-auto " href={"/"}>
+          <Link className="flex items-center w-5/12 sm:w-auto " href={"/"} aria-label="Main Logo">
             <LogoIcon />
           </Link>
           <div className=" flex justify-end w-7/12 sm:w-full gap-6 items-center">
@@ -175,7 +176,7 @@ const Header = () => {
               Get in touch
             </Link>
             <button onClick={handleOpen} className="block lg:hidden">
-              <img src="/images/Menu.svg" />
+              <Image src="/images/Menu.svg" alt="Hamburger Menu" width={42} height={42} />
             </button>
           </div>
         </div>

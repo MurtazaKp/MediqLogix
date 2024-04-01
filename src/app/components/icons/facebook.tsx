@@ -28,7 +28,7 @@ export const FacebookIcon: FC<SquaredIconProps> = ({
         <rect width="24" height="23" />
       </clipPath>
     </defs>
-    <g id="Facebook" clip-path="url(#clip-Facebook)">
+    <g id="Facebook" clipPath="url(#clip-Facebook)">
       <g
         id="Group_1016"
         data-name="Group 1016"
@@ -39,7 +39,7 @@ export const FacebookIcon: FC<SquaredIconProps> = ({
           data-name="Group 1014"
           transform="translate(2053.448 6872.448)"
         >
-          <g id="Group_26" data-name="Group 26" clip-path="url(#clip-path)">
+          <g id="Group_26" data-name="Group 26" clipPath="url(#clip-path)">
             <path
               id="Path_26"
               data-name="Path 26"

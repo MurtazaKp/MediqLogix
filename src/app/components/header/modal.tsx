@@ -60,7 +60,7 @@ const Modal = ({ handleClose }: any) => {
               onClick={handleClose}
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                 clip-rule="evenodd"
               ></path>
@@ -99,16 +99,16 @@ const Modal = ({ handleClose }: any) => {
               <span className="lg:w-6/12">
                 <p className="text-[#adadad] mb-3">Follow us</p>
                 <div className="flex gap-2 ">
-                  <a target="_blank" href="https://www.facebook.com/">
+                  <Link target="_blank" href="https://www.facebook.com/">
                     {" "}
                     <FacebookIcon color="#42ad25" />
-                  </a>
-                  <a target="_blank" href="https://www.linkedin.com">
+                  </Link>
+                  <Link target="_blank" href="https://www.linkedin.com">
                     <LinkedinIcon color="#42ad25" />
-                  </a>
-                  <a target="_blank" href="https://www.youtube.com/">
+                  </Link>
+                  <Link target="_blank" href="https://www.youtube.com/">
                     <YoutubeIcon color="#42ad25" />
-                  </a>
+                  </Link>
                 </div>
               </span>
               <div className="flex justify-end lg:justify-end items-end">
