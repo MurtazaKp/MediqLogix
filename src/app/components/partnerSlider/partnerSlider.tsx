@@ -4,6 +4,7 @@ import { FacebookIcon } from "../icons/facebook";
 import Slider from "react-slick";
 import { RightArrowIcon } from "../icons/rightArrow";
 import { LeftArrowIcon } from "../icons/leftArrow";
+import Image from "next/image";
 
 const PartnerSlider = () => {
   function LeftNavButton(props: any) {
@@ -91,7 +92,11 @@ const PartnerSlider = () => {
               className="!flex px-2   justify-center items-center"
             >
               <div className="bg-white box-shadow rounded-lg flex justify-center items-center w-full   2xl:w-11/12 h-[124px]">
-                <img src={partner.logoSrc} />
+                <Image src={partner.logoSrc} 
+                  alt=""
+                  width="0"
+                  height="0"
+                  sizes="100vw"/>
               </div>
             </div>
           );

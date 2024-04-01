@@ -5,14 +5,17 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Vision Mission | Mediqlogix",
-  description: "Vision Mission ",
+  description: "Explore MediQlogix's Vision Mission: Driving innovation in healthcare since 2004. Discover our commitment to revolutionize hospital quality management for superior patient care.",
   alternates: {
-    canonical: "https://mediqlogix.com/vision-mission",
+    canonical: '/vision-mission',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/vision-mission",
     title: "Vision Mission | Mediqlogix",
-    description: "Vision Mission",
+    description: "Explore MediQlogix's Vision Mission: Driving innovation in healthcare since 2004. Discover our commitment to revolutionize hospital quality management for superior patient care.",
     images: {
       url: "/images/seoImage.png",
       width: 800,

@@ -19,7 +19,7 @@ export const YoutubeIcon: FC<SquaredIconProps> = ({
         <rect width="24" height="23" />
       </clipPath>
     </defs>
-    <g id="Youtube" clip-path="url(#clip-Youtube)">
+    <g id="Youtube" clipPath="url(#clip-Youtube)">
       <g
         id="Group_1017"
         data-name="Group 1017"

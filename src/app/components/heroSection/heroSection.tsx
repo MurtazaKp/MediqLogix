@@ -2,6 +2,7 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 import Slider from "react-slick";
 
 // Declare your data
@@ -48,6 +49,19 @@ const HeroSection = () => {
     adaptiveHeight: true,
   };
 
+  const keyStr =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+  const triplet = (e1: number, e2: number, e3: number) => 
+    keyStr.charAt(e1 >> 2) +
+    keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+    keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+    keyStr.charAt(e3 & 63);
+
+  const rgbDataURL = (r: number, g: number, b: number) => 
+    `data:image/gif;base64,R0lGODlhAQABAPAA${triplet(0, r, g) + triplet(b, 255, 255)
+    }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
+  
   return (
     <div className="bg-black relative hero-section">
       <Slider className="z-10" {...settings}>
@@ -57,14 +71,16 @@ const HeroSection = () => {
             className="flex flex-col px-10 xl:px-36 pb-12 2xl:pb-16 relative"
           >
             <div className="absolute inset-0 -z-10">
-              <img className="object-cover w-full h-full" src={slide.image} />
+              <Image loading="eager" placeholder="blur" className="object-cover w-full h-full" 
+              alt={slide.title} width={1000} height={500} src={slide.image}
+                blurDataURL={rgbDataURL(237, 181, 6)}/>
               <div className="absolute inset-0 bg-black opacity-70"></div>
             </div>
-            <h1 className="sm:w-8/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-5 lg:text-4xl xl:text-[50px] lg:leading-primary-heading lg:pt-8  xl:pt-12 lg:pb-[100px] xl:pb-[140px] 2xl:pb-[245px] text-primary-blue ">
+            <h2 className="sm:w-8/12 text-4xl sm:text-secondary-heading sm:leading-secondary-heading py-5 lg:text-4xl xl:text-[50px] lg:leading-primary-heading lg:pt-8  xl:pt-12 lg:pb-[100px] xl:pb-[140px] 2xl:pb-[245px] text-primary-blue ">
               <span className="text-[#4ef721] font-bold">{slide.title}</span>
               <br />
               {slide.subtitle}
-            </h1>
+            </h2>
             <div>
               <p className="text-sm sm:text-2xl lg:text-[20px] xl:text-[26px] leading-5 lg:leading-10  sm:leading-secondary-heading text-white w-full sm:w-9/12 lg:w-11/12 xl:w-[700px]">
                 {slide.description}

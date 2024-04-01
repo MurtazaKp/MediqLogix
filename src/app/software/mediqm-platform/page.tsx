@@ -5,19 +5,22 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Mediqm Platform | Mediqlogix",
-  description: "Mediqm Platform page ",
+  description: "Mediqm Platform is a platform for AI-powered database for hospitals quality and safety management",
   alternates: {
-    canonical: "https://mediqlogix.com/software/mediqm-platform",
+    canonical: 'https://mediqlogix.com/software/mediqm-platform',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/software/mediqm-platform",
     title: "Mediqm Platform | Mediqlogix",
-    description: "Mediqm Platform",
+    description: "Mediqm Platform is a platform for AI-powered database for hospitals quality and safety management",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Mediqm Platform page Thumbnail",
+      alt: "Mediqlogix Mediqm Platform",
       type: "image/png",
     },
     siteName: "MediQlogix",

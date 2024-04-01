@@ -17,7 +17,7 @@ export const UpArrowIcon: FC<SquaredIconProps> = ({
         <rect width="15" height="9" />
       </clipPath>
     </defs>
-    <g id="Up" clip-path="url(#clip-Up)">
+    <g id="Up" clipPath="url(#clip-Up)">
       <g
         id="Group_2692"
         data-name="Group 2692"

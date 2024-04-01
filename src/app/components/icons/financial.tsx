@@ -20,7 +20,7 @@ export const FinancialIcon: FC<SquaredIconProps> = ({
     <g
       id="Financial_Benefit"
       data-name="Financial Benefit"
-      clip-path="url(#clip-Financial_Benefit)"
+      clipPath="url(#clip-Financial_Benefit)"
     >
       <path
         id="Path_40"

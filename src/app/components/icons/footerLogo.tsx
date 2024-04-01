@@ -33,7 +33,7 @@ export const FooterLogoIcon: FC<SquaredIconProps> = ({
     <g
       id="MediQlogix_logo_For_Footer"
       data-name="MediQlogix logo For Footer"
-      clip-path="url(#clip-MediQlogix_logo_For_Footer)"
+      clipPath="url(#clip-MediQlogix_logo_For_Footer)"
     >
       <rect
         id="Image_46"

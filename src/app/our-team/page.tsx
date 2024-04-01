@@ -5,19 +5,22 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Our Team | Mediqlogix",
-  description: "Our Team ",
+  description: "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
   alternates: {
-    canonical: "https://mediqlogix.com/our-team",
+    canonical: '/our-team',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/our-team",
     title: "Our Team | Mediqlogix",
-    description: "Our Team",
+    description: "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Our Team Page Thumbnail",
+      alt: "Mediqlogix Our Team",
       type: "image/png",
     },
     siteName: "MediQlogix",

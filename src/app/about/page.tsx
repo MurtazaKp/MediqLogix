@@ -7,20 +7,23 @@ import AboutContent from "../components/about/aboutContent/aboutContent";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | Mediqlogix",
-  description: "Aboutpage ",
+  title: "About us | Mediqlogix",
+  description: "Learn about MediQlogix's mission to innovate healthcare. Discover how our AI platform streamlines operations, enhances quality, and elevates management for better patient care. ",
   alternates: {
-    canonical: "https://mediqlogix.com/about",
+    canonical: '/about',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/about",
-    title: "About | Mediqlogix",
+    title: "About us | Mediqlogix",
     description: "About",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix About page Thumbnail",
+      alt: "About Mediqlogix",
       type: "image/png",
     },
     siteName: "MediQlogix",

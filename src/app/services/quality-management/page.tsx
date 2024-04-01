@@ -4,15 +4,18 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Quality Management | Mediqlogix",
-  description: "Quality Management page ",
+  title: "Quality Management Services | Mediqlogix",
+  description: "Empower hospitals with AI-driven solutions for compliance and financial benefits. Elevate quality management through data-driven insights.",
   alternates: {
-    canonical: "https://mediqlogix.com/service/quality-management",
+    canonical: "https://mediqlogix.com/services/quality-management",
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
-    url: "https://mediqlogix.com/service/quality-management",
-    title: "Quality Management | Mediqlogix",
-    description: "Quality Management",
+    url: "https://mediqlogix.com/services/quality-management",
+    title: "Quality Management Services | Mediqlogix",
+    description: "Empower hospitals with AI-driven solutions for compliance and financial benefits. Elevate quality management through data-driven insights.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -25,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/service/quality-management",
+    site: "https://mediqlogix.com/services/quality-management",
   },
 };
 
@@ -36,17 +39,17 @@ const QualityManagementPage = () => {
       {
         id: 1,
         label: "Hospital Quality Consulting",
-        href: "/service/hospital-quality",
+        href: "/services/hospital-quality",
       },
       {
         id: 2,
         label: "Quality Management Education & Training",
-        href: "/service/quality-management",
+        href: "/services/quality-management",
       },
       {
         id: 3,
         label: "Hospital Safety Consulting",
-        href: "/service/hospital-safety",
+        href: "/services/hospital-safety",
       },
     ],
   };

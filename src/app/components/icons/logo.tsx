@@ -21,7 +21,7 @@ export const LogoIcon: FC<SquaredIconProps> = ({
     <g
       id="MediQ_logix"
       data-name="MediQ logix"
-      clip-path="url(#clip-MediQ_logix)"
+      clipPath="url(#clip-MediQ_logix)"
     >
       <g
         id="Group_2710"

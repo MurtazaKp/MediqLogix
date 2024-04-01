@@ -22,16 +22,16 @@ export const StarIcon: FC<SquaredIconProps> = ({
           height="18.779"
           fill={color}
           stroke={color}
-          stroke-width="1"
+          strokeWidth="1"
         />
       </clipPath>
       <clipPath id="clip-Star">
         <rect width="22" height="22" />
       </clipPath>
     </defs>
-    <g id="Star" clip-path="url(#clip-Star)">
+    <g id="Star" clipPath="url(#clip-Star)">
       <g id="Group_1138" data-name="Group 1138" transform="translate(1 1)">
-        <g id="Group_1137" data-name="Group 1137" clip-path="url(#clip-path)">
+        <g id="Group_1137" data-name="Group 1137" clipPath="url(#clip-path)">
           <path
             id="Path_212"
             data-name="Path 212"
@@ -39,7 +39,7 @@ export const StarIcon: FC<SquaredIconProps> = ({
             transform="translate(-0.47 -0.471)"
             fill={color}
             stroke={color}
-            stroke-width="1"
+            strokeWidth="1"
           />
           <path
             id="Path_213"
@@ -49,7 +49,7 @@ export const StarIcon: FC<SquaredIconProps> = ({
             fill={color}
             stroke={color}
             stroke-miterlimit="10"
-            stroke-width="1"
+            strokeWidth="1"
           />
         </g>
       </g>

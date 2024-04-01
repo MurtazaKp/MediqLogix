@@ -4,15 +4,18 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Hospital Quality | Mediqlogix",
-  description: "Hospital Quality page ",
+  title: "Hospital Quality Services | Mediqlogix",
+  description: "Optimize healthcare delivery with comprehensive quality metrics. Harness integrated IT systems for enhanced patient care.",
   alternates: {
-    canonical: "https://mediqlogix.com/service/hospital-quality",
+    canonical: "https://mediqlogix.com/services/hospital-quality",
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
-    url: "https://mediqlogix.com/service/hospital-quality",
-    title: "Hospital Quality | Mediqlogix",
-    description: "Hospital Quality",
+    url: "https://mediqlogix.com/services/hospital-quality",
+    title: "Hospital Quality Services | Mediqlogix",
+    description: "Optimize healthcare delivery with comprehensive quality metrics. Harness integrated IT systems for enhanced patient care.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -25,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/service/hospital-quality",
+    site: "https://mediqlogix.com/services/hospital-quality",
   },
 };
 
@@ -36,17 +39,17 @@ const HospitalQualityPage = () => {
       {
         id: 1,
         label: "Hospital Quality Consulting",
-        href: "/service/hospital-quality",
+        href: "/services/hospital-quality",
       },
       {
         id: 2,
         label: "Quality Management Education & Training",
-        href: "/service/quality-management",
+        href: "/services/quality-management",
       },
       {
         id: 3,
         label: "Hospital Safety Consulting",
-        href: "/service/hospital-safety",
+        href: "/services/hospital-safety",
       },
     ],
   };

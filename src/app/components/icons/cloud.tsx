@@ -20,7 +20,7 @@ export const CloudIcon: FC<SquaredIconProps> = ({
     <g
       id="Cloud_Technology"
       data-name="Cloud Technology"
-      clip-path="url(#clip-Cloud_Technology)"
+      clipPath="url(#clip-Cloud_Technology)"
     >
       <g
         id="Group_41"

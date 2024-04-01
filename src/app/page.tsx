@@ -11,20 +11,24 @@ import CaseStudy from "./components/caseStudy/caseStudy";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | MediQlogix",
-  description: "Homepage ",
+  metadataBase: new URL('https://mediqlogix.com'),
   alternates: {
-    canonical: "https://mediqlogix.com",
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
+  title: "MediQlogix Solutions - Hospital Quality Consulting Services",
+  description: "MediQlogix: Transforming healthcare with AI-driven SaaS for hospitals. Enhance operations and patient outcomes with our cloud solutions. Explore innovation now!",  
   openGraph: {
     url: "https://mediqlogix.com",
-    title: "Home | Mediqlogix",
-    description: "Home",
+    title: "MediQlogix Solutions - Hospital Quality Consulting Services",
+    description: "MediQlogix: Transforming healthcare with AI-driven SaaS for hospitals. Enhance operations and patient outcomes with our cloud solutions. Explore innovation now!",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Homepage Thumbnail",
+      alt: "MediQlogix Thumbnail",
       type: "image/png",
     },
     siteName: "MediQlogix",

@@ -5,19 +5,22 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Cloud MediQM | Mediqlogix",
-  description: "Cloud MediQM page ",
+  description: "Cloud MediQM helps in data collection which removes manual dependency and saves time for skilled clinical staff",
   alternates: {
-    canonical: "https://mediqlogix.com/software/cloud-mediqm",
+    canonical: '/software/cloud-mediqm',
+    languages: {
+      'en-US': '/en-US'
+    },
   },
   openGraph: {
     url: "https://mediqlogix.com/software/cloud-mediqm",
     title: "Cloud MediQM | Mediqlogix",
-    description: "Cloud MediQM",
+    description: "Cloud MediQM helps in data collection which removes manual dependency and saves time for skilled clinical staff",
     images: {
       url: "/images/seoImage.png",
       width: 800,
       height: 600,
-      alt: "Mediqlogix Cloud MediQM page Thumbnail",
+      alt: "Mediqlogix Cloud MediQM",
       type: "image/png",
     },
     siteName: "MediQlogix",

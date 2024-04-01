@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -6,7 +7,10 @@ const MediQmMobility = () => {
     <div className="flex text-[14.5px]  flex-col gap-6">
       <div className="flex flex-col lg:flex-row gap-[30px]">
         <div className="lg:w-6/12 2xl:w-4/12">
-          <img className=" rounded-[18px]" src="/images/Mobility.jpeg" alt="" />
+          <Image className="rounded-[18px] w-full h-auto" src="/images/Mobility.jpeg" alt=""
+            width="0"
+            height="0"
+            sizes="100vw" />
         </div>
         <div className="lg:w-6/12 2xl:w-8/12 flex items-start justify-between flex-col gap-3">
           <div>

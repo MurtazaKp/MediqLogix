@@ -5,14 +5,17 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Hospital Safety | Mediqlogix",
-  description: "Hospital Safety page ",
+  description: "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care.",
   alternates: {
-    canonical: "https://mediqlogix.com/service/hospital-safety",
-  },
+    canonical: "https://mediqlogix.com/services/hospital-safety",
+    languages: {
+      'en-US': '/en-US'
+    },
+  },  
   openGraph: {
-    url: "https://mediqlogix.com/service/hospital-safety",
+    url: "https://mediqlogix.com/services/hospital-safety",
     title: "Hospital Safety | Mediqlogix",
-    description: "Hospital Safety",
+    description: "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -25,7 +28,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: "/images/seoImage.png",
-    site: "https://mediqlogix.com/service/hospital-safety",
+    site: "https://mediqlogix.com/services/hospital-safety",
+    description: "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care."
   },
 };
 
@@ -36,17 +40,17 @@ const HospitalSafetyPage = () => {
       {
         id: 1,
         label: "Hospital Quality Consulting",
-        href: "/service/hospital-quality",
+        href: "/services/hospital-quality",
       },
       {
         id: 2,
         label: "Quality Management Education & Training",
-        href: "/service/quality-management",
+        href: "/services/quality-management",
       },
       {
         id: 3,
         label: "Hospital Safety Consulting",
-        href: "/service/hospital-safety",
+        href: "/services/hospital-safety",
       },
     ],
   };

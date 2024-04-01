@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -14,10 +15,13 @@ const CloudMediQm = () => {
       </p>
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <div className="lg:w-7/12 bg-white p-5 rounded-lg">
-          <img
-            className="w-full"
+          <Image
+            className="w-full h-auto"
             src="/images/Infographic.png"
             alt="infographic image"
+            width="0"
+            height="200"
+            sizes="100vw"
           />
         </div>
         <div className="lg:w-5/12 flex items-start flex-col gap-3">
