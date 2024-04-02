@@ -62,7 +62,7 @@ const Footer = () => {
 
         {
           label: "Services",
-          href: "/service",
+          href: "/services",
         },
         {
           label: "Contact",
@@ -89,19 +89,19 @@ const Footer = () => {
                       {links.links.map((link, index) => {
                         return (
                           <li key={index}>
-                          <Link
-                            className={`text-white flex flex-wrap lg:flex-nowrap   ${
-                              index !== links.links.length - 1
-                                ? "border-b sm:border-0 sm:underline sm:underline-offset-[14px] lg:w-max decoration-[#707070]    pb-1"
-                                : ""
-                            } `}
-                            href={link.href}
-                          >
-                            {" "}
-                            <ul>
-                              <li className=" w-auto">{link.label}</li>
-                            </ul>
-                          </Link>
+                            <Link
+                              className={`text-white flex flex-wrap lg:flex-nowrap   ${
+                                index !== links.links.length - 1
+                                  ? "border-b sm:border-0 sm:underline sm:underline-offset-[14px] lg:w-max decoration-[#707070]    pb-1"
+                                  : ""
+                              } `}
+                              href={link.href}
+                            >
+                              {" "}
+                              <ul>
+                                <li className=" w-auto">{link.label}</li>
+                              </ul>
+                            </Link>
                           </li>
                         );
                       })}
