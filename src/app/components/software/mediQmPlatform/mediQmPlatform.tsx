@@ -1,25 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import PortableText from "react-portable-text";
 
-const MediQmPlatform = () => {
+const MediQmPlatform = ({ topContent, imageContent, heading }: any) => {
   return (
     <div className="flex gap-4 sm:gap-7 lg:gap-4 flex-col  text-[14.5px]">
-      <h3 className="text-[18.5px] leading-5 text-primary-green">
-        MediQM Platform
-      </h3>
+      <h3 className="text-[18.5px] leading-5 text-primary-green">{heading}</h3>
       <p className="  text-[14.5px] pb-9 rounded-2xl">
-        MediQlogix creates an advanced AI-powered database for hospitals quality
-        and safety management. This platform retrieves vital information
-        efficiently to fill in missing data for CMS The MediQlogix platform is
-        available in SaaS and LAN versions which helps hospital staff follow CMS
-        protocols for the best patient care.
+        <PortableText content={topContent.portableText} />
       </p>
       <div className="flex flex-col lg:flex-row items-start gap-[30px]">
         <div className="lg:w-6/12 2xl:w-3/12 flex ">
           <Image
             className="w-full h-auto rounded-lg"
-            src="/images/platform.jpeg"
+            src={imageContent.image}
             alt=""
             width="0"
             height="0"
@@ -27,31 +22,14 @@ const MediQmPlatform = () => {
           />
         </div>
         <div className="lg:w-6/12 2xl:w-9/12 flex items-start justify-between flex-col gap-3">
-          <span className="flex flex-col gap-3 pb-10 ">
-            <p>
-              In North America, over 5000 hospitals have implemented EMR
-              systems. These systems gather patient data, financial details, and
-              clinical information. The retrieval of patient data and the
-              application of business intelligence methods are crucial.
-              MediQlogix offers an AI-based platform to quickly identify missing
-              information, assisting organizations in complying with the
-              reporting guidelines established by the US Government (CMS).
-            </p>
-            <p>
-              MediQlogix offers a platform compatible with Microsoft SQL Server
-              and Oracle. It provides healthcare organizations access to
-              clinical quality management data. MediQlogix SaaS platform
-              integrates data from various sources securely and keeps it united.
-              It offers personalized reports for JCAHO and NSQIP and NABH.
-              Additionally, it creates specialized reports using advanced
-              AI-based software.
-            </p>
-          </span>
+          <div className="flex flex-col gap-3 pb-10 ">
+            <PortableText content={imageContent.portableText.portableText} />
+          </div>
           <Link
             className="py-2 hover:bg-black hover:text-white transition duration-300 border-black rounded-full px-8 border flex justify-center items-center "
-            href={"/mediQM?tab=Contact"}
+            href={imageContent.buttonCta.href}
           >
-            Enquiry
+            {imageContent.buttonCta.label}
           </Link>
         </div>
       </div>

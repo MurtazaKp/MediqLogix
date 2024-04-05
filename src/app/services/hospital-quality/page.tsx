@@ -2,20 +2,23 @@ import HospitalQuality from "@/app/components/service/hospitalQuality/hospitalQu
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 import React from "react";
+import { getServicesPage } from "../../../../sanity/lib/client";
 
 export const metadata: Metadata = {
   title: "Hospital Quality Services | Mediqlogix",
-  description: "Optimize healthcare delivery with comprehensive quality metrics. Harness integrated IT systems for enhanced patient care.",
+  description:
+    "Optimize healthcare delivery with comprehensive quality metrics. Harness integrated IT systems for enhanced patient care.",
   alternates: {
     canonical: "https://mediqlogix.com/services/hospital-quality",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
     url: "https://mediqlogix.com/services/hospital-quality",
     title: "Hospital Quality Services | Mediqlogix",
-    description: "Optimize healthcare delivery with comprehensive quality metrics. Harness integrated IT systems for enhanced patient care.",
+    description:
+      "Optimize healthcare delivery with comprehensive quality metrics. Harness integrated IT systems for enhanced patient care.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -32,7 +35,13 @@ export const metadata: Metadata = {
   },
 };
 
-const HospitalQualityPage = () => {
+export default async function HospitalQualityPage() {
+  let ServicePageData = await getServicesPage(
+    process.env.NEXT_PUBLIC_SANITY_TOKEN
+  );
+
+  console.log(ServicePageData, "00000000000000000");
+
   const tabs = {
     heading: "Hospital Quality Consulting",
     tabs: [
@@ -56,10 +65,8 @@ const HospitalQualityPage = () => {
   return (
     <div>
       <TabLayout {...tabs}>
-        <HospitalQuality />
+        <HospitalQuality {...ServicePageData.hospitalQuality} />
       </TabLayout>
     </div>
   );
-};
-
-export default HospitalQualityPage;
+}

@@ -3,7 +3,7 @@ import { type SchemaTypeDefinition } from "sanity";
 import blockContent from "./schemaTypes/blockContent";
 import category from "./schemaTypes/category";
 import post from "./schemaTypes/post";
-import author from "./schemaTypes/author";
+
 import header from "./schemaTypes/object/header";
 import footer from "./schemaTypes/object/footer";
 import setting from "./schemaTypes/singleton/setting";
@@ -16,6 +16,11 @@ import service from "./schemaTypes/singleton/service";
 import dataAnalytics from "./schemaTypes/singleton/dataAnalytics";
 import imageLeft from "./schemaTypes/object/imageLeft";
 import aboutUs from "./schemaTypes/singleton/aboutUs";
+import teamMember from "./schemaTypes/singleton/teamMember";
+import teamDetails from "./schemaTypes/singleton/teamDetails";
+import imageTextCta from "./schemaTypes/object/imageTextCta";
+import softwareProduct from "./schemaTypes/singleton/softwareProduct";
+import mediqm from "./schemaTypes/singleton/mediqm";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -32,5 +37,10 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     dataAnalytics,
     imageLeft,
     aboutUs,
+    teamMember,
+    teamDetails,
+    imageTextCta,
+    softwareProduct,
+    mediqm,
   ],
 };

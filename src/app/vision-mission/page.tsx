@@ -2,20 +2,24 @@ import VisionMission from "@/app/components/about/visionMission/visionMission";
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 import React from "react";
+import { getAboutUsPage } from "../../../sanity/lib/client";
+import { refactorAboutUs } from "@/utils/aboutUs";
 
 export const metadata: Metadata = {
   title: "Vision Mission | Mediqlogix",
-  description: "Explore MediQlogix's Vision Mission: Driving innovation in healthcare since 2004. Discover our commitment to revolutionize hospital quality management for superior patient care.",
+  description:
+    "Explore MediQlogix's Vision Mission: Driving innovation in healthcare since 2004. Discover our commitment to revolutionize hospital quality management for superior patient care.",
   alternates: {
-    canonical: '/vision-mission',
+    canonical: "/vision-mission",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
     url: "https://mediqlogix.com/vision-mission",
     title: "Vision Mission | Mediqlogix",
-    description: "Explore MediQlogix's Vision Mission: Driving innovation in healthcare since 2004. Discover our commitment to revolutionize hospital quality management for superior patient care.",
+    description:
+      "Explore MediQlogix's Vision Mission: Driving innovation in healthcare since 2004. Discover our commitment to revolutionize hospital quality management for superior patient care.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -32,7 +36,10 @@ export const metadata: Metadata = {
   },
 };
 
-const VisionMisionPage = () => {
+export default async function VisionMissionPage() {
+  let aboutUsPage = await getAboutUsPage(process.env.NEXT_PUBLIC_SANITY_TOKEN);
+  aboutUsPage = refactorAboutUs(aboutUsPage);
+
   const tabs = {
     heading: "Vision Mission",
     tabs: [
@@ -49,10 +56,8 @@ const VisionMisionPage = () => {
   return (
     <div>
       <TabLayout {...tabs}>
-        <VisionMission />
+        <VisionMission data={aboutUsPage.visionMission} />
       </TabLayout>
     </div>
   );
-};
-
-export default VisionMisionPage;
+}

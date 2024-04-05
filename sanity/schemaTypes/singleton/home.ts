@@ -9,13 +9,26 @@ export default defineType({
   fields: [
     defineField({
       title: "Hero Section",
-      name: "HeroSection",
+      name: "heroSection",
       type: "herosection",
     }),
     defineField({
       title: "Welcome Section",
       name: "welcomeSection",
-      type: "portableText",
+      type: "object",
+      fields: [
+        defineField({
+          name: "heading",
+          title: "heading",
+          type: "string",
+        }),
+
+        defineField({
+          name: "content",
+          title: "Content",
+          type: "portableText",
+        }),
+      ],
     }),
 
     defineField({

@@ -4,7 +4,7 @@ import { FooterLogoIcon } from "../icons/footerLogo";
 import { CareerIcon } from "../icons/career";
 import FormfacadeEmbed from "@formfacade/embed-react";
 
-const Careers = () => {
+const Careers = ({ heading, formSrc }: any) => {
   const [loading, setLoading] = useState(true);
 
   setTimeout(() => {
@@ -16,8 +16,7 @@ const Careers = () => {
       <div className="bg-primary-green lg:rounded-s-xl  lg:w-3/12 text-white flex flex-col items-center py-11 justify-between">
         <div className=" text-[18.5px] font-bold">
           {" "}
-          <p>Join the team of</p>
-          <p>MediQlogix</p>
+          <p className="w-10/12 mx-auto">{heading}</p>
         </div>
         <div>
           <CareerIcon />
@@ -76,7 +75,7 @@ const Careers = () => {
               </div>
             )}
             <FormfacadeEmbed
-              formFacadeURL="https://formfacade.com/include/109911649385799279646/form/1FAIpQLScyzrB9sIKdovMJ5hebI3JZGKpLLAydy7db62rT_T6laHPcrQ/classic.js/?div=ff-compose"
+              formFacadeURL={formSrc && formSrc}
               onSubmitForm={() => console.log("Form submitted")}
             />
           </div>

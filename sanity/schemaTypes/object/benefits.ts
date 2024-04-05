@@ -34,23 +34,6 @@ export default defineType({
               title: "Icon",
               type: "string",
             }),
-            defineField({
-              name: "knowMoreCta",
-              title: "Know More CTA",
-              type: "object",
-              fields: [
-                defineField({
-                  name: "label",
-                  title: "Label",
-                  type: "string",
-                }),
-                defineField({
-                  name: "href",
-                  title: "Href",
-                  type: "string",
-                }),
-              ],
-            }),
           ],
         },
       ],

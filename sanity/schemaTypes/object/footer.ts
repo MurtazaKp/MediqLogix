@@ -55,9 +55,22 @@ export default defineType({
           type: "string",
         }),
         defineField({
-          name: "logo",
+          type: "image",
+          name: "image",
           title: "Logo",
-          type: "string",
+          options: {
+            hotspot: true,
+          },
+
+          fields: [
+            defineField({
+              name: "alt",
+              type: "string",
+              title: "Alt text",
+              description:
+                "Alternative text for screenreaders. Falls back on caption if not set",
+            }),
+          ],
         }),
         defineField({
           name: "email",

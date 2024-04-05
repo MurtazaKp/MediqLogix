@@ -2,20 +2,23 @@ import QualityManagement from "@/app/components/service/qualityManagement/qualit
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 import React from "react";
+import { getServicesPage } from "../../../../sanity/lib/client";
 
 export const metadata: Metadata = {
   title: "Quality Management Services | Mediqlogix",
-  description: "Empower hospitals with AI-driven solutions for compliance and financial benefits. Elevate quality management through data-driven insights.",
+  description:
+    "Empower hospitals with AI-driven solutions for compliance and financial benefits. Elevate quality management through data-driven insights.",
   alternates: {
     canonical: "https://mediqlogix.com/services/quality-management",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
     url: "https://mediqlogix.com/services/quality-management",
     title: "Quality Management Services | Mediqlogix",
-    description: "Empower hospitals with AI-driven solutions for compliance and financial benefits. Elevate quality management through data-driven insights.",
+    description:
+      "Empower hospitals with AI-driven solutions for compliance and financial benefits. Elevate quality management through data-driven insights.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -32,7 +35,11 @@ export const metadata: Metadata = {
   },
 };
 
-const QualityManagementPage = () => {
+export default async function QualityManagementPage() {
+  let ServicePageData = await getServicesPage(
+    process.env.NEXT_PUBLIC_SANITY_TOKEN
+  );
+
   const tabs = {
     heading: "Quality Management Education & Training",
     tabs: [
@@ -55,9 +62,7 @@ const QualityManagementPage = () => {
   };
   return (
     <TabLayout {...tabs}>
-      <QualityManagement />
+      <QualityManagement {...ServicePageData.qualityManagement} />
     </TabLayout>
   );
-};
-
-export default QualityManagementPage;
+}

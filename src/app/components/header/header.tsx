@@ -8,7 +8,7 @@ import { FooterLogoIcon } from "../icons/footerLogo";
 import { DownArrowIcon } from "../icons/Down";
 import { LogoIcon } from "../icons/logo";
 
-const Header = () => {
+const Header = ({ navLinks }: any) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => {
@@ -119,12 +119,16 @@ const Header = () => {
     <>
       <div className="sticky py-4 xl:py-0 top-0 bg-black text-white z-30">
         <div className="flex justify-between  px-2 sm:px-10 xl:px-[139px] ">
-          <Link className="flex items-center w-5/12 sm:w-auto " href={"/"} aria-label="Main Logo">
+          <Link
+            className="flex items-center w-5/12 sm:w-auto "
+            href={"/"}
+            aria-label="Main Logo"
+          >
             <LogoIcon />
           </Link>
           <div className=" flex justify-end w-7/12 sm:w-full gap-6 items-center">
             <div className="hidden lg:flex lg:gap-3 xl:gap-5 ">
-              {NavigationData.navLinks.map((link, index) => {
+              {navLinks.map((link: any, index: number) => {
                 return (
                   <div
                     className="relative lg:py-5 text-sm cursor-pointer group "
@@ -145,7 +149,7 @@ const Header = () => {
                     </div>
                     {link.sublink && (
                       <div className="bg-[white] rounded-b-lg  hidden group-hover:flex duration-500 transition-all text-[#3c3c3c] py-3 flex-col gap-2 w-[200px]   lg:top-[77px] xl:top-[64px] absolute z-[999]">
-                        {link.sublink.map((navLinks, index) => {
+                        {link.sublink.map((navLinks: any, index: number) => {
                           return (
                             <div
                               className={`px-5 py-1 hover:underline hover:underline-offset-2 ${
@@ -176,7 +180,12 @@ const Header = () => {
               Get in touch
             </Link>
             <button onClick={handleOpen} className="block lg:hidden">
-              <Image src="/images/Menu.svg" alt="Hamburger Menu" width={42} height={42} />
+              <Image
+                src="/images/Menu.svg"
+                alt="Hamburger Menu"
+                width={42}
+                height={42}
+              />
             </button>
           </div>
         </div>

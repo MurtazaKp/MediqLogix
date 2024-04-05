@@ -3,19 +3,23 @@ import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 
 import React from "react";
+import { getAboutUsPage } from "../../../sanity/lib/client";
+import { refactorAboutUs } from "@/utils/aboutUs";
 export const metadata: Metadata = {
   title: "Company Profile | Mediqlogix",
-  description: "Elevate healthcare quality management with MediQlogix's flagship SaaS platform, MediQm. Revolutionizing hospital operations since 2004.",
+  description:
+    "Elevate healthcare quality management with MediQlogix's flagship SaaS platform, MediQm. Revolutionizing hospital operations since 2004.",
   alternates: {
-    canonical: '/company-profile',
+    canonical: "/company-profile",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
     url: "https://mediqlogix.com/company-profile",
     title: "Company Profile | Mediqlogix",
-    description: "Elevate healthcare quality management with MediQlogix's flagship SaaS platform, MediQm. Revolutionizing hospital operations since 2004.",
+    description:
+      "Elevate healthcare quality management with MediQlogix's flagship SaaS platform, MediQm. Revolutionizing hospital operations since 2004.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -32,7 +36,10 @@ export const metadata: Metadata = {
   },
 };
 
-const CompanyProfilePage = () => {
+export default async function CompanyProfilePage() {
+  let aboutUsPage = await getAboutUsPage(process.env.NEXT_PUBLIC_SANITY_TOKEN);
+  aboutUsPage = refactorAboutUs(aboutUsPage);
+
   const tabs = {
     heading: "Comapany Profile",
     tabs: [
@@ -49,10 +56,8 @@ const CompanyProfilePage = () => {
   return (
     <div>
       <TabLayout {...tabs}>
-        <CompanyProfile />
+        <CompanyProfile {...aboutUsPage.companyProfile} />
       </TabLayout>
     </div>
   );
-};
-
-export default CompanyProfilePage;
+}

@@ -9,20 +9,11 @@ export default defineType({
       type: "object",
       fields: [
         defineField({
-          name: "icon",
-          title: "Icon",
-          type: "string",
-        }),
-        defineField({
           name: "label",
           title: "Label",
           type: "string",
         }),
-        defineField({
-          name: "activeLink",
-          title: "Active Link",
-          type: "string",
-        }),
+
         defineField({
           name: "paragraph",
           title: "Paragraph",
@@ -46,9 +37,22 @@ export default defineType({
           ],
         }),
         defineField({
+          type: "image",
           name: "image",
           title: "Image",
-          type: "image",
+          options: {
+            hotspot: true,
+          },
+
+          fields: [
+            defineField({
+              name: "alt",
+              type: "string",
+              title: "Alt text",
+              description:
+                "Alternative text for screenreaders. Falls back on caption if not set",
+            }),
+          ],
         }),
       ],
     },

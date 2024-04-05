@@ -2,7 +2,7 @@ import { CogIcon, ImageIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 export default defineType({
-  name: "Service",
+  name: "servicePage",
   title: "Service ",
   type: "document",
 

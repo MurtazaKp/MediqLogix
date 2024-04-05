@@ -54,7 +54,7 @@ export default defineType({
   initialValue: {
     slides: [
       {
-        title: "AI-Powered",
+        title: "AI-Powereds",
         subtitle: "Cloud Solutions",
         description:
           "AI-Powered cloud solutions for hospital and healthcare organizations.",

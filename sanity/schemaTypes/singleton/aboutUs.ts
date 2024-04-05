@@ -27,14 +27,15 @@ export default defineType({
     defineField({
       name: "visionMission",
       title: "Vision Mission",
-      type: "imageLeft",
+      type: "array",
+      of: [{ type: "imageLeft" }],
     }),
   ],
 
   preview: {
     prepare() {
       return {
-        title: "Data Analytics Page",
+        title: "About Us Page",
       };
     },
   },

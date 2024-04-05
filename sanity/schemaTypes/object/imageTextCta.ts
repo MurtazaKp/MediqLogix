@@ -1,16 +1,17 @@
 import { defineField, defineType } from "sanity";
 
 export default defineType({
-  name: "imageLeft",
-  title: "Image Left ",
+  name: "imageTextCta",
+  title: "Content ",
   type: "object",
 
   fields: [
     defineField({
       name: "heading",
-      title: "Heading",
+      title: "heading",
       type: "string",
     }),
+
     defineField({
       type: "image",
       name: "image",
@@ -31,9 +32,27 @@ export default defineType({
     }),
 
     defineField({
-      name: "content",
-      title: "Content",
+      name: "portableText",
+      title: "Portable Text",
       type: "portableText",
+    }),
+
+    defineField({
+      name: "buttonCta",
+      title: "Button CTA",
+      type: "object",
+      fields: [
+        defineField({
+          name: "label",
+          title: "Label",
+          type: "string",
+        }),
+        defineField({
+          name: "href",
+          title: "Href",
+          type: "string",
+        }),
+      ],
     }),
   ],
 
