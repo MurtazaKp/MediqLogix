@@ -78,7 +78,7 @@ const Features = ({ mainHeading, features }: any) => {
                 className="border rounded-lg hover:border-primary-green p-5"
               >
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
-                  {/* <div>{features && <FeatureLink {...feature} />}</div> */}
+                  <div>{features && <FeatureLink {...feature} />}</div>
                   <div>
                     <h2 className=" text-[18.5px] text-primary-green font-semibold">
                       {feature.heading}

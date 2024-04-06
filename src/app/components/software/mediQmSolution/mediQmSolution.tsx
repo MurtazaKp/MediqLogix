@@ -10,13 +10,13 @@ const MediQmSolution = ({
   imageContent,
 }: any) => {
   return (
-    <div className="flex gap-4 sm:gap-7 lg:gap-4 flex-col  text-[14.5px]">
+    <div className="flex gap-4 sm:gap-7 lg:gap-4 flex-col  text-[14.5px] ">
       <h3 className="text-[18.5px] leading-5 text-primary-green font-bold">
         {heading}
       </h3>
-      <p className="  text-[14.5px]">
+      <div className="  text-[14.5px]">
         <PortableText content={topContent.portableText} />
-      </p>
+      </div>
       <div className="flex flex-col lg:flex-row  gap-10">
         <div className="lg:w-6/12 2xl:w-4/12 ">
           <Image
@@ -29,9 +29,9 @@ const MediQmSolution = ({
           />
         </div>
         <div className="lg:w-6/12 2xl:w-8/12 2xl:justify-center flex items-start flex-col gap-7">
-          <span>
+          <div className="portable-text-wrapper">
             <PortableText content={imageContent.portableText.portableText} />
-          </span>
+          </div>
           <Link
             className="py-2 hover:bg-black hover:text-white transition duration-300 border-black rounded-full px-8 border flex justify-center items-center "
             href={imageContent.buttonCta.href}

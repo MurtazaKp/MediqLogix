@@ -135,3 +135,20 @@ h1 {
     transform: rotate(1turn);
   }
 }
+
+.portable-text-wrapper p:not(:first-child) {
+  padding: 10px 0;
+}
+
+.portable-text-wrapper ul {
+  list-style: disc;
+  padding: 0 0 0 20px;
+}
+
+.portable-text-wrapper li::marker {
+  color: #42ad25;
+}
+
+.portable-text-wrapper li {
+  padding: 5px 0;
+}

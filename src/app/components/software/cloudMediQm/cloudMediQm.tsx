@@ -35,7 +35,7 @@ const CloudMediQm = ({ imageContent, topContent, bottomContent }: any) => {
           </Link>
         </div>
       </div>
-      <div>
+      <div className="portable-text-wrapper">
         <PortableText content={bottomContent.portableText} />
       </div>
     </div>
