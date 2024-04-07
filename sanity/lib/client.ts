@@ -1,6 +1,6 @@
 import { createClient } from "next-sanity";
 
-import { apiVersion, dataset, projectId, useCdn, token } from "../env";
+import { apiVersion, dataset, projectId, useCdn } from "../env";
 
 import {
   aboutUsPageQuery,
@@ -10,6 +10,7 @@ import {
   servicesPageQuery,
   settingQuery,
   softwarePageQuery,
+  teamPageQuery,
 } from "./sanity.queries";
 
 const sanityClient = (token: any) => {
@@ -44,4 +45,8 @@ export async function getSetting({ token }: any) {
 
 export async function getMediqmPage({ token }: any) {
   return await sanityClient(token)?.fetch(mediqmPageQuery);
+}
+
+export async function getTeamPage({ token }: any) {
+  return await sanityClient(token)?.fetch(teamPageQuery);
 }

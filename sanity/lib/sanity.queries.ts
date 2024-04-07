@@ -60,3 +60,16 @@ export const mediqmPageQuery = groq`
      partners
  }
 `;
+
+export const teamPageQuery = groq`
+*[_type == 'teamDetails']{
+  teamDetails,
+    teamMember->{
+      role,
+      degree,
+      name,
+      imageSrc
+    }
+}
+`;
+

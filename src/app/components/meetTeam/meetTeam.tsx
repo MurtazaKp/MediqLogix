@@ -107,7 +107,10 @@ const teamMembers = [
   },
 ];
 
-const MeetTeam = () => {
+const MeetTeam = ({teamDetails}:any) => {
+
+  console.log(teamDetails,'xxxxxxxxxxxxxxxxxxxxxxxx');
+  
   const [isOpen, setIsOpen] = useState(false);
   const [openIndex, setOpenIndex] = useState(0);
   const [teamDetail, setTeamDetail] = useState();
@@ -127,7 +130,22 @@ const MeetTeam = () => {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5  gap-4">
-        {teamMembers.map((member, index) => (
+        {/* {teamDetails.map((member:any,index:number)=>{
+          console.log(member,'xxxxxyyyyyyyyyyyy');
+          
+          return(
+            <div key={index}>
+              {member.teamDetails.map((member:any,index:number)=>{
+                return(
+                  <div key={index}>
+fff
+                  </div>
+                )
+              })}
+            </div>
+          )
+        })} */}
+        {teamDetails.map((member:any, index:number) => (
           <div
             onClick={() => handleTeamMember(member)}
             key={index}
@@ -139,19 +157,19 @@ const MeetTeam = () => {
               className={`w-full top-0 sm:-top-2 lg:top-0  ${
                 index === 0 ? "w-full" : "lg:w-full"
               } absolute 2xl:-top-4 lg:top-0`}
-              src={member.imageSrc}
+              src={member.teamMember.imageSrc.src}
               alt=""
             />
             <div className="text-white absolute w-full py-2 h-[70px] 2xl:h-16 px-4  bg-secondary-black group-hover:bg-primary-green transition duration-500">
               <h3 className=" HelveticaNeue-Regular sm:text-sm lg:text-sm xl:text-base">
-                {member.name}{" "}
-                {member.degree && (
+                {member.teamMember.name}{" "}
+                {member.teamMember.degree && (
                   <span className="text-[0.625rem] text-[#cccccc]">
-                    ( {member.degree} )
+                    ( {member.teamMember.degree} )
                   </span>
                 )}
               </h3>
-              <p className="text-xs HelveticaNeue-Regular">{member.role}</p>
+              <p className="text-xs HelveticaNeue-Regular">{member.teamMember.role}</p>
             </div>
           </div>
         ))}

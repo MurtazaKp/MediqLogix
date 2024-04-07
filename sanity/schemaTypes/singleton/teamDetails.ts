@@ -6,6 +6,13 @@ export default defineType({
   title: "Team Details",
   type: "document",
   fields: [
+
+    defineField({
+      name: "name",
+      title: "name",
+      type: "string",
+    }),
+
     defineField({
       title: "Team Details",
       name: "teamDetails",

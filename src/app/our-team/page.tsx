@@ -2,6 +2,8 @@ import MeetTeam from "@/app/components/meetTeam/meetTeam";
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 import React from "react";
+import { getTeamPage } from "../../../sanity/lib/client";
+import { refactorOurTeam } from "@/utils/ourTeam";
 
 export const metadata: Metadata = {
   title: "Our Team | Mediqlogix",
@@ -32,7 +34,19 @@ export const metadata: Metadata = {
   },
 };
 
-const OurTeamPage = () => {
+export default async function OurTeamPage() {
+  let teamPageData = await getTeamPage(
+    process.env.NEXT_PUBLIC_SANITY_TOKEN
+  );
+
+  teamPageData=refactorOurTeam(teamPageData)
+
+  console.log(teamPageData);
+  
+
+
+
+  
   const tabs = {
     heading: "Our Team",
     tabs: [
@@ -49,10 +63,10 @@ const OurTeamPage = () => {
   return (
     <div>
       <TabLayout {...tabs}>
-        <MeetTeam />
+        <MeetTeam {...teamPageData} />
       </TabLayout>
     </div>
   );
 };
 
-export default OurTeamPage;
+
