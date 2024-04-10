@@ -107,10 +107,7 @@ const teamMembers = [
   },
 ];
 
-const MeetTeam = ({teamDetails}:any) => {
-
-  console.log(teamDetails,'xxxxxxxxxxxxxxxxxxxxxxxx');
-  
+const MeetTeam = ({ teamMembers }: any) => {
   const [isOpen, setIsOpen] = useState(false);
   const [openIndex, setOpenIndex] = useState(0);
   const [teamDetail, setTeamDetail] = useState();
@@ -123,6 +120,8 @@ const MeetTeam = ({teamDetails}:any) => {
     setIsOpen(!isOpen);
   };
   const handleTeamMember = (member: any) => {
+    console.log(member.teamDetails);
+
     setTeamDetail(member);
     setIsOpen(!isOpen);
   };
@@ -145,7 +144,7 @@ fff
             </div>
           )
         })} */}
-        {teamDetails.map((member:any, index:number) => (
+        {teamMembers.map((member: any, index: number) => (
           <div
             onClick={() => handleTeamMember(member)}
             key={index}
@@ -169,7 +168,9 @@ fff
                   </span>
                 )}
               </h3>
-              <p className="text-xs HelveticaNeue-Regular">{member.teamMember.role}</p>
+              <p className="text-xs HelveticaNeue-Regular">
+                {member.teamMember.role}
+              </p>
             </div>
           </div>
         ))}

@@ -21,6 +21,7 @@ import teamDetails from "./schemaTypes/singleton/teamDetails";
 import imageTextCta from "./schemaTypes/object/imageTextCta";
 import softwareProduct from "./schemaTypes/singleton/softwareProduct";
 import mediqm from "./schemaTypes/singleton/mediqm";
+import teamDetailsPage from "./schemaTypes/singleton/teamDetailsPage/teamDetailsPage";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -42,5 +43,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     imageTextCta,
     softwareProduct,
     mediqm,
+    teamDetailsPage,
   ],
 };

@@ -62,14 +62,15 @@ export const mediqmPageQuery = groq`
 `;
 
 export const teamPageQuery = groq`
-*[_type == 'teamDetails']{
-  teamDetails,
-    teamMember->{
+ *[_type == "teamPage"][0]{
+   teamMembers[]->{
+     teamDetails,
+     teamMember->{
       role,
       degree,
       name,
       imageSrc
     }
-}
+   }
+ }
 `;
-

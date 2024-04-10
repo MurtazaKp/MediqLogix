@@ -8,6 +8,7 @@ import {
   TeamTwo,
 } from "../TeamContent";
 import Image from "next/image";
+import PortableText from "react-portable-text";
 const TeamContent: any = {
   teamOne: TeamOne,
   teamTwo: TeamTwo,
@@ -18,6 +19,15 @@ const TeamContent: any = {
   // Add more social media icons as needed
 };
 
+const Components = {
+  // ...,
+  marks: {
+    textColor: ({ children, value }: any) => (
+      <span style={{ color: value.value }}>{children}</span>
+    ),
+  },
+};
+
 const TeamDataContent = ({ teamNumber }: any) => {
   const IconComponent = TeamContent[teamNumber];
 
@@ -25,6 +35,8 @@ const TeamDataContent = ({ teamNumber }: any) => {
 };
 
 const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
+  console.log(teamDetail);
+
   const teamMembers = [
     {
       name: "Naveen Pola",
@@ -64,6 +76,8 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
     },
   ];
 
+  console.log(teamDetail);
+
   return (
     <div className="fixed inset-0 z-[80] min-h-full overflow-y-auto overflow-x-hidden transition flex items-center">
       {/* <!-- overlay --> */}
@@ -98,65 +112,39 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
 
           <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-11 xl:gap-16 ">
             <div className=" lg:w-4/12">
-              <Image
-                className="w-full border rounded-lg border-[#707070] h-full flex justify-center items-end"
-                src={teamDetail?.imageSrc}
-                alt=""
-                width="0"
-                height="0"
-                sizes="100vw"
-              />
+              {teamDetail?.teamMember?.imageSrc && (
+                <Image
+                  className="w-full border rounded-lg border-[#707070] h-full flex justify-center items-end"
+                  src={teamDetail?.teamMember?.imageSrc.src}
+                  alt=""
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  loading="eager"
+                />
+              )}
             </div>
             <div className="text-white lg:w-8/12">
               <div className="pb-5">
                 <h3 className="text-primary-green text-[18.5px]  HelveticaNeue-Regular">
-                  {teamDetail?.name}{" "}
+                  {teamDetail?.teamMember?.name}{" "}
                   {teamDetail.degree && (
                     <span className="text-[0.625rem] text-[#cccccc]">
-                      ( {teamDetail?.degree} )
+                      ( {teamDetail?.teamMember?.degree} )
                     </span>
                   )}
                 </h3>
-                <p className="text-[14.5px]">{teamDetail?.role}</p>
+                <p className="text-[14.5px]">{teamDetail?.teamMember?.role}</p>
               </div>
               <div
                 id="meetTeam"
                 className="h-[407px] flex flex-col gap-5 overflow-y-scroll pe-10 HelveticaNeue-Regular HelveticaNeue-Regular text-[14.5px] leading-5"
-                // dangerouslySetInnerHTML={{ __html: teamDetail?.teamDetail }}
+                // dangerouslySetInnerHTML={{ __html: teamDetail?.teamMember?.teamDetail }}
               >
-                <teamDetail.teamDetail />
-                {/* {teamDetail.teamDetail} */}
-
-                {/* <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
-                  Mr. Navin worked in the information technology industry - NEC,
-                  Bay Networks, Nortel, Com21 and Lucent Technologies in
-                  software/product development, marketing and management
-                  leadership. Currently Mr. Pola is responsible operations and
-                  managing their software development operations in India.
-                </p>
-                <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
-                  Since 2001, Mr. Navin, has been involved in starting up US
-                  companies in India - Time2Market (Chip design company, parent
-                  company based out of California, USA), MIC Electronics (LED,
-                  Embedded Systems Company based out of Hyderabad, India) ,
-                  BayNest (IT Consulting), MicroNet (ISP), and iCST. During the
-                  start up phase for “Time2Market”, India, Mr. Navin was
-                  involved in strategic decisions of company on new product
-                  development and product marketing planning for Indian Market.{" "}
-                </p>
-                <p className="HelveticaNeue-Regular text-[14.5px] leading-5">
-                  Mr. Pola’s expertise includes working with the Indian
-                  government in establishing technology development centers,
-                  operations of companies and managing Indian operations from
-                  scratch. In his capacity as a director for “Time2Market” Mr.
-                  Pola has significant experience in setting up the operations,
-                  participated in the merger of “Time2Market” with InfoTech,
-                  Hyderabad, India. Mr. Pola has also successfully completed
-                  assignments for MicroNet co-founder and iCSt (India) in the
-                  capacity of Director. He was instrumental in convincing the
-                  management of iCST (USA) and successfully launching part of
-                  operations in India.
-                </p> */}
+                <PortableText
+                  content={teamDetail.teamDetails.portableText}
+                  serializers={Components}
+                />
               </div>
             </div>
           </div>

@@ -9,7 +9,18 @@ const Paragrapgh = ({ heading, content }: any) => {
         <span className="text-[#4ef721]"> MediQlogix</span>
       </h1>
       <div className="sm:text-lg text-sm  ">
-        <PortableText content={content.portableText} />
+        <PortableText
+          content={content.portableText}
+          serializers={{
+            marks: {
+              textColor: (props: any) => (
+                <span style={{ color: props.mark.value }}>
+                  {props.children}
+                </span>
+              ),
+            },
+          }}
+        />
       </div>
     </div>
   );

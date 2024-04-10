@@ -7,17 +7,19 @@ import { refactorOurTeam } from "@/utils/ourTeam";
 
 export const metadata: Metadata = {
   title: "Our Team | Mediqlogix",
-  description: "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
+  description:
+    "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
   alternates: {
-    canonical: '/our-team',
+    canonical: "/our-team",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
     url: "https://mediqlogix.com/our-team",
     title: "Our Team | Mediqlogix",
-    description: "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
+    description:
+      "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -35,18 +37,12 @@ export const metadata: Metadata = {
 };
 
 export default async function OurTeamPage() {
-  let teamPageData = await getTeamPage(
-    process.env.NEXT_PUBLIC_SANITY_TOKEN
-  );
+  let teamPageData = await getTeamPage(process.env.NEXT_PUBLIC_SANITY_TOKEN);
 
-  teamPageData=refactorOurTeam(teamPageData)
+  console.log({ ...teamPageData });
 
-  console.log(teamPageData);
-  
+  teamPageData = refactorOurTeam({ ...teamPageData });
 
-
-
-  
   const tabs = {
     heading: "Our Team",
     tabs: [
@@ -67,6 +63,4 @@ export default async function OurTeamPage() {
       </TabLayout>
     </div>
   );
-};
-
-
+}
