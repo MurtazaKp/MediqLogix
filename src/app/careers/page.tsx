@@ -42,7 +42,6 @@ export default async function CareersPage() {
     process.env.NEXT_PUBLIC_SANITY_TOKEN
   );
   MediQmPageData = refactorMediqm(MediQmPageData);
-  console.log(MediQmPageData);
 
   const tabs = {
     heading: "Careers",

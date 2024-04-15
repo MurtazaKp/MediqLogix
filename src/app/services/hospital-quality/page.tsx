@@ -40,8 +40,6 @@ export default async function HospitalQualityPage() {
     process.env.NEXT_PUBLIC_SANITY_TOKEN
   );
 
-  console.log(ServicePageData, "00000000000000000");
-
   const tabs = {
     heading: "Hospital Quality Consulting",
     tabs: [

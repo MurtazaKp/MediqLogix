@@ -1,5 +1,6 @@
 import React from "react";
-import PortableText from "react-portable-text";
+import { PortableText } from "@portabletext/react";
+import { myPortableTextComponents } from "@/utils/component";
 
 const DataAnalytics = ({ heading, dataAnalytics }: any) => {
   return (
@@ -13,7 +14,10 @@ const DataAnalytics = ({ heading, dataAnalytics }: any) => {
           </nav>
         </div>
         <div className="flex flex-col gap-8  text-[14.5px] leading-5 pt-[30px]">
-          <PortableText content={dataAnalytics.portableText} />
+          <PortableText
+            value={dataAnalytics.portableText}
+            components={myPortableTextComponents}
+          />
         </div>
 
         {/* <Blog /> */}

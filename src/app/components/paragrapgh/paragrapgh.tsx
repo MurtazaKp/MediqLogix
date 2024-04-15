@@ -1,5 +1,6 @@
+import { myPortableTextComponents } from "@/utils/component";
+import { PortableText } from "@portabletext/react";
 import React from "react";
-import PortableText from "react-portable-text";
 
 const Paragrapgh = ({ heading, content }: any) => {
   return (
@@ -10,16 +11,8 @@ const Paragrapgh = ({ heading, content }: any) => {
       </h1>
       <div className="sm:text-lg text-sm  ">
         <PortableText
-          content={content.portableText}
-          serializers={{
-            marks: {
-              textColor: (props: any) => (
-                <span style={{ color: props.mark.value }}>
-                  {props.children}
-                </span>
-              ),
-            },
-          }}
+          value={content.portableText}
+          components={myPortableTextComponents}
         />
       </div>
     </div>

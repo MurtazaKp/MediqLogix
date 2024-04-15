@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import PortableText from "react-portable-text";
+import { PortableText } from "@portabletext/react";
+import { myPortableTextComponents } from "@/utils/component";
 
 const Partners = ({ data }: any) => {
   return (
@@ -21,7 +22,10 @@ const Partners = ({ data }: any) => {
               />
             </div>
             <div>
-              <PortableText content={item.companyDescription.portableText} />
+              <PortableText
+                value={item.companyDescription.portableText}
+                components={myPortableTextComponents}
+              />
             </div>
           </div>
         );

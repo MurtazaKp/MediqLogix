@@ -1,7 +1,8 @@
 import React from "react";
 import { MissionIcon } from "../../icons/mission";
 import { VisionIcon } from "../../icons/vision";
-import PortableText from "react-portable-text";
+import { PortableText } from "@portabletext/react";
+import { myPortableTextComponents } from "@/utils/component";
 
 const VisionMission = ({ data }: any) => {
   return (
@@ -22,7 +23,10 @@ const VisionMission = ({ data }: any) => {
                 {item.heading}
               </h3>
               <div className="text-center sm:text-start  leading-5 text-[14.5px]">
-                <PortableText content={item.content.portableText} />
+                <PortableText
+                  value={item.content.portableText}
+                  components={myPortableTextComponents}
+                />
               </div>
             </div>
           </div>

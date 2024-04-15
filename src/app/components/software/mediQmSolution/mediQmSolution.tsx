@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import PortableText from "react-portable-text";
+import { PortableText } from "@portabletext/react";
+import { myPortableTextComponents } from "@/utils/component";
 
 const MediQmSolution = ({
   heading,
@@ -15,7 +16,10 @@ const MediQmSolution = ({
         {heading}
       </h3>
       <div className="  text-[14.5px]">
-        <PortableText content={topContent.portableText} />
+        <PortableText
+          value={topContent.portableText}
+          components={myPortableTextComponents}
+        />
       </div>
       <div className="flex flex-col lg:flex-row  gap-10">
         <div className="lg:w-6/12 2xl:w-4/12 ">
@@ -30,7 +34,10 @@ const MediQmSolution = ({
         </div>
         <div className="lg:w-6/12 2xl:w-8/12 2xl:justify-center flex items-start flex-col gap-7">
           <div className="portable-text-wrapper">
-            <PortableText content={imageContent.portableText.portableText} />
+            <PortableText
+              value={imageContent.portableText.portableText}
+              components={myPortableTextComponents}
+            />
           </div>
           <Link
             className="py-2 hover:bg-black hover:text-white transition duration-300 border-black rounded-full px-8 border flex justify-center items-center "
@@ -41,7 +48,10 @@ const MediQmSolution = ({
         </div>
       </div>
       <div>
-        <PortableText content={bottomContent.portableText} />
+        <PortableText
+          value={bottomContent.portableText}
+          components={myPortableTextComponents}
+        />
       </div>
     </div>
   );

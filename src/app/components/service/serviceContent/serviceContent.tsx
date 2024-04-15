@@ -1,12 +1,16 @@
 import React from "react";
 import Blog from "../../blog/blog";
-import PortableText from "react-portable-text";
+import { PortableText } from "@portabletext/react";
+import { myPortableTextComponents } from "@/utils/component";
 
 const ServiceContent = ({ portableText }: any) => {
   return (
     <div className="flex flex-col gap-4">
       <div className="  text-[14.5px]">
-        <PortableText content={portableText} />
+        <PortableText
+          value={portableText}
+          components={myPortableTextComponents}
+        />
       </div>
       {/* <Blog /> */}
     </div>

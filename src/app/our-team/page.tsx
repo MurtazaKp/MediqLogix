@@ -39,8 +39,6 @@ export const metadata: Metadata = {
 export default async function OurTeamPage() {
   let teamPageData = await getTeamPage(process.env.NEXT_PUBLIC_SANITY_TOKEN);
 
-  console.log({ ...teamPageData });
-
   teamPageData = refactorOurTeam({ ...teamPageData });
 
   const tabs = {

@@ -6,8 +6,6 @@ import React from "react";
 const TabLayout = ({ children, tabs, heading }: any) => {
   const pathname = usePathname();
 
-  console.log(pathname, "pathname", tabs);
-
   //   const tabs = [
   //     { id: 1, label: "Company Profile", href: "/companyProfile" },
   //     { id: 2, label: "Vision and Mission", href: "/VisionMission" },

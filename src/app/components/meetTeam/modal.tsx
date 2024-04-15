@@ -8,7 +8,8 @@ import {
   TeamTwo,
 } from "../TeamContent";
 import Image from "next/image";
-import PortableText from "react-portable-text";
+import { PortableText } from "@portabletext/react";
+import { myPortableTextComponents } from "@/utils/component";
 const TeamContent: any = {
   teamOne: TeamOne,
   teamTwo: TeamTwo,
@@ -35,8 +36,6 @@ const TeamDataContent = ({ teamNumber }: any) => {
 };
 
 const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
-  console.log(teamDetail);
-
   const teamMembers = [
     {
       name: "Naveen Pola",
@@ -75,8 +74,6 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
       teamNumber: "teamSix",
     },
   ];
-
-  console.log(teamDetail);
 
   return (
     <div className="fixed inset-0 z-[80] min-h-full overflow-y-auto overflow-x-hidden transition flex items-center">
@@ -142,8 +139,8 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
                 // dangerouslySetInnerHTML={{ __html: teamDetail?.teamMember?.teamDetail }}
               >
                 <PortableText
-                  content={teamDetail.teamDetails.portableText}
-                  serializers={Components}
+                  value={teamDetail.teamDetails.portableText}
+                  components={myPortableTextComponents}
                 />
               </div>
             </div>

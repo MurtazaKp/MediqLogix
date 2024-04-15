@@ -120,8 +120,6 @@ const MeetTeam = ({ teamMembers }: any) => {
     setIsOpen(!isOpen);
   };
   const handleTeamMember = (member: any) => {
-    console.log(member.teamDetails);
-
     setTeamDetail(member);
     setIsOpen(!isOpen);
   };
@@ -129,21 +127,6 @@ const MeetTeam = ({ teamMembers }: any) => {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5  gap-4">
-        {/* {teamDetails.map((member:any,index:number)=>{
-          console.log(member,'xxxxxyyyyyyyyyyyy');
-          
-          return(
-            <div key={index}>
-              {member.teamDetails.map((member:any,index:number)=>{
-                return(
-                  <div key={index}>
-fff
-                  </div>
-                )
-              })}
-            </div>
-          )
-        })} */}
         {teamMembers.map((member: any, index: number) => (
           <div
             onClick={() => handleTeamMember(member)}
