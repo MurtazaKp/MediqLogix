@@ -68,7 +68,6 @@ const ProductGrid = ({ data }: any) => {
       <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-9 justify-evenly ">
         {Array.isArray(data) &&
           data?.map((product: any, index: number) => {
-            console.log("Product", product.image);
             return (
               <div
                 className={`text-white pe-5 flex flex-col items-center  lg:items-start gap-5 justify-between  ${

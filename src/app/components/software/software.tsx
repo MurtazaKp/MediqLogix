@@ -21,12 +21,7 @@ const SoftwareProducts = () => {
     { id: 3, label: "MediQM Platform" },
     { id: 4, label: "MediQM Solution" },
   ];
-  // useEffect(() => {
-  //   paramURL.get("active")
-  //     ? setActiveLink(paramURL.get("active") || "")
-  //     : setActiveLink("Software Products");
-  // }, [paramURL]);
-  console.log("Active", activeLink);
+
   return (
     <div className="py-12 pb-[30px] bg-secondary-gray xl:min-h-[calc(100vh-424px)]">
       <div className=" mx-auto sm:px-6 xl:px-32 px-8 ">

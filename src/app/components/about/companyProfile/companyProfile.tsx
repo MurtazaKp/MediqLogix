@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import PortableText from "react-portable-text";
+import { PortableText } from "@portabletext/react";
+import { myPortableTextComponents } from "@/utils/component";
 
 const CompanyProfile = ({ image, content }: any) => {
   return (
@@ -14,7 +15,10 @@ const CompanyProfile = ({ image, content }: any) => {
         sizes="100vw"
       />
       <div className="lg:w-7/12 py-6 flex flex-col gap-3">
-        <PortableText content={content.portableText} />
+        <PortableText
+          value={content.portableText}
+          components={myPortableTextComponents}
+        />
       </div>
     </div>
   );

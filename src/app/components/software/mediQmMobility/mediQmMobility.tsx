@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import PortableText from "react-portable-text";
+import { PortableText } from "@portabletext/react";
+import { myPortableTextComponents } from "@/utils/component";
 
 const MediQmMobility = ({ heading, portableText, image, buttonCta }: any) => {
   return (
@@ -23,7 +24,10 @@ const MediQmMobility = ({ heading, portableText, image, buttonCta }: any) => {
               {heading}
             </h3>
             <span className="text-[14.5px] leading-5">
-              <PortableText content={portableText.portableText} />
+              <PortableText
+                value={portableText.portableText}
+                components={myPortableTextComponents}
+              />
             </span>
           </div>
           <Link

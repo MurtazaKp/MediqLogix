@@ -29,7 +29,8 @@ export default defineConfig({
         { label: "primary-blue", value: "#4387EA" },
         { label: "primary-black", value: "#333333" },
         { label: "secondary-black", value: "#000000" },
-        { label: "secondary-gray", value: "#4ef721" },
+        { label: "secondary-green", value: "#43ac25" },
+        { label: "custom...", value: "custom" },
       ],
     }),
 
