@@ -10,6 +10,7 @@ import { structureTool } from "sanity/structure";
 import { apiVersion, dataset, projectId } from "./sanity/env";
 import { schema } from "./sanity/schema";
 import { simplerColorInput } from "sanity-plugin-simpler-color-input";
+import { vercelDeployTool } from "sanity-plugin-vercel-deploy";
 
 export default defineConfig({
   basePath: "/studio",
@@ -19,6 +20,7 @@ export default defineConfig({
   schema,
   plugins: [
     structureTool(),
+    vercelDeployTool(),
     simplerColorInput({
       defaultColorFormat: "hex",
       enableSearch: true,
