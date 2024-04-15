@@ -2,6 +2,8 @@ import Contact from "@/app/components/mediQm/contact/contact";
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 import React from "react";
+import { getMediqmPage } from "../../../sanity/lib/client";
+import { refactorMediqm } from "@/utils/mediqm";
 
 export const metadata: Metadata = {
   title: "Contact | Mediqlogix",
@@ -9,13 +11,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://mediqlogix.com/contact",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
     url: "https://mediqlogix.com/contact",
     title: "Contact | Mediqlogix",
-    description: "Feel free to contact Mediqlogix for any questions and concerns",
+    description:
+      "Feel free to contact Mediqlogix for any questions and concerns",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -29,11 +32,16 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: "/images/seoImage.png",
     site: "https://mediqlogix.com/contact",
-    description: "Feel free to contact Mediqlogix for any questions and concerns"
+    description:
+      "Feel free to contact Mediqlogix for any questions and concerns",
   },
 };
 
-const ContactPage = () => {
+export default async function ContactPage() {
+  let MediQmPageData = await getMediqmPage(
+    process.env.NEXT_PUBLIC_SANITY_TOKEN
+  );
+  MediQmPageData = refactorMediqm(MediQmPageData);
   const tabs = {
     heading: "Contact",
     tabs: [
@@ -45,9 +53,7 @@ const ContactPage = () => {
 
   return (
     <TabLayout {...tabs}>
-      <Contact />
+      <Contact {...MediQmPageData.contact} />
     </TabLayout>
   );
-};
-
-export default ContactPage;
+}

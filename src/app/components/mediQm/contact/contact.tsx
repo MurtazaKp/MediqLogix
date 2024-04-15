@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FooterLogoIcon } from "../../icons/footerLogo";
 import Image from "next/image";
 
-const Contact = () => {
+const Contact = ({ heading, formSrc }: any) => {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
@@ -13,8 +13,7 @@ const Contact = () => {
       <div className="bg-primary-green lg:rounded-s-xl  lg:w-3/12 text-white flex flex-col items-center py-11 justify-between">
         <div className=" text-[18.5px] font-bold">
           {" "}
-          <p>Get In Touch</p>
-          <p>With Us!</p>
+          <p className="w-10/12 mx-auto">{heading}</p>
         </div>
         <div>
           <Image src="/images/Email.svg" alt="Email" width={120} height={40} />
@@ -62,7 +61,7 @@ const Contact = () => {
             )}
             <iframe
               className="w-full relativez-40 h-[500px]   "
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdZ2LWscolnH9GZPY9A8-dBsBbYsYEpCjuDRpa-9boqwLxXPw/viewform?embedded=true"
+              src={formSrc && formSrc}
             ></iframe>
           </div>
 

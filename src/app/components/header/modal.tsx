@@ -4,7 +4,7 @@ import { FacebookIcon } from "../icons/facebook";
 import { LinkedinIcon } from "../icons/linkedinIcon";
 import { YoutubeIcon } from "../icons/youtubeIcon";
 import { LogoIcon } from "../icons/logo";
-import { FooterLogoIcon } from "../icons/footerLogo";
+
 import { usePathname } from "next/navigation";
 
 const Modal = ({ handleClose }: any) => {

@@ -2,20 +2,24 @@ import MeetTeam from "@/app/components/meetTeam/meetTeam";
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 import React from "react";
+import { getTeamPage } from "../../../sanity/lib/client";
+import { refactorOurTeam } from "@/utils/ourTeam";
 
 export const metadata: Metadata = {
   title: "Our Team | Mediqlogix",
-  description: "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
+  description:
+    "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
   alternates: {
-    canonical: '/our-team',
+    canonical: "/our-team",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
     url: "https://mediqlogix.com/our-team",
     title: "Our Team | Mediqlogix",
-    description: "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
+    description:
+      "Meet the MediQlogix Team: Discover the expertise behind our mission to enhance hospital quality management.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -32,7 +36,13 @@ export const metadata: Metadata = {
   },
 };
 
-const OurTeamPage = () => {
+export default async function OurTeamPage() {
+  let teamPageData = await getTeamPage(process.env.NEXT_PUBLIC_SANITY_TOKEN);
+
+  console.log({ ...teamPageData });
+
+  teamPageData = refactorOurTeam({ ...teamPageData });
+
   const tabs = {
     heading: "Our Team",
     tabs: [
@@ -49,10 +59,8 @@ const OurTeamPage = () => {
   return (
     <div>
       <TabLayout {...tabs}>
-        <MeetTeam />
+        <MeetTeam {...teamPageData} />
       </TabLayout>
     </div>
   );
-};
-
-export default OurTeamPage;
+}

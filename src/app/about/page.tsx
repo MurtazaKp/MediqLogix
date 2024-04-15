@@ -5,14 +5,16 @@ import Footer from "../components/footer/footer";
 import TabLayout from "../components/tabLayout/tabLayout";
 import AboutContent from "../components/about/aboutContent/aboutContent";
 import { Metadata } from "next";
+import { getAboutUsPage } from "../../../sanity/lib/client";
 
 export const metadata: Metadata = {
   title: "About us | Mediqlogix",
-  description: "Learn about MediQlogix's mission to innovate healthcare. Discover how our AI platform streamlines operations, enhances quality, and elevates management for better patient care. ",
+  description:
+    "Learn about MediQlogix's mission to innovate healthcare. Discover how our AI platform streamlines operations, enhances quality, and elevates management for better patient care. ",
   alternates: {
-    canonical: '/about',
+    canonical: "/about",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
@@ -35,7 +37,8 @@ export const metadata: Metadata = {
   },
 };
 
-const About = () => {
+export default async function About() {
+  let aboutUsPage = await getAboutUsPage(process.env.NEXT_PUBLIC_SANITY_TOKEN);
   const tabs = {
     heading: "About Us",
     tabs: [
@@ -52,10 +55,8 @@ const About = () => {
   return (
     <div className="">
       <TabLayout {...tabs}>
-        <AboutContent />
+        <AboutContent {...aboutUsPage.aboutUs} />
       </TabLayout>
     </div>
   );
-};
-
-export default About;
+}

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { QualityIcon } from "../icons/quality";
 import { FinancialIcon } from "../icons/financial";
@@ -5,7 +7,7 @@ import { DataIcon } from "../icons/data";
 import { CloudIcon } from "../icons/cloud";
 import Link from "next/link";
 
-const Features = () => {
+const Features = ({ mainHeading, features }: any) => {
   const FeatureData = [
     {
       heading: "Healthcare Quality",
@@ -65,31 +67,30 @@ const Features = () => {
   return (
     <div className="px-10 xl:px-36 py-14">
       <h4 className="  text-tertiary-heading text-center mb-8 font-semibold">
-        Benefits of MediQM
+        {mainHeading}
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {FeatureData.map((feature, index) => {
-          return (
-            <div
-              key={index}
-              className="border rounded-lg hover:border-primary-green p-5"
-            >
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
-                <div>
-                  <FeatureLink {...feature} />
-                </div>
-                <div>
-                  <h2 className=" text-[18.5px] text-primary-green font-semibold">
-                    {feature.heading}
-                  </h2>
-                  <p className="text-[14.5px]  leading-normal pe-2">
-                    {feature.description}
-                  </p>
+        {features &&
+          features?.map((feature: any, index: number) => {
+            return (
+              <div
+                key={index}
+                className="border rounded-lg hover:border-primary-green p-5"
+              >
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+                  <div>{features && <FeatureLink {...feature} />}</div>
+                  <div>
+                    <h2 className=" text-[18.5px] text-primary-green font-semibold">
+                      {feature.heading}
+                    </h2>
+                    <p className="text-[14.5px]  leading-normal pe-2">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
     </div>
   );

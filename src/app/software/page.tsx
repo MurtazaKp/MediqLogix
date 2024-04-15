@@ -6,20 +6,24 @@ import Footer from "../components/footer/footer";
 import SoftwareContent from "../components/software/softwareContent/softwareContent";
 import TabLayout from "../components/tabLayout/tabLayout";
 import { Metadata } from "next";
+import { getSoftwareProductPage } from "../../../sanity/lib/client";
+import { refactorSoftware } from "@/utils/software";
 
 export const metadata: Metadata = {
   title: "AI Driven Healthcare Management Software | Mediqlogix",
-  description: "MediQlogix develops an AI-driven software platform designed for seamless integration with your IT systems",
+  description:
+    "MediQlogix develops an AI-driven software platform designed for seamless integration with your IT systems",
   alternates: {
-    canonical: '/software',
+    canonical: "/software",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
-  },  
+  },
   openGraph: {
     url: "https://mediqlogix.com/software",
     title: "AI Driven Healthcare Management Software | Mediqlogix",
-    description: "MediQlogix develops an AI-driven software platform designed for seamless integration with your IT systems",
+    description:
+      "MediQlogix develops an AI-driven software platform designed for seamless integration with your IT systems",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -36,7 +40,13 @@ export const metadata: Metadata = {
   },
 };
 
-const Software = () => {
+export default async function Software() {
+  let SoftwarePageData = await getSoftwareProductPage(
+    process.env.NEXT_PUBLIC_SANITY_TOKEN
+  );
+
+  SoftwarePageData = refactorSoftware(SoftwarePageData);
+
   const tabs = {
     heading: "Software Products",
     tabs: [
@@ -50,11 +60,9 @@ const Software = () => {
     <div>
       <div className="">
         <TabLayout {...tabs}>
-          <SoftwareContent />
+          <SoftwareContent {...SoftwarePageData.software} />
         </TabLayout>
       </div>
     </div>
   );
-};
-
-export default Software;
+}

@@ -1,22 +1,27 @@
 import React from "react";
+import PortableText from "react-portable-text";
 
-const Paragrapgh = () => {
+const Paragrapgh = ({ heading, content }: any) => {
   return (
     <div className="px-10 xl:px-36 bg-black py-10 lg:py-14 text-white">
       <h1 className="text-xl sm:text-2xl mb-6 lg:text-[32px]">
-        Welcome to <span className="text-[#4ef721]">MediQlogix</span>
+        {heading}
+        <span className="text-[#4ef721]"> MediQlogix</span>
       </h1>
-      <p className="sm:text-lg text-sm  ">
-        <span className="text-[#4ef721] leading-body-font"> MediQlogix </span>
-        is a digital solution company providing AI and ML-powered SaaS platform
-        to hospitals and healthcare organizations to enhance their{" "}
-        <span className="font-bold">Global Quality Matrix</span> by taking
-        advantage of the business benefits of cloud-based solutions. The
-        company&apos;s business vision is to improve healthcare delivery by
-        increasing quality, safety, reducing re-admits and finally transforming
-        the operative room to enhance the healthcare delivery experience to
-        patients at large.
-      </p>
+      <div className="sm:text-lg text-sm  ">
+        <PortableText
+          content={content.portableText}
+          serializers={{
+            marks: {
+              textColor: (props: any) => (
+                <span style={{ color: props.mark.value }}>
+                  {props.children}
+                </span>
+              ),
+            },
+          }}
+        />
+      </div>
     </div>
   );
 };

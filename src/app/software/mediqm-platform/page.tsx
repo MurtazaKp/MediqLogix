@@ -2,20 +2,24 @@ import MediQmPlatform from "@/app/components/software/mediQmPlatform/mediQmPlatf
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 import React from "react";
+import { getSoftwareProductPage } from "../../../../sanity/lib/client";
+import { refactorSoftware } from "@/utils/software";
 
 export const metadata: Metadata = {
   title: "Mediqm Platform | Mediqlogix",
-  description: "Mediqm Platform is a platform for AI-powered database for hospitals quality and safety management",
+  description:
+    "Mediqm Platform is a platform for AI-powered database for hospitals quality and safety management",
   alternates: {
-    canonical: 'https://mediqlogix.com/software/mediqm-platform',
+    canonical: "https://mediqlogix.com/software/mediqm-platform",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
     url: "https://mediqlogix.com/software/mediqm-platform",
     title: "Mediqm Platform | Mediqlogix",
-    description: "Mediqm Platform is a platform for AI-powered database for hospitals quality and safety management",
+    description:
+      "Mediqm Platform is a platform for AI-powered database for hospitals quality and safety management",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -32,7 +36,11 @@ export const metadata: Metadata = {
   },
 };
 
-const MediQmPlatformPage = () => {
+export default async function MediqmPlatformPage() {
+  let SoftwarePageData = await getSoftwareProductPage(
+    process.env.NEXT_PUBLIC_SANITY_TOKEN
+  );
+  SoftwarePageData = refactorSoftware(SoftwarePageData);
   const tabs = {
     heading: "Software Products",
     tabs: [
@@ -44,9 +52,7 @@ const MediQmPlatformPage = () => {
   };
   return (
     <TabLayout {...tabs}>
-      <MediQmPlatform />
+      <MediQmPlatform {...SoftwarePageData.mediqmPlatform} />
     </TabLayout>
   );
-};
-
-export default MediQmPlatformPage;
+}

@@ -3,7 +3,7 @@ import React from "react";
 import { FooterLogoIcon } from "../icons/footerLogo";
 import { LogoIcon } from "../icons/logo";
 
-const Footer = () => {
+const Footer = ({ address, copyRight, footerLinks }: any) => {
   const footerData = {
     footerLinks: [
       {
@@ -79,14 +79,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-0 xl:gap-10 lg:grid-cols-4">
           <div className=" lg:col-span-3 lg:w-9/12">
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 ">
-              {footerData.footerLinks.map((links, index) => {
+              {footerLinks.map((links: any, index: number) => {
                 return (
                   <div key={index}>
                     <h3 className="mb-7 text-base text-white ">
                       {links.heading}
                     </h3>
                     <ul className="flex flex-col gap-3 text-sm">
-                      {links.links.map((link, index) => {
+                      {links.links.map((link: any, index: number) => {
                         return (
                           <li key={index}>
                             <Link
@@ -112,25 +112,22 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-span-1">
-            <h5 className="mb-5 text-white">{footerData.address.heading}</h5>
+            <h5 className="mb-5 text-white">{address.heading}</h5>
             <div className="text-white flex flex-col gap-3 text-sm">
               <Link href={"/"} aria-label="Footer Logo">
                 <LogoIcon className="w-6/12 " />
               </Link>
               <p className="border-b border-[#707070]  p-1">
-                {footerData.address.address}
+                {address.address}
               </p>
               <p className="border-b border-[#707070]  p-1">
                 <Link href={`tel:${footerData.address.phone} `}>
-                  {footerData.address.phone}
+                  {address.phone}
                 </Link>
               </p>
               <p className="border-b border-[#707070]  p-1">
                 Email :
-                <Link href={`mailto:${footerData.address.email}`}>
-                  {" "}
-                  {footerData.address.email}
-                </Link>
+                <Link href={`mailto:${address.email}`}> {address.email}</Link>
               </p>
               {/* <p className="ps-1">Website : {footerData.address.website}</p> */}
             </div>
@@ -151,7 +148,7 @@ const Footer = () => {
       <div className="bg-primary-green py-2 px-10 xl:px-36">
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 gap-2 xl:gap-0 ">
           <div className="lg:col-span-2 flex-wrap justify-center sm:justify-center lg:justify-start items-center flex gap-4 sm:gap-7">
-            {footerData.copyRight.copyrightLinks.map((link, index) => {
+            {copyRight.copyrightLinks.map((link: any, index: number) => {
               return (
                 <Link
                   className={`font-semibold  text-xs text-white ${
@@ -166,7 +163,7 @@ const Footer = () => {
             })}
           </div>
           <div className="lg:col-span-2 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center  xl:justify-center">
-            {footerData.copyRight.copyrightText}
+            {copyRight.copyrightText}
           </div>
           <div className="lg:col-span-2 text-center sm:text-start  text-white text-xs sm:flex sm:justify-center lg:justify-end">
             Created by{" "}

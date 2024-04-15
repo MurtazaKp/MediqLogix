@@ -7,6 +7,8 @@ import { GoogleAnalyticsTracking } from "./components/googleAnalytics.tsx/google
 
 import { Suspense } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { getSetting } from "../../sanity/lib/client";
+import { refactorSetting } from "@/utils/setting";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,11 +43,15 @@ export const metadata: Metadata = {
     icon: "/images/Favicon.svg",
   },
 };
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  let Setting = await getSetting(process.env.NEXT_PUBLIC_SANITY_TOKEN);
+
+  Setting = refactorSetting(Setting);
+
   return (
     <html lang="en">
       <head>
@@ -106,9 +112,9 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <GoogleAnalytics gaId="G-1QQFW51GEL" />
-        <Header />
+        <Header {...Setting.headerMenus} />
         <Suspense>{children}</Suspense>
-        <Footer />
+        <Footer {...Setting.Footer} />
       </body>
     </html>
   );

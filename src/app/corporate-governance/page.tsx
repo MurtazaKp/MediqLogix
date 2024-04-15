@@ -1,15 +1,17 @@
 import CorporateGovernance from "@/app/components/about/corporateGovernance/corporateGovernance";
 import TabLayout from "@/app/components/tabLayout/tabLayout";
+import { refactorAboutUs } from "@/utils/aboutUs";
 import { Metadata } from "next";
 import React from "react";
+import { getAboutUsPage } from "../../../sanity/lib/client";
 
 export const metadata: Metadata = {
   title: "Corporate Governance | Mediqlogix",
   description: "MediQlogix has embraced corporate governance principles.",
   alternates: {
-    canonical: '/corporate-governance',
+    canonical: "/corporate-governance",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
   },
   openGraph: {
@@ -32,7 +34,9 @@ export const metadata: Metadata = {
   },
 };
 
-const CorporateGovernancPage = () => {
+export default async function CorporateGovernancePage() {
+  let aboutUsPage = await getAboutUsPage(process.env.NEXT_PUBLIC_SANITY_TOKEN);
+  aboutUsPage = refactorAboutUs(aboutUsPage);
   const tabs = {
     heading: "Corporate Governance",
     tabs: [
@@ -49,10 +53,8 @@ const CorporateGovernancPage = () => {
   return (
     <div>
       <TabLayout {...tabs}>
-        <CorporateGovernance />
+        <CorporateGovernance {...aboutUsPage.corporateGovernance} />
       </TabLayout>
     </div>
   );
-};
-
-export default CorporateGovernancPage;
+}

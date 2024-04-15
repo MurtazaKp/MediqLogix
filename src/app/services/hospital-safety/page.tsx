@@ -2,20 +2,23 @@ import HospitalSafety from "@/app/components/service/hospitalSafety/hospitalSafe
 import TabLayout from "@/app/components/tabLayout/tabLayout";
 import { Metadata } from "next";
 import React from "react";
+import { getServicesPage } from "../../../../sanity/lib/client";
 
 export const metadata: Metadata = {
   title: "Hospital Safety | Mediqlogix",
-  description: "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care.",
+  description:
+    "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care.",
   alternates: {
     canonical: "https://mediqlogix.com/services/hospital-safety",
     languages: {
-      'en-US': '/en-US'
+      "en-US": "/en-US",
     },
-  },  
+  },
   openGraph: {
     url: "https://mediqlogix.com/services/hospital-safety",
     title: "Hospital Safety | Mediqlogix",
-    description: "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care.",
+    description:
+      "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care.",
     images: {
       url: "/images/seoImage.png",
       width: 800,
@@ -29,11 +32,16 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: "/images/seoImage.png",
     site: "https://mediqlogix.com/services/hospital-safety",
-    description: "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care."
+    description:
+      "Enhance hospital safety with expert consulting services. Our tailored solutions prioritize compliance and risk management for optimal patient care.",
   },
 };
 
-const HospitalSafetyPage = () => {
+export default async function HospitalSafetyPage() {
+  let ServicePageData = await getServicesPage(
+    process.env.NEXT_PUBLIC_SANITY_TOKEN
+  );
+
   const tabs = {
     heading: "Hospital Safety Consulting",
     tabs: [
@@ -56,9 +64,7 @@ const HospitalSafetyPage = () => {
   };
   return (
     <TabLayout {...tabs}>
-      <HospitalSafety />
+      <HospitalSafety {...ServicePageData.hospitalSafety} />
     </TabLayout>
   );
-};
-
-export default HospitalSafetyPage;
+}
