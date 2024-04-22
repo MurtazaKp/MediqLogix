@@ -13,8 +13,8 @@ on:
         required: true
         type: string
 
-env:
-  DEPLOYMENT_FOLDER: .next
+#env:
+#  DEPLOYMENT_FOLDER: .next
 
 jobs:
 # Please do not rename this job
