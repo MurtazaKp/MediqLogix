@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next build && next-sitemap"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@formfacade/embed-react": "^1.0.1",

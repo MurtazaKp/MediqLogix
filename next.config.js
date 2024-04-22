@@ -1,5 +1,5 @@
 module.exports = {
-  distDir: "build",
+  output: "export",
   images: {
     domains: ["cdn.sanity.io"],
   },
