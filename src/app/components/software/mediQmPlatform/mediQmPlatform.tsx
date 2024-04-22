@@ -16,7 +16,7 @@ const MediQmPlatform = ({ topContent, imageContent, heading }: any) => {
       </p>
       <div className="flex flex-col lg:flex-row items-start gap-[30px]">
         <div className="lg:w-6/12 2xl:w-3/12 flex ">
-          <Image
+          <img
             className="w-full h-auto rounded-lg"
             src={imageContent.image}
             alt=""

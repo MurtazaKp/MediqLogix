@@ -110,7 +110,7 @@ const Modal = ({ handleClose, openIndex, teamDetail }: any) => {
           <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-11 xl:gap-16 ">
             <div className=" lg:w-4/12">
               {teamDetail?.teamMember?.imageSrc && (
-                <Image
+                <img
                   className="w-full border rounded-lg border-[#707070] h-full flex justify-center items-end"
                   src={teamDetail?.teamMember?.imageSrc.src}
                   alt=""

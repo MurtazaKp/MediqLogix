@@ -13,7 +13,7 @@ const Partners = ({ data }: any) => {
               <h4 className="text-[18.5px] font-bold leading-5 text-primary-green">
                 {item.companyName}
               </h4>
-              <Image
+              <img
                 className=" mix-blend-darken "
                 src={item.image}
                 alt="Microsoft"

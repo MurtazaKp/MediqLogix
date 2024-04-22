@@ -6,7 +6,7 @@ import { myPortableTextComponents } from "@/utils/component";
 const CompanyProfile = ({ image, content }: any) => {
   return (
     <div className="flex flex-col lg:flex-row text-[14.5px] justify-center items-center leading-5 gap-9">
-      <Image
+      <img
         className="w-[400px] h-[266px] rounded-lg"
         src={image}
         alt="company profile image"

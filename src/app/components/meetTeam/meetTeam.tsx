@@ -133,7 +133,7 @@ const MeetTeam = ({ teamMembers }: any) => {
             key={index}
             className="rounded-xl cursor-pointer group border border-gray-400 grayscale mx-auto hover:grayscale-0 transition duration-300 relative overflow-y-hidden flex justify-center items-end  w-full h-[250px] "
           >
-            <Image
+            <img
               width={250}
               height={250}
               className={`w-full top-0 sm:-top-2 lg:top-0  ${

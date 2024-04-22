@@ -92,11 +92,13 @@ const PartnerSlider = () => {
               className="!flex px-2   justify-center items-center"
             >
               <div className="bg-white box-shadow rounded-lg flex justify-center items-center w-full   2xl:w-11/12 h-[124px]">
-                <Image src={partner.logoSrc} 
+                <img
+                  src={partner.logoSrc}
                   alt=""
                   width="0"
                   height="0"
-                  sizes="100vw"/>
+                  sizes="100vw"
+                />
               </div>
             </div>
           );

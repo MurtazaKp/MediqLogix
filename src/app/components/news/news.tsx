@@ -43,7 +43,7 @@ const News = () => {
               className="flex gap-6 border rounded-lg lg:h-[120px] items-stretch border-primary-green"
             >
               <div className="w-5/12 rounded-lg ">
-                <Image
+                <img
                   className="w-full h-full rounded-s-lg"
                   src="https://images.pexels.com/photos/3153204/pexels-photo-3153204.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt=""

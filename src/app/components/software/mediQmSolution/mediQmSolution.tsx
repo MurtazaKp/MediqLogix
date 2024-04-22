@@ -23,7 +23,7 @@ const MediQmSolution = ({
       </div>
       <div className="flex flex-col lg:flex-row  gap-10">
         <div className="lg:w-6/12 2xl:w-4/12 ">
-          <Image
+          <img
             className="w-full h-auto rounded-lg"
             src={imageContent.image}
             alt=""

@@ -13,7 +13,7 @@ const CloudMediQm = ({ imageContent, topContent, bottomContent }: any) => {
       />
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <div className="lg:w-7/12 bg-white p-5 rounded-lg">
-          <Image
+          <img
             className="w-full h-auto"
             src={imageContent.image}
             alt="infographic image"

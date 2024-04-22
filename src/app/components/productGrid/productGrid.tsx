@@ -75,7 +75,7 @@ const ProductGrid = ({ data }: any) => {
                 } `}
                 key={index}
               >
-                <Image
+                <img
                   className={` w-20 h-auto ${index == 3 ? "mt-2" : ""} `}
                   src={product.image}
                   alt={product.label}

@@ -9,7 +9,7 @@ const MediQmMobility = ({ heading, portableText, image, buttonCta }: any) => {
     <div className="flex text-[14.5px]  flex-col gap-6">
       <div className="flex flex-col lg:flex-row gap-[30px]">
         <div className="lg:w-6/12 2xl:w-4/12">
-          <Image
+          <img
             className="rounded-[18px] w-full h-auto"
             src={image}
             alt=""

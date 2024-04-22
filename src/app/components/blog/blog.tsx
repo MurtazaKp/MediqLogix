@@ -50,7 +50,7 @@ const Blog = () => {
         return (
           <div className="bg-white rounded-xl  flex flex-col" key={index}>
             <div className="rounded-t-xl relative  overflow-hidden shadow-lg">
-              <Image
+              <img
                 className="w-full h-52 object-cover "
                 src={blog.image.src}
                 alt="Sunset in the mountains"

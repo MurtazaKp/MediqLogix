@@ -67,7 +67,7 @@ const LatestWork = () => {
                 key={index}
               >
                 <div className="rounded-t-xl relative  overflow-hidden shadow-lg">
-                  <Image
+                  <img
                     className="w-full h-28 object-cover "
                     src={blog.image.src}
                     alt="Sunset in the mountains"

@@ -72,15 +72,13 @@ const HeroSection = ({ slides }: any) => {
             className="flex flex-col px-10 xl:px-36 pb-12 2xl:pb-16 relative"
           >
             <div className="absolute inset-0 -z-10">
-              <Image
+              <img
                 loading="eager"
-                placeholder="blur"
                 className="object-cover w-full h-full"
                 alt={slide.title}
                 width={1000}
                 height={500}
                 src={slide.image}
-                blurDataURL={rgbDataURL(237, 181, 6)}
               />
               <div className="absolute inset-0 bg-black opacity-70"></div>
             </div>
